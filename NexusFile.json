@@ -1,0 +1,21 @@
+{
+    "version": "5.3.4",
+    "license": "unknown",
+    "homepage": "http://www.xiles.net/",
+    "url": "http://a.xiles.net/pds/nexusfile_5.3.4.zip",
+    "extract_dir": "NexusFile5",
+    "hash": "2ff2585bc8125510a87bd0d995b26976bba7a1b18a6951bf238bd08d44aaee43",
+    "bin": "NexusFile.exe",
+    "persist": "userdata",
+    "shortcuts": [
+        [
+            "NexusFile.exe",
+            "NexusFile"
+        ]
+    ],
+    "checkver": "nexusfile_([\\d.]+)\\.zip",
+    "autoupdate": {
+        "url": "http://a.xiles.net/pds/nexusfile_$version.zip",
+        "extract_dir": "NexusFile$majorVersion"
+    }
+}

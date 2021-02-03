@@ -1,0 +1,22 @@
+{
+    "homepage": "https://www.pdfshaper.com/",
+    "version": "10.7",
+    "license": "free for home users",
+    "url": "https://www.pdfshaper.com/downloads/pdfshaper_free_10.7.exe",
+    "hash": "1f13ea5c253bf7c106df73b583cfd09419f87558657f47ff6bd9768fc341308b",
+    "innosetup": true,
+    "bin": "PDFShaper.exe",
+    "shortcuts": [
+        [
+            "PDFShaper.exe",
+            "PDF Shaper"
+        ]
+    ],
+    "checkver": {
+        "url": "https://www.pdfshaper.com/download.html",
+        "regex": "Download <small class=\"text-muted font-weight-lighter\">version ([\\d.]+)"
+    },
+    "autoupdate": {
+        "url": "https://www.pdfshaper.com/downloads/pdfshaper_free_$version.exe"
+    }
+}

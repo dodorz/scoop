@@ -1,0 +1,22 @@
+{
+    "homepage": "http://www.taglyst.com/",
+    "license": "unknown",
+    "version": "3.927",
+    "url": "http://r.taglyst.com/release/tagLyst.Next.setup.3927.exe#/dl.7z",
+    "hash": "9b6e58b87cc28f171c7579017604c85f2f13bff1358ab455392e867f8ff5e6ac",
+    "bin": "run\\tagLyst.exe",
+    "shortcuts": [
+        [
+            "run\\tagLyst.exe",
+            "tagLyst"
+        ]
+    ],
+    "post_install": "Remove-Item \"$dir\\uninst.exe.nsis\" -Force",
+    "checkver": {
+        "url": "http://www.taglyst.com/download-next",
+        "regex": "正式版 V([\\d.]+)"
+    },
+    "autoupdate": {
+        "url": "http://r.taglyst.com/release/tagLyst.Next.setup.$cleanVersion.exe#/dl.7z"
+    }
+}

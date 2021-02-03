@@ -1,0 +1,44 @@
+{
+    "homepage": "https://github.com/tomboy-notes/tomboy-ng",
+    "license": "GPL-3.0-or-later",
+    "version": "0.31f",
+    "url": "https://github.com/tomboy-notes/tomboy-ng/releases/download/v0.31/tomboy-ng-setup-0.31f.exe",
+    "hash": "12934dca7de9b0109aaed98b292f8e462acbb5df24c6dd4d98968c6050999015",
+    "innosetup": true,
+    "architecture": {
+        "64bit": {
+            "installer": {
+                "script": [
+                    "Rename-Item \"$dir\\tomboy-ng,1.exe\" \"tomboy-ng.exe\"",
+                    "Rename-Item \"$dir\\libeay32,1.dll\" \"libeay32.dll\"",
+                    "Rename-Item \"$dir\\ssleay32,1.dll\" \"ssleay32.dll\"",
+                    "Remove-Item \"$dir\\tomboy-ng,2.exe\",\"$dir\\libeay32,2.dll\",\"$dir\\ssleay32,2.dll\""
+                ]
+            }
+        },
+        "32bit": {
+            "installer": {
+                "script": [
+                    "Rename-Item \"$dir\\tomboy-ng,2.exe\" \"tomboy-ng.exe\"",
+                    "Rename-Item \"$dir\\libeay32,2.dll\" \"libeay32.dll\"",
+                    "Rename-Item \"$dir\\ssleay32,2.dll\" \"ssleay32.dll\"",
+                    "Remove-Item \"$dir\\tomboy-ng,1.exe\",\"$dir\\libeay32,1.dll\",\"$dir\\ssleay32,1.dll\""
+                ]
+            }
+        }
+    },
+    "bin": "tomboy-ng.exe",
+    "shortcuts": [
+        [
+            "tomboy-ng.exe",
+            "TomBoy NG"
+        ]
+    ],
+    "checkver": {
+        "url": "https://github.com/tomboy-notes/tomboy-ng/releases/latest",
+        "regex": "[\\w\\W]*/tomboy-notes/tomboy-ng/releases/download/v(?<main>[\\d.]+)/tomboy-ng-setup-([\\d.\\w]+).exe"
+    },
+    "autoupdate": {
+        "url": "https://github.com/tomboy-notes/tomboy-ng/releases/download/v$matchMain/tomboy-ng-setup-$version.exe"
+    }
+}

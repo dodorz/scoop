@@ -1,0 +1,28 @@
+{
+    "homepage": "https://www.xnview.com/en/nconvert/",
+    "version": "7.39",
+    "license": "freeware",
+    "architecture": {
+        "64bit": {
+            "url": "http://download.xnview.com/NConvert-win64.zip",
+            "hash": "2c6ccfac9b1fdf79d3d8d83f55da72050b42257f6e6cb5c1e93fe53f4750c040"
+        },
+        "32bit": {
+            "url": "http://download.xnview.com/NConvert-win.zip",
+            "hash": "58dc82ecc6fa865899e3bbee0c0c577891384e210a7001556e7014b0c2693a6c"
+        }
+    },
+    "extract_dir": "XnView",
+    "bin": "nconvert.exe",
+    "checkver": "<p>NConvert ([\\d.]+) for Windows</p>",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "http://download.xnview.com/NConvert-win64.zip"
+            },
+            "32bit": {
+                "url": "http://download.xnview.com/NConvert-win.zip"
+            }
+        }
+    }
+}
