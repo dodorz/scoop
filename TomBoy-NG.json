@@ -1,9 +1,9 @@
 {
     "homepage": "https://github.com/tomboy-notes/tomboy-ng",
     "license": "GPL-3.0-or-later",
-    "version": "0.31f",
-    "url": "https://github.com/tomboy-notes/tomboy-ng/releases/download/v0.31/tomboy-ng-setup-0.31f.exe",
-    "hash": "12934dca7de9b0109aaed98b292f8e462acbb5df24c6dd4d98968c6050999015",
+    "version": "0.31h",
+    "url": "https://github.com/tomboy-notes/tomboy-ng/releases/download/v0.31/tomboy-ng-setup-0.31h.exe",
+    "hash": "26ebdd92791008fced50623313b90f8ccc273a2c03e8c766ab0d8e4fe510ee78",
     "innosetup": true,
     "architecture": {
         "64bit": {
