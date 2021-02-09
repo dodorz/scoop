@@ -1,15 +1,15 @@
 {
     "homepage": "http://www.javaeditor.org/",
-    "version": "19.12",
+    "version": "19.13",
     "license": "freeware",
     "architecture": {
         "64bit": {
-            "url": "http://www.javaeditor.org/wiki/jedownload/javaeditor64.19.12.zip",
-            "hash": "dfadeb8218f88714ff06550c647ba50e4d320dfafc22e7b4683b88f69b4f9e26"
+            "url": "http://www.javaeditor.org/wiki/jedownload/javaeditor64.19.13.zip",
+            "hash": "6ce82f695a3e0066591e0b441036f4ad5c93a5ee2f9f2f6e30233eeaba8b9468"
         },
         "32bit": {
-            "url": "http://www.javaeditor.org/wiki/jedownload/javaeditor19.12.zip",
-            "hash": "acafaa854c69b7bdec969395660eb82ee9422ee84ed2c2c21ea000e1187bd818"
+            "url": "http://www.javaeditor.org/wiki/jedownload/javaeditor19.13.zip",
+            "hash": "0f92afd9663d1e917877e26af1545e60e4d16665972ba95a1e20602bdf3899a3"
         }
     },
     "bin": "javaeditor.exe",
