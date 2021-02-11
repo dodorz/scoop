@@ -1,9 +1,9 @@
 {
     "homepage": "https://www.strokesplus.net/",
     "license": "Proprietary",
-    "version": "0.4.1.4",
-    "url": "https://www.strokesplus.net/files/StrokesPlus.net_Portable_0.4.1.4.zip",
-    "hash": "051484e8706fadd8a499651e1e6270808a4bf4c61e2ca86faf181ee5018274ca",
+    "version": "0.4.1.5",
+    "url": "https://www.strokesplus.net/files/StrokesPlus.net_Portable_0.4.1.5.zip",
+    "hash": "3db2d8cc0da620e72c3cc4e238467d0fb15953f2df7903eca5f0b2f37862a289",
     "bin": "StrokesPlus.net.exe",
     "shortcuts": [
         [
