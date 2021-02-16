@@ -1,10 +1,10 @@
 {
     "homepage": "https://www.musicpd.org/",
     "description": "Music Player Daemon, a server-side application for playing music.",
-    "version": "0.22.5",
+    "version": "0.22.6",
     "license": "GPL-2.0-only",
-    "url": "https://www.musicpd.org/download/win32/0.22.5/mpd.exe",
-    "hash": "2fa6adb885f4dd781398d8fd72fa4f0dfed7ba53cdaf1a0d49fd1ae11ceac9dd",
+    "url": "https://www.musicpd.org/download/win32/0.22.6/mpd.exe",
+    "hash": "9e398c9a6254bde827aa5097621c7561cd6f159a4ceccc0502afee63a2847ca0",
     "bin": [
         [
             "mpd.exe",
