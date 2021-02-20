@@ -1,15 +1,15 @@
 {
     "homepage": "https://github.com/chriswalz/bit",
     "license": "Apache-2.0",
-    "version": "0.9.12",
+    "version": "0.9.16",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/chriswalz/bit/releases/download/v0.9.12/bit_0.9.12_windows_amd64.tar.gz",
-            "hash": "1694cd64e63122cf3cd2f2202d82f0bd7e2ba31790b1cf4986244ad7ecbb76fe"
+            "url": "https://github.com/chriswalz/bit/releases/download/v0.9.16/bit_0.9.16_windows_amd64.tar.gz",
+            "hash": "c37e1e1b6e6360336cf3cd442f749b67e3cdd6eb6d6f4dec1d8959598da7e0f4"
         },
         "32bit": {
-            "url": "https://github.com/chriswalz/bit/releases/download/v0.9.12/bit_0.9.12_windows_386.tar.gz",
-            "hash": "945abe50024d1f43b6156f622d9193540386b7459e20438247bd3cb206205bcf"
+            "url": "https://github.com/chriswalz/bit/releases/download/v0.9.16/bit_0.9.16_windows_386.tar.gz",
+            "hash": "0ccc09f21b50156a07fdf2a42f07b367b70f2aa89bf14786a903b94a0efad205"
         }
     },
     "bin": "bit.exe",
