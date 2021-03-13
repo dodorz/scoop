@@ -56,7 +56,7 @@
     ],
     "checkver": {
         "url": "https://www.ccleaner.com/ccleaner/download",
-        "regex": "<strong>v([\\d.]+)</strong>"
+        "regex": "<strong>CCleaner v([\\d.]+)</strong>"
     },
     "autoupdate": {
         "url": "https://download.ccleaner.com/portable/ccsetup$majorVersion$minorVersion.zip"
