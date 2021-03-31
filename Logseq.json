@@ -1,0 +1,28 @@
+{
+    "homepage": "https://logseq.com/",
+    "license": "AGPL-3.0",
+    "version": "0.0.15",
+    "url": "https://github.com/logseq/logseq/releases/download/0.0.15/logseq-win-x64-0.0.15.exe#/dl.7z",
+    "hash": "d7e4a74067b96f240bbd076e3d3a3da876f31cc07c7effd8430d2dd3a6ada406",
+    "installer": {
+        "script": [
+            "$pkgfile = (Get-ChildItem \"$dir\" '*.nupkg' | Select-Object -First 1).FullName",
+            "Expand-7ZipArchive \"$pkgfile\" \"$dir\" -Removal",
+            "Move-Item \"$dir\\lib\\net45\\*\" \"$dir\""
+        ]
+    },
+    "bin": "Logseq.exe",
+    "shortcuts": [
+        [
+            "Logseq.exe",
+            "Logseq"
+        ]
+    ],
+    "post_install": "Remove-Item \"$dir\\package\",\"$dir\\_rels\",\"$dir\\Logseq.nuspec\",\"$dir\\[Content_Types].xml\",\"$dir\\*.nupkg\",\"$dir\\background.gif\" -Recurse",
+    "checkver": {
+        "github": "https://github.com/logseq/logseq"
+    },
+    "autoupdate": {
+        "url": "https://github.com/logseq/logseq/releases/download/$version/logseq-win-x64-$version.exe#/dl.7z"
+    }
+}
