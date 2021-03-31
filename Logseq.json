@@ -18,7 +18,7 @@
             "Logseq"
         ]
     ],
-    "post_install": "Remove-Item \"$dir\\package\",\"$dir\\_rels\",\"$dir\\Logseq.nuspec\",\"$dir\\[Content_Types].xml\",\"$dir\\*.nupkg\",\"$dir\\background.gif\" -Recurse",
+    "post_install": "Remove-Item \"$dir\\package\",\"$dir\\_rels\",\"$dir\\Logseq.nuspec\",\"$dir\\[Content_Types].xml\",\"$dir\\*.nupkg\",\"$dir\\background.gif\",\"$dir\\lib\" -Recurse",
     "checkver": {
         "github": "https://github.com/logseq/logseq"
     },
