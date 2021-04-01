@@ -1,9 +1,9 @@
 {
     "homepage": "https://www.picpick.org/",
-    "version": "5.1.4",
+    "version": "5.1.5",
     "license": "freeware for personal use",
     "url": "https://www.picpick.org/releases/latest/picpick_portable.zip",
-    "hash": "1c6b04afb42ab3b932538c1ddda245190f1abaa5c9072f4e6ee37a3cd1667c98",
+    "hash": "2a41aad92041a11b7a328b89ea1062dfd9bcbba6418d9562c89012336c5232a9",
     "bin": "picpick.exe",
     "persist": [
         "picpick.ini",
