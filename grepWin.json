@@ -10,7 +10,7 @@
         },
         "32bit": {
             "url": "https://github.com/stefankueng/grepWin/releases/download/2.0.7/grepWin-2.0.7_portable.exe",
-            "hash": ""
+            "hash": "b9f83c39d80fc019aa297b52606636a5ce8a5f8467262d0648e72dd11868e3e5"
         }
     },
     "pre_install": "if (!(Test-Path \"$persist_dir\\grepwin.ini\")) {Set-Content \"$dir\\grepwin.ini\" (@('[global]', '[Software\\grepWin\\History]') -join \"`r`n\") -Encoding ASCII}",
