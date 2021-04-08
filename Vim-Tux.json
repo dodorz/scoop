@@ -1,7 +1,7 @@
 {
     "homepage": "https://tuxproject.de/projects/vim/",
     "description": "Vim build from TurProject",
-    "version": "8.2.2679",
+    "version": "8.2.2730",
     "license": "Vim",
     "architecture": {
         "64bit": {
