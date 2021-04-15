@@ -15,6 +15,6 @@ shift
 goto :vldone
 
 :vldall
-%VALID%  %SCHEMA% * | grep -v "validates against the schema!"
+%VALID%  %SCHEMA% *.json | grep -v "validates against the schema!"
 
 :end
