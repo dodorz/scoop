@@ -4,7 +4,7 @@
     "version": "6.0.1",
     "url": "https://github.com/xwmx/nb/archive/refs/tags/6.0.1.zip",
     "hash": "3d3478e7fe843d1e1e907ee4cc600aeb36d58966621982af7f0a0eae17426d76",
-    "extract_dir": "6.0.1",
+    "extract_dir": "nb-6.0.1",
     "installer": {
         "script": "Set-Content \"$dir\\nb.bat\" '@bash.exe \"%~dp0nb\" %*' -Encoding ASCII"
     },
@@ -12,6 +12,6 @@
     "checkver": "github",
     "autoupdate": {
         "url": "https://github.com/xwmx/nb/archive/refs/tags/$version.zip",
-        "extract_dir": "$version"
+        "extract_dir": "nb-$version"
     }
 }
