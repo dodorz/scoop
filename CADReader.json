@@ -1,9 +1,9 @@
 {
     "homepage": "https://cad.glodon.com/",
     "license": "freewre",
-    "version": "5.13.3.73",
+    "version": "5.14.0.74",
     "url": "http://cdn.cad.glodon.com/app/CADReaderPc.exe",
-    "hash": "72e3da7cdff58a84c3a85fc72f64ca89ce061a1ae31ea23d25def3135ce28e9f",
+    "hash": "ac0c88438f186aa2761e06a6069097a8d274357da8150be337454e01e32642fa",
     "innosetup": true,
     "bin": "CADReader.exe",
     "shortcuts": [
