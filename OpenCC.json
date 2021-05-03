@@ -20,7 +20,7 @@
     ],
     "checkver": {
         "url": "https://github.com/BYVoid/OpenCC/releases/latest",
-        "regex": "\/releases\/tag\/ver.([\d.]+)"
+        "regex": "\/releases\/tag\/ver.([\\d.]+)"
     },
     "autoupdate": {
         "architecture": {
