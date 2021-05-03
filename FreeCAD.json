@@ -30,15 +30,9 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/FreeCAD/FreeCAD/releases/download/$version/FreeCAD-$matchBuild-WIN-x64-portable.7z",
+                "url": "https://github.com/FreeCAD/FreeCAD/releases/download/$version/FreeCAD-$matchBuild-WIN-x64-portable1.7z",
                 "hash": {
-                    "url": "$baseurl/FreeCAD-$matchBuild-WIN-x64-portable-SHA256.txt"
-                }
-            },
-            "32bit": {
-                "url": "https://github.com/FreeCAD/FreeCAD/releases/download/$version/FreeCAD-$matchBuild-WIN-x32-portable.7z",
-                "hash": {
-                    "url": "$baseurl/FreeCAD-$matchBuild-WIN-x32-portable.7z-SHA256.txt"
+                    "url": "$baseurl/FreeCAD-$matchBuild-WIN-x64-portable1.7z-SHA256.txt"
                 }
             }
         }
