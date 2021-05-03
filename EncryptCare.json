@@ -15,7 +15,7 @@
     ],
     "checkver": {
         "url": "https://www.glorylogic.com/download.html",
-        "regex": "<p>Encrypt Care v([\\d.]+) <small class=\"text-muted\">Free</small>"
+        "regex": "<p>Encrypt Care ([\\d.]+)</p>"
     },
     "autoupdate": {
         "url": "https://www.glorylogic.com/downloads/encryptcare_$version.exe"
