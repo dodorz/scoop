@@ -5,17 +5,7 @@
     "url": "https://github.com/clibs/clib/releases/download/2.7.0/clib-win-2.7.0.zip",
     "hash": "22af84655017016c6f71ac405fa4f650cd7743a5531ba59db5f2a68543d1bd41",
     "extract_dir": "clib-win",
-    "bin": [
-        "clib-build.exe",
-        "clib-configure.exe",
-        "clib-init.exe",
-        "clib-install.exe",
-        "clib-search.exe",
-        "clib-uninstall.exe",
-        "clib-update.exe",
-        "clib-upgrade.exe",
-        "clib.exe"
-    ],
+    "bin": "clib.exe",
     "checkver": {
         "github": "https://github.com/clibs/clib"
     },
