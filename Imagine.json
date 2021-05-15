@@ -15,8 +15,8 @@
             ]
         },
         "32bit": {
-            "url": "http://www.nyam.pe.kr/dev/imagine/download/x64/Imagine_1.1.1_x64_Unicode.zip",
-            "hash": "985f05102a8519bd75bbaa89fb697037d0c0889ed9bd8431f64eb309e7e43b3f",
+            "url": "http://www.nyam.pe.kr/dev/imagine/download/unicode/Imagine_1.1.1_Unicode.zip",
+            "hash": "c29373dec594e2f1a522412aaa917ddb896bc50ca5ce61e998adf31e1c58acd4",
             "bin": "Imagine.exe",
             "shortcuts": [
                 [
@@ -38,7 +38,7 @@
                 "url": "http://www.nyam.pe.kr/dev/imagine/download/x64/Imagine_$version_x64_Unicode.zip"
             },
             "32bit": {
-                "url": "http://www.nyam.pe.kr/dev/imagine/download/x64/Imagine_$version_x64_Unicode.zip"
+                "url": "http://www.nyam.pe.kr/dev/imagine/download/unicode/Imagine_$version_Unicode.zip"
             }
         }
     }
