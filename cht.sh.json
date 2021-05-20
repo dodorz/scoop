@@ -11,5 +11,12 @@
         "Set-Content \"$dir\\cht.bat\" \"@for /f %%i in ('scoop prefix git') do @%%i\\bin\\bash.exe %~dp0\\cht.sh %*\" -Encoding ASCII"
         ]
     },
-    "bin": "cht.bat"
+    "bin": "cht.bat",
+    "checkver": {
+        "url": "https://cht.sh/%3Acht.sh",
+        "regex": "__CHTSH_VERSION=([\\d.]+)"
+    },
+    "autoupdate": {
+        "url": "https://cht.sh/%3Acht.sh"
+    }
 }
