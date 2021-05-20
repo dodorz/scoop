@@ -1,9 +1,9 @@
 @echo off
 setlocal
 
-for /f %%i in ('scoop which scoop') do (
-    set CHECKVER=%%~dpicheckver.ps1
-    set FORMAT=%%~dpiformatjson.ps1
+for /f %%i in ('scoop prefix scoop') do (
+    set CHECKVER=%%i\bin\checkver.ps1
+    set FORMAT=%%i\bin\formatjson.ps1
 )
 for /f %%i in ('scoop which pwsh') do set PWSH=%%i
 if "%PWSH%x" == "x" for /f %%i in ('scoop which powershell') do set PWSH=%%i
