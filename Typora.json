@@ -19,13 +19,7 @@
         }
     },
     "installer": {
-        "script": [
-            "innounp -x \"$dir\\$fname\" -d\"$dir\" -q",
-            "Move-Item \"$dir\\{app}\\*\" \"$dir\"",
-            "Remove-Item \"$dir\\$fname\"",
-            "Remove-Item \"$dir\\install_script.iss\"",
-            "Remove-Item \"$dir\\{app}\" -Recurse"
-        ]
+        "script": "Expand-InnoArchive  -Path \"$dir\\$fname\" -DestinationPath \"$dir\" -Removal"
     },
     "bin": "Typora.exe",
     "shortcuts": [
