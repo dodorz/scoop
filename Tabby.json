@@ -1,5 +1,5 @@
 {
-    "homepage": "https://eugeny.github.io/terminus/",
+    "homepage": "https://eugeny.github.io/tabby/",
     "description": "A terminal for a more modern age.",
     "version": "1.0.143",
     "license": "MIT",
@@ -9,21 +9,21 @@
             "hash": "9b4e6375120cffeef73692d1b0117c13daf0cce781741b2fbf945ac234959e66"
         }
     },
-    "bin": "Terminus.exe",
+    "bin": "Tabby.exe",
     "shortcuts": [
         [
-            "Terminus.exe",
-            "Terminus"
+            "Tabby.exe",
+            "Tabby"
         ]
     ],
     "persist": "data",
     "checkver": {
-        "github": "https://github.com/Eugeny/terminus"
+        "github": "https://github.com/Eugeny/tabby"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/Eugeny/terminus/releases/download/v$version/terminus-$version-portable.zip"
+                "url": "https://github.com/Eugeny/tabby/releases/download/v$version/tabby-$version-portable.zip"
             }
         }
     }
