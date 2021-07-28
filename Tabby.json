@@ -1,12 +1,12 @@
 {
     "homepage": "https://eugeny.github.io/tabby/",
     "description": "A terminal for a more modern age.",
-    "version": "1.0.146",
+    "version": "1.0.148",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/Eugeny/tabby/releases/download/v1.0.146/tabby-1.0.146-portable.zip",
-            "hash": "c6ef5b6c56020cab2204c44d304613d4095d40e0670bed6e47dab581bdc21312"
+            "url": "https://github.com/Eugeny/tabby/releases/download/v1.0.148/tabby-1.0.148-portable.zip",
+            "hash": "5651e765d06bb0e6b382a97c6d306c5aad922efb02f39cb74bb4a285fc72ed57"
         }
     },
     "bin": "Tabby.exe",
