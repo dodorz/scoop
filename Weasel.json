@@ -5,10 +5,15 @@
     "url": "https://github.com/rime/weasel/releases/download/0.14.3/weasel-0.14.3.0-installer.exe#/dl.7z",
     "hash": "de63dc2ef45d5b094a239fc704051270f3185bf9e883132532b7e17d2fdaf81b",
     "installer": {
-        "file": "rime-install.bat"
+        "script": [
+            "& \"WeaselSetup.exe /i\"",
+            "& \"WeaselDeployer.exe /install\"",
+            "& \"WeaselServer.exe\""
+        ]
     },
     "checkver": {
-        "github": "https://github.com/rime/weasel"
+        "url": "https://github.com/rime/weasel/releases",
+        "regex": "/rime/weasel/releases/download/[\\d.]+/weasel-([\\d.]+)-installer.exe"
     },
     "autoupdate": {
         "url": "https://github.com/rime/weasel/releases/download/$matchHead/weasel-$version-installer.exe#/dl.7z"
