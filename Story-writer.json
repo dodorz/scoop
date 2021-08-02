@@ -1,15 +1,15 @@
 {
     "homepage": "https://github.com/suziwen/markdownxiaoshujiang",
     "license": "shareware",
-    "version": "8.6.0",
+    "version": "8.6.1",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/suziwen/markdownxiaoshujiang/releases/download/v8.6.0/Story-writer-win64-setup.exe",
-            "hash": "e3f9fa54de077800b1fe2ccbfa59ef91cbf3192656d770e17302d763424f9d92"
+            "url": "https://github.com/suziwen/markdownxiaoshujiang/releases/download/v8.6.1/Story-writer-win64-setup.exe",
+            "hash": "7f0d589dcf4df2f0868ec616b575d77b9f4642abd83ba723c0fac02c53c2c752"
         },
         "32bit": {
-            "url": "https://github.com/suziwen/markdownxiaoshujiang/releases/download/v8.6.0/Story-writer-win32-setup.exe",
-            "hash": "fc37d1d48b328392daecfb084aae504e0cc279573ff16ac90067d98142731b21"
+            "url": "https://github.com/suziwen/markdownxiaoshujiang/releases/download/v8.6.1/Story-writer-win32-setup.exe",
+            "hash": "07d322444061a5812e2dfabac9b6b27a88fdc5612744b8a0dcf835165ce818f7"
         }
     },
     "innosetup": true,
