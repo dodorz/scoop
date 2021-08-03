@@ -1,15 +1,15 @@
 {
     "homepage": "https://monkeysaudio.com/",
-    "version": "6.50",
+    "version": "6.51",
     "license": "",
     "architecture": {
         "64bit": {
-            "url": "https://monkeysaudio.com/files/MAC_650_x64.exe",
-            "hash": "9247fde3d4cbb3519bce8527964b9b95eb1a782c07ce6781e5bdcc5a4139bc47"
+            "url": "https://monkeysaudio.com/files/MAC_651_x64.exe",
+            "hash": "2fb67602f5be695c810794ab7100fd08e6202e554a241b21ae302b9f8c9eabbd"
         },
         "32bit": {
-            "url": "https://monkeysaudio.com/files/MAC_650.exe",
-            "hash": "2ca2f6c72db1154890506567be8badf8c2aab7b4b4948dc4a379b01116a8a968"
+            "url": "https://monkeysaudio.com/files/MAC_651.exe",
+            "hash": "3d5e4baffce21eb5dbf69152755116dd1ce71d377e60b71392f638bda9447720"
         }
     },
     "innosetup": true,
