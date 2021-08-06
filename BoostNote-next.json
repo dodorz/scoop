@@ -1,9 +1,9 @@
 {
     "homepage": "https://github.com/BoostIO/BoostNote.next",
     "license": "GPL-3.0-or-later",
-    "version": "0.21.0",
-    "url": "https://github.com/BoostIO/BoostNote.next/releases/download/v0.21.0/boost-note-win.exe",
-    "hash": "e38d3036677548bb9c4af1680a40d2d82769813e6d12951f152f1c4dfa87deb9",
+    "version": "0.21.1",
+    "url": "https://github.com/BoostIO/BoostNote.next/releases/download/v0.21.1/boost-note-win.exe",
+    "hash": "b9f7bcd7ac90f981c53eec9cbad0903df4750531d508628c51801b7fb5f46cd5",
     "bin": "Boost Note.exe",
     "shortcuts": [
         [
