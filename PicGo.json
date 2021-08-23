@@ -2,11 +2,21 @@
     "homepage": "https://molunerfinn.com/PicGo/",
     "description": "Image uploader/manager",
     "license": "MIT",
-    "version": "2.3.0-beta.6",
+    "version": "2.3.0-beta.8",
     "architecture": {
+        "32bit": {
+            "url": "https://github.com/Molunerfinn/PicGo/releases/download/v2.3.0-beta.8/PicGo-Setup-2.3.0-beta.8-ia32.exe/#dl.7z",
+            "hash": "14875cecfb89d4507bf876727c1f02f244494030cae9022cf892b8a68a93c409",
+            "installer": {
+                "script": [
+                    "Expand-7ZipArchive \"$dir\\`$PLUGINSDIR\\app-32.7z\" \"$dir\" -Removal",
+                    "Remove-Item \"$dir\\`$PLUGINSDIR\"  -Force -Recurse"
+                ]
+            }
+        },
         "64bit": {
-            "url": "https://github.com/Molunerfinn/PicGo/releases/download/v2.3.0-beta.6/PicGo-Setup-2.3.0-beta.6.exe/#dl.7z",
-            "hash": "7c21411de807ac34ed851cda6e24e6a7e0bab9bd504c986c86d5be79d70b1a59",
+            "url": "https://github.com/Molunerfinn/PicGo/releases/download/v2.3.0-beta.8/PicGo-Setup-2.3.0-beta.8-x64.exe/#dl.7z",
+            "hash": "b9541355852ed5f04f0003e5c568f6b9572b8d7dcd3604a82b7a1c24050533ba",
             "installer": {
                 "script": [
                     "Expand-7ZipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\" -Removal",
@@ -27,8 +37,15 @@
     },
     "autoupdate": {
         "architecture": {
+            "32bit": {
+                "url": "https://github.com/Molunerfinn/PicGo/releases/download/v$version/PicGo-Setup-$version-ia32.exe/#dl.7z",
+                "hash": {
+                    "url": "$baseurl/latest.yml",
+                    "regex": "sha512:\\s+$base64"
+                }
+			},
             "64bit": {
-                "url": "https://github.com/Molunerfinn/PicGo/releases/download/v$version/PicGo-Setup-$version.exe/#dl.7z",
+                "url": "https://github.com/Molunerfinn/PicGo/releases/download/v$version/PicGo-Setup-$version-x64.exe/#dl.7z",
                 "hash": {
                     "url": "$baseurl/latest.yml",
                     "regex": "sha512:\\s+$base64"
