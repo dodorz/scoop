@@ -5,7 +5,7 @@
     "url": "https://github.com/zu1k/copy-translator/releases/download/v0.2.0/copy-translator_windows.zip",
     "hash": "77cd32a368e3f60657a43b1e4238d32d68bd382d8ed58721afeede71c444ab0a",
     "bin": "copy-translator.exe",
-    "shortcut": [
+    "shortcuts": [
         [
             "copy-translator.exe",
             "Copy Translator"
