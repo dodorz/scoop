@@ -1,9 +1,9 @@
 {
     "homepage": "https://logseq.com/",
     "license": "AGPL-3.0",
-    "version": "0.4.5",
-    "url": "https://github.com/logseq/logseq/releases/download/0.4.5/logseq-win-x64-0.4.5.exe#/dl.7z",
-    "hash": "8ff2dbb0aad9a01e1bf65581d0214b27f1b2f97415950b8da8fdcdc41347fa7b",
+    "version": "0.4.9",
+    "url": "https://github.com/logseq/logseq/releases/download/0.4.9/logseq-win-x64-0.4.9.exe#/dl.7z",
+    "hash": "a35b8047c3b05b4b61ba2a2f6b167fe94b9d6a74f676861d1bff71042385cc6a",
     "installer": {
         "script": [
             "$pkgfile = (Get-ChildItem \"$dir\" '*.nupkg' | Select-Object -First 1).FullName",
