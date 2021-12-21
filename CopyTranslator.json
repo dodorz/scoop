@@ -4,10 +4,10 @@
     "version": "0.2.4",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/zu1k/copy-translator/releases/download/v0.2.4/copy-translator_x86-64_windows.zip"
+            "url": "https://github.com/zu1k/copy-translator/releases/download/v0.2.4/copy-translator_windows.zip"
         }
     },
-    "hash": "8f0f1dfec1d0be2839842f98536034b5ac4bfd19c72a4ad064ee33c589322aa6",
+    "hash": "",
     "bin": "copy-translator.exe",
     "shortcuts": [
         [
@@ -20,7 +20,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/zu1k/copy-translator/releases/download/v$version/copy-translator_x86-64_windows.zip"
+                "url": "https://github.com/zu1k/copy-translator/releases/download/v$version/copy-translator_windows.zip"
             }
         }
     }
