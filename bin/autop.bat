@@ -12,5 +12,5 @@ for /f %%i in ('git diff --name-only') do (
         git tag "%%~ni-%%v"
     )
 )
-git push origin master
+git push origin master --tags
 git checkout -f master
