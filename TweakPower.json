@@ -1,10 +1,6 @@
 {
     "homepage": "https://kurtzimmermann.com/tweakpowerext_en.html",
-<<<<<<< HEAD
     "version": "2.015",
-=======
-    "version": "2.014",
->>>>>>> f2edf506fc8a843d223242e24fc1f2b87d811455
     "license": "freeware",
     "architecture": {
         "64bit": {
