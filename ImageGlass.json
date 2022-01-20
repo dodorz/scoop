@@ -1,0 +1,48 @@
+{
+    "homepage": "https://imageglass.org/",
+    "description": " lightweight, versatile image viewer",
+    "license": "GPL-3.0-or-later",
+    "version": "8.3.11.21",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/d2phap/ImageGlass/releases/download/8.3.11.21/ImageGlass_8.3.11.21_x64.zip",
+            "hash": "sha1:2d149661e7dd5928267c3a0d19be383084b478ed",
+            "extract_dir": "ImageGlass_8.3.11.21_x64"
+        },
+        "64bit": {
+            "url": "https://github.com/d2phap/ImageGlass/releases/download/8.3.11.21/ImageGlass_8.3.11.21_x86.zip",
+            "hash": "sha1:caa954d42b0b74dcf7025130b97f607eb51f2909",
+            "extract_dir": "ImageGlass_8.3.11.21_x86"
+        }
+    },
+    "bin": "ImageGlass.exe",
+    "shortcuts": [
+        [
+        "ImageGlass.exe",
+        "ImageGlass"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/d2phap/ImageGlass"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/d2phap/ImageGlass/releases/download/$version/ImageGlass_$version_x64.zip",
+                "hash": {
+                    "url": "https://github.com/d2phap/ImageGlass/releases/latest",
+                    "find": "_x64.msi</td>\\r\\n<td><code>($sha1)</code>"
+                },
+                "extract_dir": "ImageGlass_$version_x64"
+            },
+            "32bit": {
+                "url": "https://github.com/d2phap/ImageGlass/releases/download/$version/ImageGlass_$version_x86.zip",
+                "hash": {
+                    "url": "https://github.com/d2phap/ImageGlass/releases/latest",
+                    "find": "_x86.msi</td>\\r\\n<td><code>($sha1)</code>"
+                },
+                "extract_dir": "ImageGlass_$version_x86"
+            }
+        }
+    }
+}
