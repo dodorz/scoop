@@ -2,12 +2,12 @@
     "homepage": "https://imageglass.org/",
     "description": " lightweight, versatile image viewer",
     "license": "GPL-3.0-or-later",
-    "version": "8.4.1.22",
+    "version": "8.4.2.22",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/d2phap/ImageGlass/releases/download/8.4.1.22/ImageGlass_8.4.1.22_x64.zip",
-            "hash": "bf3532a4064f31997b26ebdf3b969d83ae5be84e80db95d55754654bdf8b8e6d",
-            "extract_dir": "ImageGlass_8.4.1.22_x64"
+            "url": "https://github.com/d2phap/ImageGlass/releases/download/8.4.2.22/ImageGlass_8.4.2.22_x64.zip",
+            "hash": "fd56c7f2e64164e8d3da89d60ff55fe93e5f35865a4f88cf5482eb314de7bfaa",
+            "extract_dir": "ImageGlass_8.4.2.22_x64"
         }
     },
     "bin": "ImageGlass.exe",
