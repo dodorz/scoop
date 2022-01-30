@@ -3,7 +3,7 @@ setlocal
 
 for %%i in (%0) do set DIR=%%~dpi..
 cd %DIR%
-git pull origin master
+git pull --ff-only origin master
 git checkout master
 for /f %%i in ('git diff --name-only') do (
     git add %%i
