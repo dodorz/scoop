@@ -1,11 +1,7 @@
 {
     "homepage": "https://www.cobiansoft.com/cobianbackup.html",
     "license": "freeware",
-<<<<<<< HEAD
     "version": "0.9.80",
-=======
-    "version": "0.9.79",
->>>>>>> f2edf506fc8a843d223242e24fc1f2b87d811455
     "extract_dir": "",
     "url": "https://files.cobiansoft.com/programs/cbSetup.exe#/dl.7z",
     "hash": "9ec08d76e4b810de2c3cbc7bd90787cc462deb0accc6996cab2394ab261c7154",

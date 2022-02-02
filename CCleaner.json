@@ -1,18 +1,10 @@
 {
     "homepage": "https://www.ccleaner.com/ccleaner",
-<<<<<<< HEAD
     "version": "5.89.9401",
     "license": "Freeware",
     "description": "Number-one tool for cleaning your PC.",
     "url": "https://download.ccleaner.com/portable/ccsetup589.zip",
     "hash": "dab95285d352299acf3d50d505608c418d79eb214e31cdcc6b07ef3ea049c5be",
-=======
-    "version": "5.89.9385",
-    "license": "Freeware",
-    "description": "Number-one tool for cleaning your PC.",
-    "url": "https://download.ccleaner.com/portable/ccsetup589.zip",
-    "hash": "554df2b06833d4ae48aeaafb79a55a58a14c895613aa7397abd12e4906e306ea",
->>>>>>> f2edf506fc8a843d223242e24fc1f2b87d811455
     "architecture": {
         "64bit": {
             "bin": [
