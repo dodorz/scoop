@@ -1,5 +1,5 @@
 {
-    "homepage": "https://github.com/zu1k/copy-translator",
+    "homepage": "https://github.com/CopyTranslator/CopyTranslator",
     "license": "GPL-3.0-or-later",
     "version": "0.2.4",
     "architecture": {
@@ -20,7 +20,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/zu1k/copy-translator/releases/download/v$version/copy-translator_windows.zip"
+                "url": "https://github.com/CopyTranslator/CopyTranslator/releases/download/v$version/copy-translator_windows.zip"
             }
         }
     }
