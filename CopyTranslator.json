@@ -20,7 +20,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/CopyTranslator/CopyTranslator/releases/download/v$version/copy-translator_windows.zip"
+                "url": "https://github.com/CopyTranslator/CopyTranslator/releases/download/v$version/copytranslator-$version-win.zip"
             }
         }
     }
