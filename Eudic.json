@@ -18,6 +18,7 @@
             "Eudic"
         ]
     ],
+    "persist": "dic",
     "autoupdate": {
         "url": "http://static.frdic.com/pkg/eudic_win.zip?v=$version"
     }
