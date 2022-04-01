@@ -15,10 +15,22 @@
             "$folder = (Get-Childitem -Directory \"$dir\"| Select-Object -First 1).FullName",
             "Move-Item \"$folder\\*\" \"$dir\"",
             "Remove-Item \"$folder\"",
-            "Set-Content \"$dir\\nb.bat\" \"@for /f %%i in ('scoop prefix git') do @%%i\\bin\\bash.exe %~dp0nb %*\" -Encoding ASCII"
+            "Set-Content \"$dir\\nb.bat\" \"@for /f %%i in ('scoop prefix git') do @%%i\\bin\\bash.exe %~dp0nb %*\" -Encoding ASCII",
+            "Set-Content \"$dir\\bookmark.bat\" \"@for /f %%i in ('scoop prefix git') do @%%i\\bin\\bash.exe %~dp0bin\\bookmark %*\" -Encoding ASCII",
+            "Remove-Item \"$zipfile\" -Force",
+            "Remove-Item \"$dir\\.github\" -Force -Recurse",
+            "Remove-Item \"$dir\\nb.go\" -Force -Recurse",
+            "Remove-Item \"$dir\\test\" -Force -Recurse",
+            "Remove-Item \"$dir\\.gitignore\" -Force",
+            "Remove-Item \"$dir\\.shellcheckrc\" -Force",
+            "Remove-Item \"$dir\\Makefile\" -Force",
+            "Remove-Item \"$dir\\Baskfile\" -Force"
         ]
     },
-    "bin": "nb.bat",
+    "bin": [
+        "nb.bat",
+        "bookmark.bat"
+    ],
     "checkver": {
         "url": "https://github.com/xwmx/nb/tags",
         "regex": "Update version to ([\\d.]+)."
