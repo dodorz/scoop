@@ -15,7 +15,7 @@
         }
     },
     "bin": [
-        "baulkterminal.exe",
+        "baulk-terminal.exe",
         "bin\\baulk.exe",
         "bin\\baulk-exec.exe",
         "bin\\baulk-dock.exe",
