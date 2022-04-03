@@ -9,8 +9,8 @@
             "hash": "21b47edeef4b0ce35fb306bb377cff796804e2b58dfcc94a0096c0d15076ccfa"
         },
         "32bit": {
-            "url": "http://softwareok.com/Download/DesktopOK.zip",
-            "hash": "c7ab8246da1810738c00c51371a60de0f2689d112c8ab10a6127a7b6e02a6fb1"
+            "url": "http://softwareok.com/Download/DesktopOK_Unicode.zip",
+            "hash": "067bf03aeb4ef1557f3a98ce1bed14b074b321cfac3e26c775f2e16af9d281bd"
         }
     },
     "pre_install": [
@@ -39,9 +39,9 @@
                 }
             },
             "32bit": {
-                "url": "http://softwareok.com/Download/DesktopOK.zip",
+                "url": "http://softwareok.com/Download/DesktopOK_Unicode.zip",
                 "hash": {
-                    "url": "http://softwareok.com/?Download=DesktopOK",
+                    "url": "http://softwareok.com/?Download=DesktopOK_Unicode",
                     "find": "DesktopOK\\.zip.+?target=_blank>($sha256)"
                 }
             }
