@@ -1,0 +1,50 @@
+{
+    "homepage": "http://softwareok.com/?seite=Microsoft/DesktopOK",
+    "description": "Save and restore the positions of the Windows Desktop Icons and many helpful Windows Desktop-Tools",
+    "license": "freeware",
+    "version": "9.77",
+    "architecture": {
+        "64bit": {
+            "url": "http://softwareok.com/Download/DesktopOK_x64.zip",
+            "hash": "21b47edeef4b0ce35fb306bb377cff796804e2b58dfcc94a0096c0d15076ccfa"
+        },
+        "32bit": {
+            "url": "http://softwareok.com/Download/DesktopOK.zip",
+            "hash": "c7ab8246da1810738c00c51371a60de0f2689d112c8ab10a6127a7b6e02a6fb1"
+        }
+    },
+    "pre_install": [
+        "$exefile = (Get-ChildItem \"$dir\" '*.exe' | Select-Object -First 1).FullName",
+        "Rename-Item \"$exefile\" \"$dir\\DesktopOK.exe\"",
+        "if(!(Test-Path \"$persist_dir\\DesktopOK.ini\")) {",
+        "    New-Item \"$dir\\DesktopOK.ini\" -Type File -Force | Out-Null",
+        "}"
+    ],
+    "bin": "DesktopOK.exe",
+    "shortcuts": [
+        [
+            "DesktopOK.exe",
+            "DesktopOK"
+        ]
+    ],
+    "persist": "DesktopOK.ini",
+    "checkver": "DesktopOK ([\\d.]+)",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "http://softwareok.com/Download/DesktopOK_x64.zip",
+                "hash": {
+                    "url": "http://softwareok.com/?Download=DesktopOK",
+                    "find": "DesktopOK_x64\\.zip.+?target=_blank>($sha256)"
+                }
+            },
+            "32bit": {
+                "url": "http://softwareok.com/Download/DesktopOK.zip",
+                "hash": {
+                    "url": "http://softwareok.com/?Download=DesktopOK",
+                    "find": "DesktopOK\\.zip.+?target=_blank>($sha256)"
+                }
+            }
+        }
+    }
+}
