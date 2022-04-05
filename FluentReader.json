@@ -13,10 +13,10 @@
             "hash": "fe49c10642ca04120b2851147265a232e27d4a90a10a082b9c06176b3708a013"
         }
     },
-    "bin": "Fluent Reader",
+    "bin": "Fluent Reader.exe",
     "shortcuts": [
         [
-            "Fluent Reader",
+            "Fluent Reader.exe",
             "Fluent Reader"
         ]
     ],
