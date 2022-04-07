@@ -1,13 +1,14 @@
 {
     "homepage": "https://meeting.tencent.com/",
     "license": "unknown",
-    "version": "3.6.6.477",
-    "url": "https://updatecdn.meeting.qq.com/cos/a6bea20ad27eec4ddb85a5228acdb002/TencentMeeting_0300000000_3.6.6.477.publish.exe#/dl.7z",
-    "hash": "7f18a7eeac479dfc74718292d9f547c34f2417678fe5e299728bfbd284b2f3fe",
+    "version": "3.5.6.416",
+    "url": "https://updatecdn.meeting.qq.com/cos/8d470eda782890abc7cc8cc3c2629cb3/TencentMeeting_0300000000_3.5.6.416.publish.exe#/dl.7z",
+    "hash": "dacd74f99d97c1776b28a971b63818c0afe51146824c242bb826987526222d4e",
     "installer": {
         "script": [
-            "Remove-Item \"$dir\\wemeetapp_new.exe\" \"$dir\\`$TEMP\" -Force -Recurse",
-            "Rename-Item \"$dir\\`$_9_\" \"$dir\\$version\""
+            "Rename-Item \"$dir\\`$_9_\" \"$dir\\$version\"",
+            "Remove-Item \"$dir\\wemeetapp_new.exe\" -Force",
+            "Remove-Item \"$dir\\`$TEMP\", \"$dir\\`$WINDIR\", \"$dir\\`$PLUGINSDIR\" -Force -Recurse"
         ]
     },
     "bin": "wemeetapp.exe",
