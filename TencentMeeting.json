@@ -1,9 +1,9 @@
 {
     "homepage": "https://meeting.tencent.com/",
     "license": "unknown",
-    "version": "3.5.6.416",
-    "url": "https://updatecdn.meeting.qq.com/cos/8d470eda782890abc7cc8cc3c2629cb3/TencentMeeting_0300000000_3.5.6.416.publish.exe#/dl.7z",
-    "hash": "dacd74f99d97c1776b28a971b63818c0afe51146824c242bb826987526222d4e",
+    "version": "3.6.7.428",
+    "url": "https://updatecdn.meeting.qq.com/cos/fcc20e8804b5962335f7d813f344d4aa/TencentMeeting_0300000000_3.6.7.428.publish.exe#/dl.7z",
+    "hash": "a0d5edcbe8e83020242cb220e523d5498cc15b573e83bf3fb04ccd104750e2dd",
     "installer": {
         "script": [
             "Rename-Item \"$dir\\`$_9_\" \"$dir\\$version\"",
