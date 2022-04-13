@@ -11,12 +11,5 @@
             "ExitWindows.exe",
             "OptimumX Exit Windows"
         ]
-    ],
-    "checkver": {
-        "url": "https://web.archive.org/web/http://optimumx.com/downloads.html",
-        "regex": "<b>Exit Windows v([\\d.]+) \\(ExitWindows.exe\\)</b>"
-    },
-    "autoupdate": {
-        "url": "https://web.archive.org/web/http://optimumx.com/download/ExitWindows.zip"
-    }
+    ]
 }
