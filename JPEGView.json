@@ -1,10 +1,10 @@
 {
-    "homepage": "https://sourceforge.net/projects/jpegview/",
-    "description": "Fast and highly configurable viewer/editor for images with a minimal GUI.",
-    "version": "1.0.37",
-    "license": "GPL-2.0-only",
-    "url": "https://downloads.sourceforge.net/project/jpegview/jpegview/1.0.37/JPEGView_1.0.37.zip",
-    "hash": "sha1:fb394fdbff070749956f830bac40d533aa0b4713",
+    "homepage": "https://github.com/sylikc/jpegview",
+    "description": "Fork of fast and highly configurable viewer/editor for images with a minimal GUI.",
+    "version": "1.0.40",
+    "license": "GPL-2.0-or-later",
+    "url": "https://github.com/sylikc/jpegview/releases/download/v1.0.40/JPEGView_1.0.40.7z",
+    "hash": "82ba6f84a7d7c88c655253acb41ffed9e8667cf1f3ac9573836952c08c4dc82c",
     "architecture": {
         "64bit": {
             "extract_dir": "JPEGView64"
@@ -21,16 +21,13 @@
             "JPEGView"
         ]
     ],
-    "checkver": {
-        "url": "https://sourceforge.net/projects/jpegview/rss?path=/",
-        "regex": "/jpegview/([\\d.]+)/JPEGView_"
-    },
+    "checkver": "github",
     "persist": [
         "JPEGView.ini",
         "KeyMap.txt",
         "ParamDB.db"
     ],
     "autoupdate": {
-        "url": "https://downloads.sourceforge.net/project/jpegview/jpegview/$version/JPEGView_$version.zip"
+        "url": "https://github.com/sylikc/jpegview/releases/download/v$version/JPEGView_$version.7z"
     }
 }
