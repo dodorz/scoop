@@ -1,10 +1,10 @@
 {
     "homepage": "https://www.aardio.com/",
     "description": "A Windows desktop rapid programming platform",
-    "version": "34.49.11",
+    "version": "34.49.12",
     "license": "freeware",
     "url": "https://ide.update.aardio.com/releases/aardio.7z",
-    "hash": "241c5f02c8d4631f7e70f5ba671e6560ecb2d29b86ea3bd7da14e8ad9f2ef5a1",
+    "hash": "a8c1f9a4cb58be7dd015c2b6216c80c5f1e3bfcf57b724cf4c6dd8686cbe2705",
     "bin": "aardio.exe",
     "shortcuts": [
         [
