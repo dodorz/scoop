@@ -8,7 +8,7 @@
     "architecture": {
         "64bit": {
             "installer": {
-                "script": "Move-Item \"$dir\\x64\\*\" \"$dir\"",
+                "script": "Move-Item \"$dir\\x64\\*\" \"$dir\""
             },
             "bin": [
                 [
