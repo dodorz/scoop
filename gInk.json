@@ -13,6 +13,11 @@
             "gInk"
         ]
     ],
+    "persist": [
+        "config.ini",
+        "hotkeys.ini",
+        "pens.ini"
+    ],
     "checkver": "github",
     "autoupdate": {
         "url": "https://github.com/geovens/gInk/releases/download/v$version/gInk_v$version.zip",
