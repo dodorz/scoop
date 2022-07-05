@@ -9,7 +9,6 @@
             "hash": "7e7275fd78b5dca3f01a74568da47913b432c4bcf475cd27735bf8e19424915e"
         }
     },
-    "extract_dir": "dist",
     "pre_install": "Rename-Item \"$dir\\cheat-windows-amd64.exe\" \"cheat.exe\"",
     "bin": "cheat.exe",
     "checkver": "github",
