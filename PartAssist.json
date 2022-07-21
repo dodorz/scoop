@@ -1,9 +1,9 @@
 {
     "homepage": "https://www.disktool.cn/",
     "license": "freeware for non-commercial use",
-    "version": "9.6",
+    "version": "9.8",
     "url": "http://www2.aomeisoftware.com/download/pacn/PAGreen.zip",
-    "hash": "c072fdb7b4bd76573b1556223465351634f279ec144470a9695387a8e2b43c3d",
+    "hash": "5e199044792d05dc9c07670f4308a3584c1d501664bc686d521d35a70f0d298b",
     "extract_dir": "PA_Green",
     "installer": {
         "file": "install.bat"
