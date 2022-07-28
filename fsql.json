@@ -1,5 +1,6 @@
 {
     "homepage": "https://github.com/kashav/fsql",
+    "description": "Search for files using a structured query language",
     "license": "MIT",
     "version": "0.4.0",
     "architecture": {
