@@ -18,7 +18,7 @@
     "bin": "ATGUI.exe",
     "checkver": {
         "url": "https://anytxt.net/download/",
-        "regex": "AnyTXT.Searcher.([\\d.]+).exe"
+        "regex": "Version ([\\d.]+)</p>"
     },
     "autoupdate": {
         "url": "https://sourceforge.net/projects/anytxt/files/AnyTXT.Searcher.$version.exe",
