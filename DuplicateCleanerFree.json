@@ -13,8 +13,8 @@
     ],
     "post_install": "Remove-Item \"$dir\\`$PLUGINSDIR\" -Force -Recurse",
     "checkver": {
-        "url": "https://www.digitalvolcano.co.uk/dcchangelog.html",
-        "regex": "Updates in Duplicate Cleaner v([\\d.]+)"
+        "url": "https://www.digitalvolcano.co.uk/dcdownload_versions.html",
+        "regex": "Duplicate Cleaner Free.*?Version ([\\d.]+)"
     },
     "autoupdate": {
         "url": "https://www.digitalvolcano.co.uk/download/DuplicateCleanerFree$majorVersion_setup.exe#/dl.7z"
