@@ -28,7 +28,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/sedwards2009/extraterm/releases/download/v$version/extraterm-$version-win32-x64.zip",
+                "url": "https://github.com/sedwards2009/extraterm/releases/download/v$version/extratermqt-$version-win32-x64.zip",
                 "extract_dir": "extraterm-$version-win32-x64"
             }
         }
