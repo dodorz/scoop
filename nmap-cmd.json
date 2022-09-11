@@ -13,14 +13,20 @@
         "nmap.exe",
         "ncat.exe",
         "nping.exe",
-        "ndiff.bat"
+        "ndiff.bat",
+        "zenmap.exe"
+    ],
+    "shortcuts": [
+        [
+            "zenmap.exe",
+            "Zenmap"
+        ]
     ],
     "checkver": {
         "url": "https://nmap.org/download.html",
         "regex": "nmap-([\\d.]+)-setup\\.exe"
     },
     "autoupdate": {
-        "url": "https://nmap.org/dist/nmap-$version-win32.zip",
-        "extract_dir": "nmap-$version"
+        "url": "https://nmap.org/dist/nmap-$version-win32.exe#dl.7z"
     }
 }
