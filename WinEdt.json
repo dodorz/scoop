@@ -25,10 +25,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "http://www.winedt.com/download/winedt$cleanVersion-64.exe#/dl.7z"
-            },
-            "32bit": {
-                "url": "http://www.winedt.com/download/winedt$cleanVersion-32.exe#/dl.7z"
+                "url": "http://www.winedt.com/download/winedt$majorVersion.exe#/dl.7z"
             }
         }
     }
