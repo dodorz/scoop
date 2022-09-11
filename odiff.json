@@ -13,7 +13,7 @@
     "bin": "bin\\ODiffBin.exe",
     "checkver": {
         "url": "https://github.com/dmtrKovalenko/odiff/releases/latest",
-        "regex": "/dmtrKovalenko/odiff/releases/download/(?:v|V)?([\\d.]+)/odiff-Windows_x64-(?<ver2>[\\d.]+)-(?<hash>[\\w\\d]{8}).tar.gz"
+        "regex": "Release ([\\d.]+) · dmtrKovalenko/odiff"
     },
     "autoupdate": {
         "architecture": {
