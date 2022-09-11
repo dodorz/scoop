@@ -16,7 +16,7 @@
         "SpeedCrunch.ini",
         "history.json"
     ],
-    "checkver": "VERSION:\\s+'([\\d.]+)'",
+    "checkver": "SpeedCrunch ([\\d.]+) documentation",
     "autoupdate": {
         "extract_dir": "speedcrunch-$version-win32",
         "url": "https://bitbucket.org/heldercorreia/speedcrunch/downloads/SpeedCrunch-$version-win32.zip"
