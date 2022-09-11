@@ -1,5 +1,5 @@
 {
-    "homepage": "https://github.com/Jermolene/TiddlyDesktop",
+    "homepage": "https://github.com/TiddlyWiki/TiddlyDesktop",
     "license": "unknown",
     "version": "0.0.14",
     "architecture": {
@@ -26,15 +26,18 @@
             "Tiddly Desktop"
         ]
     ],
-    "checkver": "github",
+    "checkver": {
+        "url": "https://github.com/TiddlyWiki/TiddlyDesktop/releases/latest",
+        "regex": "TiddlyWiki/TiddlyDesktop/releases/tag/v(([\\d.]+-prerelease.\d+)"
+    },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/Jermolene/TiddlyDesktop/releases/download/v$version/tiddlydesktop-win64-v$version.zip",
+                "url": "https://github.com/TiddlyWiki/TiddlyDesktop/releases/download/v$version/tiddlydesktop-win64-v$version.zip",
                 "extract_dir": "TiddlyDesktop-win64-v$version"
             },
             "32bit": {
-                "url": "https://github.com/Jermolene/TiddlyDesktop/releases/download/v$version/tiddlydesktop-win32-v$version.zip",
+                "url": "https://github.com/TiddlyWiki/TiddlyDesktop/releases/download/v$version/tiddlydesktop-win32-v$version.zip",
                 "extract_dir": "TiddlyDesktop-win32-v$version"
             }
         }
