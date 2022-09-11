@@ -26,7 +26,8 @@
         ]
     ],
     "checkver": {
-        "github": "https://github.com/WizTeam/WizNoteLite"
+        "url": "https://github.com/WizTeam/WizNoteLite/tags",
+        "regex": "/WizTeam/WizNoteLite/releases/tag/v([\\d.]+)"
     },
     "autoupdate": {
         "architecture": {
