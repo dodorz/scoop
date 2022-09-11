@@ -19,7 +19,8 @@
         ]
     ],
     "checkver": {
-        "github": "https://github.com/ivarptr/yu-writer.site"
+        "url": "https://github.com/ivarptr/yu-writer.site/releases/latest",
+        "regex": "Release Beta ([\\d.]+) · ivarptr/yu-writer.site"
     },
     "persist": [
         "Yu Writer\\bootstrap.config",
