@@ -21,19 +21,18 @@
     ],
     "checkver": {
         "url": "https://www.rainlendar.net/cms/index.php?option=com_rny_download&Itemid=30",
-        "regex": "Rainlendar Lite[\\w\\W]+?Version ([\\d.]+) for Windows"
+        "regex": "Rainlendar-Lite-([\\d.]+)-64bit.exe"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://www.rainlendar.net/download/Rainlendar-Lite-$version-64bit.exe"
+                "url": "https://www.rainlendar.net/download/$version/Rainlendar-Lite-$version-64bit.exe",
+                "hash": "\"win64LiteSha\" x-sha=\"$sha256 "
             },
             "32bit": {
-                "url": "https://www.rainlendar.net/download/Rainlendar-Lite-$version-32bit.exe"
-            }
-        },
-        "hash": {
-            "url": "$baseurl/Rainlendar-$version.sha1"
+                "url": "https://www.rainlendar.net/download/$version/Rainlendar-Lite-$version-32bit.exe",
+                 "hash": "\"win32LiteSha\" x-sha=\"$sha256 "
+           }
         }
     }
 }
