@@ -19,7 +19,7 @@
     ],
     "checkver": {
         "url": "https://github.com/vooidzero/B23Downloader/releases/latest",
-        "regex": "Release B23Downloader-v([\\d.]+) ·"
+        "regex": "B23Dld-v([\\d.]+)-win10-64\\.zip"
     },
     "autoupdate": {
         "architecture": {
