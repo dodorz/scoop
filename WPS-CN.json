@@ -19,6 +19,22 @@
         [
             "wpsoffice.exe",
             "WPS Office"
+        ],
+        [
+            "wps.exe",
+            "WPS 文字"
+        ],
+        [
+            "et.exe",
+            "WPS 表格"
+        ],
+        [
+            "wpp.exe",
+            "WPS 演示"
+        ],
+        [
+            "ksomisc.exe",
+            "WPS 配置工具"
         ]
     ],
     "checkver": "WPS_Setup_(?<num>\\d+).exe",
