@@ -11,8 +11,9 @@
     "extract_dir": "$_11_",
     "pre_install": [
         "Expand-7zipArchive \"$dir\\`$EXEFILE\" -Switches '-t#'",
-        "Remove-Item \"$dir\\*\" -Exclude '4.7z' -Recurse",
-        "Expand-7zipArchive \"$dir\\4.7z\" -ExtractDir 'office6' -Removal"
+        "Remove-Item \"$dir\\*\" -Exclude '4.7z','2.7z' -Recurse",
+        "Expand-7zipArchive \"$dir\\4.7z\" -ExtractDir 'office6' -Removal",
+        "Expand-7zipArchive \"$dir\\2.7z\" -ExtractDir 'CONTROL\\office6' -Removal"
     ],
     "shortcuts": [
         [
