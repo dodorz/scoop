@@ -22,19 +22,19 @@
         ],
         [
             "wps.exe",
-            "WPS 文字"
+            "WPS 鏂囧瓧"
         ],
         [
             "et.exe",
-            "WPS 表格"
+            "WPS 琛ㄦ牸"
         ],
         [
             "wpp.exe",
-            "WPS 演示"
+            "WPS 婕旂ず"
         ],
         [
             "ksomisc.exe",
-            "WPS 配置工具"
+            "WPS 閰嶇疆宸ュ叿"
         ]
     ],
     "checkver": "WPS_Setup_(?<num>\\d+).exe",
