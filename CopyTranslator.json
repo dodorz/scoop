@@ -1,11 +1,11 @@
 {
     "homepage": "https://github.com/CopyTranslator/CopyTranslator",
     "license": "GPL-3.0-or-later",
-    "version": "10.0.1",
+    "version": "10.0.3",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/CopyTranslator/CopyTranslator/releases/download/v10.0.1/copytranslator-10.0.1-win.zip",
-            "hash": "0b3f6828d85b298bb2d21eb1a7976d54135b867ff2d8c0692af97ef811bccaeb"
+            "url": "https://github.com/CopyTranslator/CopyTranslator/releases/download/v10.0.3/copytranslator-10.0.3-win.zip",
+            "hash": "eda40f25aeb2b29a5d63e1bbf2d7bc1a4e16ef8b57d9eff70a5ab0a2c4b3fb38"
         }
     },
     "bin": "copytranslator.exe",
