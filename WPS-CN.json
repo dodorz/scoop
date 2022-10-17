@@ -1,13 +1,13 @@
 {
     "homepage": "https://platform.wps.cn",
     "description": "Complete office suite",
-    "version": "11.2.0.12358",
+    "version": "11.2.0.12598",
     "license": {
         "identifier": "Freeware",
         "url": "https://www.wps.com/eula"
     },
-    "url": "https://official-package.wpscdn.cn/wps/download/WPS_Setup_12358.exe#/dl.7z",
-    "hash": "85ae19b3f0ced74f6ec914875ce7f80fd162a48560bcaa8041c20c2ab4c5b023",
+    "url": "https://official-package.wpscdn.cn/wps/download/WPS_Setup_12598.exe#/dl.7z",
+    "hash": "e83ecd5a62991ce3018004329bcfc61f5733b3d29191338ea3e5539b3c5b86a4",
     "extract_dir": "$_11_",
     "pre_install": [
         "Expand-7zipArchive \"$dir\\`$EXEFILE\" -Switches '-t#'",
