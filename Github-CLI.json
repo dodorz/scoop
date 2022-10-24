@@ -2,15 +2,15 @@
     "homepage": "https://cli.github.com/",
     "description": "GitHub on the command line",
     "license": "MIT",
-    "version": "2.17.0",
+    "version": "2.18.1",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/cli/cli/releases/download/v2.17.0/gh_2.17.0_windows_amd64.zip",
-            "hash": "96d4e523636446b796b28f069332b6f8ea9a0950c6ef43617203cc5ac5af0d84"
+            "url": "https://github.com/cli/cli/releases/download/v2.18.1/gh_2.18.1_windows_amd64.zip",
+            "hash": "0b2dc1cab81277532a7b893697d571a51716b3b28fab5a5f46c14dca12638e89"
         },
         "32bit": {
-            "url": "https://github.com/cli/cli/releases/download/v2.17.0/gh_2.17.0_windows_386.zip",
-            "hash": "d3b06f291551ce0357e08334d8ba72810a552b593329e3c0dd3489f51a8712a3"
+            "url": "https://github.com/cli/cli/releases/download/v2.18.1/gh_2.18.1_windows_386.zip",
+            "hash": "f5bb70fcad11f848c69eb0ddc1d66dd5fb32f0aee855e85843edad7c07b09e8a"
         }
     },
     "bin": "bin\\gh.exe",
