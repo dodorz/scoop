@@ -38,12 +38,13 @@
             "Listary"
         ]
     ],
+    "persist": "UserData\\Preferences.json",
     "checkver": {
         "url": "https://www.listary.com/download",
         "regex": "<h2>([\\d.]+) \\([\\d/]+\\)</h2>"
     },
     "autoupdate": {
-        "url": "https://www.listary.com/download/Listary.exe?version=$version#/dl.exe",
+        "url": "https://www.listary.com/download/Listary.exe?version=$version#/dl.exe"
+    },
     "notes": "We don't persist your Listary data, they are still storaged in \"$env:APPDATA\\Listary\"."
-    }
 }
