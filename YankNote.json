@@ -2,11 +2,11 @@
     "homepage": "https://yank-note.vercel.app/",
     "license": "AGPL-3.0-or-later",
     "description": "A Hackable Markdown Note Application for Programmers.",
-    "version": "3.43.0",
+    "version": "3.45.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/purocean/yn/releases/download/v3.43.0/Yank-Note-win-x64-3.43.0.zip",
-            "hash": "33e15987b57ff730d657d3f36d1e8a1ce618d5f9b42eaaaafc0aa80fdc8237d0"
+            "url": "https://github.com/purocean/yn/releases/download/v3.45.0/Yank-Note-win-x64-3.45.0.zip",
+            "hash": "909abd44543b323216f1e222f8c3af6cefea5f7dd18f385972747653c6e9893a"
         }
     },
     "bin": "Yank Note.exe",
