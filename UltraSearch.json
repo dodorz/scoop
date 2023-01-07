@@ -24,6 +24,7 @@
         "architecture": {
             "64bit": {
                 "url": "https://downloads.jam-software.de/ultrasearch/UltraSearch-x64.zip"
+            }
         }
     }
 }
