@@ -12,5 +12,12 @@
             "skylark.exe",
             "Skylark Edit"
         ]
+    ],
+    "persist": [
+        "conf\\skylark.conf",
+        "conf\\skylark_theme.conf",
+        "conf\\skylark_input.conf",
+        "conf\\script-opts",
+        "conf\\snippets"
     ]
 }
