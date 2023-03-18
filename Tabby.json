@@ -1,12 +1,12 @@
 {
     "homepage": "https://tabby.sh",
     "description": "A terminal for a more modern age.",
-    "version": "1.0.189",
+    "version": "1.0.191",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/Eugeny/tabby/releases/download/v1.0.189/tabby-1.0.189-portable-x64.zip",
-            "hash": "d48d54799a96d954eedb8c56e59a41e060da8da22ffd6080ddbf4d04e125ecb4"
+            "url": "https://github.com/Eugeny/tabby/releases/download/v1.0.191/tabby-1.0.191-portable-x64.zip",
+            "hash": "28d155a421a19352ab4675efc2700d7497558a33dc211bbeb1fcdb5a8fb46c7a"
         }
     },
     "post_install": [
