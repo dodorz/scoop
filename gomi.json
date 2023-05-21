@@ -18,11 +18,14 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/b4b4r07/gomi/releases/download/v$version/gomi_windows_amd64.exe"
+                "url": "https://github.com/b4b4r07/gomi/releases/download/v$version/gomi_windows_amd64.zip"
             },
             "32bit": {
-                "url": "https://github.com/b4b4r07/gomi/releases/download/v$version/gomi_windows_386.exe"
+                "url": "https://github.com/b4b4r07/gomi/releases/download/v$version/gomi_windows_386.zip"
             }
+        },
+        "hash": {
+            "url": "$baseurl/checksum.txt"
         }
     }
 }
