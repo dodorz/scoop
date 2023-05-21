@@ -15,11 +15,7 @@
     ],
     "checkver": {
         "url": "https://u-tools.com/download_prod.asp?download_id=600&Agree=1",
-<<<<<<< HEAD
         "regex": "Version: ([\\d.]+)\\s"
-=======
-        "regex": "Version: ([\\d.]+)\s"
->>>>>>> 5f406a27579b384525642b8f19089ec752e17b46
     },
     "autoupdate": {
         "url": "https://u-tools.com/files/msls$patchVersion.exe#/dl.7z"
