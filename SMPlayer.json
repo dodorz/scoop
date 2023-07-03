@@ -1,19 +1,22 @@
 {
     "homepage": "https://www.smplayer.info/",
-    "version": "22.7.0",
+    "version": "23.6.0",
     "license": "GPL-2.0-only",
     "architecture": {
         "64bit": {
-            "url": "https://downloads.sourceforge.net/project/smplayer/SMPlayer/22.7.0/smplayer-22.7.0-x64.exe#/dl.7z",
-            "hash": "sha1:4dbe366ccb1e28538d7bc2e57bbcbfeb98c9402c"
+            "url": "https://github.com/smplayer-dev/smplayer/releases/download/v23.6.0/smplayer-portable-23.6.0.0-x64.7z",
+            "hash": "32c02daab027bd154cb29e5818e9ef5d6645b1a23d1cf56a1abe4bcbb2f4f163"
         },
         "32bit": {
-            "url": "https://downloads.sourceforge.net/project/smplayer/SMPlayer/22.7.0/smplayer-22.7.0-win32-qt5.6.exe#/dl.7z",
-            "hash": "sha1:01e64fbe7ebf1ba2473ae323f08687a576bdbdbe"
+            "url": "https://github.com/smplayer-dev/smplayer/releases/download/v23.6.0/smplayer-portable-23.6.0.0-win32-qt5.6.7z",
+            "hash": "a54b7d6dba5df9c54236861aa6c010812825e84723e6dc1724a541e679608359"
         }
     },
-    "extract_dir": "smplayer-portable-22.7.0.0",
-    "bin": "smplayer.exe",
+    "extract_dir": "smplayer-portable",
+    "bin": [
+        "smplayer.exe",
+        "simple_web_server"
+    ],
     "persist": [
         "smplayer.ini",
         "playlist.ini",
@@ -31,24 +34,16 @@
         ]
     ],
     "checkver": {
-        "url": "https://www.smplayer.info/downloads/",
-        "regex": "Click here to download SMPlayer ([\\d.]+) \\(64-bit\\)"
+        "github": "https://github.com/smplayer-dev/smplayer"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://downloads.sourceforge.net/project/smplayer/SMPlayer/$version/smplayer-$version-x64.exe#/dl.7z",
-                "hash": {
-                    "mode": "fosshub"
-                }
+                "url": "https://github.com/smplayer-dev/smplayer/releases/download/v$version/smplayer-portable-$version.0-x64.7z"
             },
             "32bit": {
-                "url": "https://downloads.sourceforge.net/project/smplayer/SMPlayer/$version/smplayer-$version-win32-qt5.6.exe#/dl.7z",
-                "hash": {
-                    "mode": "fosshub"
-                }
+                "url": "https://github.com/smplayer-dev/smplayer/releases/download/v$version/smplayer-portable-$version.0-win32-qt5.6.7z"
             }
-        },
-        "extract_dir": "smplayer-portable-$version.0"
+        }
     }
 }
