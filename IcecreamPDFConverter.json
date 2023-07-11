@@ -14,7 +14,7 @@
     ],
     "checkver": {
         "url": "https://icecreamapps.com/PDF-Converter/",
-        "regex": "Version: ([\\d.]+)"
+        "regex": "PDF Editor <span class=\"app-download-sub-number\">([\\d.]+)"
     },
     "autoupdate": {
         "url": "http://download.icecreamapps.com/pdf_converter_setup.exe"
