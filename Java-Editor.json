@@ -31,10 +31,10 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "http://www.javaeditor.org/wiki/jedownload/javaeditor64.$version.zip"
+                "url": "https://www.javaeditor.org/download/javaeditor64.$version.zip"
             },
             "32bit": {
-                "url": "http://www.javaeditor.org/wiki/jedownload/javaeditor$version.zip"
+                "url": "https://www.javaeditor.org/download/javaeditor$version.zip"
             }
         }
     }
