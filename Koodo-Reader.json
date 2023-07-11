@@ -22,7 +22,7 @@
     ],
     "checkver": {
         "url": "https://koodo.960960.xyz/en",
-        "regex": "Stable Version ([\\d.]) "
+        "regex": "Stable Version ([\\d.]+) "
     },
     "autoupdate": {
         "architecture": {
