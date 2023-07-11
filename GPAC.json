@@ -31,15 +31,15 @@
     ],
     "checkver": {
         "url": "https://gpac.wp.imt.fr/downloads/",
-        "regex": "/gpac/release/([\\d.]+)/gpac-(?<rev>[\\d\\w.-]+)-master"
+        "regex": "/gpac/release/([\\d.]+)/gpac-(?<rev>[\\d\\w.-]+)-release"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "http://download.tsi.telecom-paristech.fr/gpac/release/$version/gpac-$matchRev-master-x64.exe#/dl.7z"
+                "url": "http://download.tsi.telecom-paristech.fr/gpac/release/$version/gpac-$matchRev-release-$majorVersion.$minorVersion-x64.exe#/dl.7z"
             },
             "32bit": {
-                "url": "http://download.tsi.telecom-paristech.fr/gpac/release/$version/gpac-$matchRev-master-win32.exe#/dl.7z"
+                "url": "http://download.tsi.telecom-paristech.fr/gpac/release/$version/gpac-$matchRev-release-$majorVersion.$minorVersion-win32.exe#/dl.7z"
             }
         }
     }
