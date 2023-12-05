@@ -5,9 +5,11 @@
     "version": "0.9.1",
     "url": "https://github.com/SalOne22/rimage/releases/download/v0.9.1/rimage-0.9.1-x86_64-pc-windows-msvc.zip",
     "hash": "98b800d193b489c95c5d1b95aee3b5c5a99c8554f7d79868e13bb72241bab161",
+    "extract_dir": "rimage-0.9.1-x86_64-pc-windows-msvc",
     "bin": "rimage.exe",
     "checkver": "github",
     "autoupdate": {
-        "url": "https://github.com/SalOne22/rimage/releases/download/v$version/rimage-$version-x86_64-pc-windows-msvc.zip"
+        "url": "https://github.com/SalOne22/rimage/releases/download/v$version/rimage-$version-x86_64-pc-windows-msvc.zip",
+        "extract_dir": "rimage-$version-x86_64-pc-windows-msvc"
     }
 }
