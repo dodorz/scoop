@@ -17,10 +17,6 @@
         "github": "https://github.com/XmacsLabs/mogan"
     },
     "autoupdate": {
-        "url": "https://github.com/XmacsLabs/mogan/releases/download/v$version/Mogan-v$version-64bit-installer.exe",
-        "hash": {
-            "url": "https://mogan.app/guide/Install.html",
-            "find": "($sha256)\\s+MoganResearch-v[\\d.]+-64bit-installer\.exe"
-        }
-    }
+        "url": "https://github.com/XmacsLabs/mogan/releases/download/v$version/Mogan-v$version-64bit-installer.exe"
+   }
 }
