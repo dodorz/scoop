@@ -4,7 +4,11 @@
     "license": "GPL-3.0-or-later",
     "version": "1.2.1",
     "url": "https://github.com/XmacsLabs/mogan/releases/download/v1.2.1/Mogan-v1.2.1-64bit-installer.exe",
+<<<<<<< HEAD
     "hash": "md5:619998f9b78541520513f1d9d620c919",
+=======
+    "hash": "md5:f34dd47aecf9a47fad7c4b27529ef8b4",
+>>>>>>> c91e4b1 (Mogan: Update to version 1.2.1)
     "innosetup": true,
     "bin": "bin\\Mogan.exe",
     "shortcuts": [
