@@ -2,9 +2,9 @@
     "homepage": "https://wingware.com/",
     "description": "A very simple python IDE designed for teaching beginning programmers",
     "license": "unknown",
-    "version": "10.0.1.0",
-    "url": "https://wingware.com/pub/wing-101/10.0.1.0/wing-personal-10.0.1.0-win.zip",
-    "hash": "sha1:a1b55d28766e8de493e5b1ff7dcfe3f47de5a28d",
+    "version": "10.0.3.0",
+    "url": "https://wingware.com/pub/wing-101/10.0.3.0/wing-personal-10.0.3.0-win.zip",
+    "hash": "sha1:25b6548ec99d8b4421ba953a328cfe615163bc57",
     "installer": {
         "script": [
             "$fold = (Get-ChildItem \"$dir\" '*' | Select-Object -First 1).FullName",
