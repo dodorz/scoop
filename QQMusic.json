@@ -16,7 +16,7 @@
         "regex": "Windows PC <span class=\"product_list__version\">最新版:([\\d.]+)"
     },
     "autoupdate": {
-        "url": "https://dldir1v6.qq.com/music/clntupate/QQMusic_Setup_Home_$cleanVersion.exe#/dl.7z"
+        "url": "https://dldir1v6.qq.com/music/clntupate/QQMusic_Setup_Home_$majorVersion$minorVersion$patchVersion.exe#/dl.7z"
     },
     "notes": "We don't persist your QQMusic data, they are still storaged in '%LOCALAPPDATA%\\Tencent\\QQMusic'."
 }
