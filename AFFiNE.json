@@ -23,6 +23,6 @@
         "github": "https://github.com/toeverything/AFFiNE"
     },
     "autoupdate": {
-        "url": "https://github.com/toeverything/AFFiNE/releases/download/v$version/affine-stable-windows-x64.exe#/dl.7z"
+        "url": "https://github.com/toeverything/AFFiNE/releases/download/v$version/affine-$version-stable-windows-x64.exe#/dl.7z"
     }
 }
