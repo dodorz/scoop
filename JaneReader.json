@@ -17,7 +17,7 @@
             "Jane Reader"
         ]
     ],
-    "checkver": "latest version: ([\\d.]+)",
+    "checkver": "×îÐÂ°æ±¾: ([\\d.]+)",
     "autoupdate": {
         "url": "https://janereader.com/downloads/releases/windows/x86_64/$version"
     }
