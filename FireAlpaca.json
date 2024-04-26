@@ -1,29 +1,29 @@
 {
-    "version": "2.11.18",
+    "version": "2.11.19",
     "homepage": "https://firealpaca.com/",
     "license": "freeware",
     "architecture": {
         "64bit": {
-            "url": "https://firealpaca.com/download/win64_zip#/dl.7z",
-            "hash": "81325b802a40dcf1d11318f3a09dbb8817fbcbe5e642613a8ea15814a849730b",
+            "url": "https://firealpaca.com/download/win64_zip",
+            "hash": "a3f23ca1310103aec591227b6ecfdaf3dae61685b777f86d7f4624bbcf052e01",
             "installer": {
                 "script": [
                     "$folder = (Get-ChildItem \"$dir\" 'FireAlpacaWin64*' | Select-Object -First 1).FullName",
                     "Move-Item \"$folder\\*\" \"$dir\"",
                     "Remove-Item \"$folder\" -Force"
                 ]
-            },
+            }
         },
         "32bit": {
-            "url": "https://firealpaca.com/download/win_zip#/dl.7z",
-            "hash": "27ae64289fac7327f729950bef236e84feef3a47ff35613e42f0c613c84b8671",
+            "url": "https://firealpaca.com/download/win_zip",
+            "hash": "1b918ac293f02ebbab4cf50e7c42a861d6ed125fea8d45e691f8505ae947b970",
             "installer": {
                 "script": [
                     "$folder = (Get-ChildItem \"$dir\" 'FireAlpacaWin32*' | Select-Object -First 1).FullName",
                     "Move-Item \"$folder\\*\" \"$dir\"",
                     "Remove-Item \"$folder\" -Force"
                 ]
-            },
+            }
         }
     },
     "shortcuts": [
