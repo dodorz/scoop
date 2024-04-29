@@ -34,10 +34,10 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/dream7180/ClashWarden/releases/download/$matchTag/ClashWarden_$matchTag.0-$matchDate_win64.7z"
+                "url": "https://github.com/dream7180/ClashWarden/releases/download/$version/ClashWarden_$version_win64_$matchDate.7z"
             },
             "32bit": {
-                "url": "https://github.com/dream7180/ClashWarden/releases/download/$matchTag/ClashWarden_$matchTag-$matchDate_win32.7z"
+                "url": "https://github.com/dream7180/ClashWarden/releases/download/$version/ClashWarden_$version_win32_$matchDate.7z"
             }
         }
     }
