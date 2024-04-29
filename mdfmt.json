@@ -11,6 +11,10 @@
         "32bit": {
             "url": "https://github.com/elliotxx/mdfmt/releases/download/v1.0.0/mdfmt_Windows_i386.tar.gz",
             "hash": "be214b3b944741df3803078cafb126d39d5d5f133f598f25fa6e2c60bf21fd21"
+        },
+        "arm64": {
+            "url": "https://github.com/elliotxx/mdfmt/releases/download/v1.0.0/mdfmt_Windows_arm64.tar.gz",
+            "hash": "df5e4356dc28770991fb62af456e539bfcaf4e3455b11324cfbda46a17ee1889"
         }
     },
     "bin": "mdfmt.exe",
