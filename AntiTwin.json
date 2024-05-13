@@ -14,7 +14,8 @@
     ],
     "checkver": {
         "url": "https://antitwin.org/en/download.html",
-        "regex": "<b>Version ([\\d.]+\\w)</b>",
+        "regex": "<b>Version ([\\d.]+\\w)</b>"
+	},
     "autoupdate": {
         "url": "https://www.aidex.de/software/antitwin/AntiTwin.exe"
     }
