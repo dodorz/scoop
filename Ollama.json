@@ -2,9 +2,9 @@
     "homepage": "https://ollama.com/",
     "description": "Get up and running with Llama 2, Mistral, and other large language models.",
     "license": "MIT",
-    "version": "0.1.33",
+    "version": "0.1.41",
     "url": "https://ollama.com/download/OllamaSetup.exe",
-    "hash": "1927f5a183a9860e8c65dbc7776d06393803e98c116c2d5868afaf1451d3d0c2",
+    "hash": "e14a21228321bc6f94f3dc59b0e56a40a1dafbcc56310d1bd339c32c918afad0",
     "innosetup": true,
     "bin": "ollama.exe",
     "shortcuts": [
