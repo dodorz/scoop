@@ -3,13 +3,12 @@
     "description": "Get up and running with Llama 2, Mistral, and other large language models.",
     "license": "MIT",
     "version": "0.1.41",
-    "url": "https://ollama.com/download/OllamaSetup.exe",
-    "hash": "e14a21228321bc6f94f3dc59b0e56a40a1dafbcc56310d1bd339c32c918afad0",
-    "innosetup": true,
+    "url": "https://github.com/ollama/ollama/releases/download/v0.1.44/ollama-windows-amd64.zip",
+    "hash": "483fef57f094f5a52d865182a0d6f9a2e8a59eb44dd756b4517ea9b747d90338",
     "bin": "ollama.exe",
     "shortcuts": [
         [
-            "ollama app.exe",
+            "ollama.exe",
             "Ollama"
         ]
     ],
@@ -17,6 +16,6 @@
         "github": "https://github.com/ollama/ollama"
     },
     "autoupdate": {
-        "url": "https://ollama.com/download/OllamaSetup.exe"
+        "url": "https://github.com/ollama/ollama/releases/download/v$version/ollama-windows-amd64.zip"
     }
 }
