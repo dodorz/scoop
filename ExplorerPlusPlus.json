@@ -120,7 +120,7 @@
             "Explorer++"
         ]
     ],
-    "checkver": "<h5>Version ([\\d.]+) \\(stable\\)</h5>",
+    "checkver": "<h5>Version ([\\d.]+)</h5>",
     "autoupdate": {
         "architecture": {
             "64bit": {
