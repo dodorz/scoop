@@ -20,4 +20,5 @@
         "hash": {
             "url": "$baseurl/sha256sum.txt"
         }
+	}
 }
