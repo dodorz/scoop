@@ -2,9 +2,9 @@
     "homepage": "https://ollama.com/",
     "description": "Get up and running with Llama 2, Mistral, and other large language models.",
     "license": "MIT",
-    "version": "0.1.48",
-    "url": "https://github.com/ollama/ollama/releases/download/v0.1.48/ollama-windows-amd64.zip",
-    "hash": "a095dce6739c4635e7f4b856c08d1429598d3eae5c632995653f5339e15b5933",
+    "version": "0.2.7",
+    "url": "https://github.com/ollama/ollama/releases/download/v0.2.7/ollama-windows-amd64.zip",
+    "hash": "cb74319b7adbe0a69586b10a0208bdea3b81ac1e3fb3ea354e280ed030ab88b9",
     "bin": "ollama.exe",
     "shortcuts": [
         [
@@ -20,5 +20,5 @@
         "hash": {
             "url": "$baseurl/sha256sum.txt"
         }
-	}
+    }
 }
