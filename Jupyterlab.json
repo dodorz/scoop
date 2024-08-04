@@ -21,11 +21,14 @@
             "JupyterLab"
         ]
     ],
-    "checkver": "github",
+    "checkver": {
+        "url": "https://github.com/jupyterlab/jupyterlab-desktop/releases/latest",
+        "regex": "<title>Release v([\\d.-]+)"
+    },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/jupyterlab/jupyterlab-desktop/releases/download/v$version/JupyterLab-Setup-Windows-x64.exe#dl.7z",
+                "url": "https://github.com/jupyterlab/jupyterlab-desktop/releases/download/v$version/JupyterLab-Setup-Windows-x64.exe#dl.7z"
             }
         }
     }
