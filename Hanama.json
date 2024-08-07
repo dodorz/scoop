@@ -13,6 +13,8 @@
     ],
     "persist": [
         "Hamana.ini",
+        "Hamana.his",
+        "Hamana2.his",
     ],
     "shortcuts": [
         [
