@@ -1,15 +1,15 @@
 {
     "version": "2.0.0.11",
-    "description": "A local document search application",
+    "description": "An easy to use version of BASIC designed to teach anybody how to program",
     "homepage": "http://www.basic256.org/",
-    "license": "unknown",
-    "url": "https://sourceforge.net/projects/basic256prtbl/files/Release/BASIC256Portable_2.0.0.11.paf.exe",
-    "hash": "sha1:6a8c393eed29d7fc0cde8f86d656bc49fe402ed7",
+    "license": "GPL-2.0-only",
+    "url": "https://sourceforge.net/projects/kidbasic/files/BASIC256-2.0.0.11_Win32_Install.exe",
+    "hash": "sha1:0ea2a446a41552ef94186f5cb50d4f87d72075d0",
     "installer": {
-        "args": "/destination=$dir\\",
         "script": [
-            "Move-Item \"$dir\\BASIC256Portable\\App\\BASIC256\\*\" \"$dir\"",
-            "Remove-Item \"$dir\\BASIC256Portable\"  -Force -Recurse"
+            "$file = (Get-ChildItem \"$dir\" 'BASIC256*.exe' | Select-Object -First 1).FullName",
+            "Expand-7ZipArchive \"$file\" \"$dir\\\" -Removal",
+            "Remove-Item \"$dir\\`$PLUGINSDIR\",\"$dir\\`$R0\"  -Force -Recurse"
         ]
     },
     "bin": "BASIC256.exe",
@@ -18,11 +18,11 @@
         "BASIC256"
     ],
     "checkver": {
-        "url": "https://sourceforge.net/projects/basic256prtbl/files/Release/",
-        "regex": "/Release/BASIC256Portable_([\\d.]+)\\.paf\\.exe"
+        "url": "https://sourceforge.net/projects/kidbasic/files/",
+        "regex": "/BASIC256-([\\d.]+)_Win32_Install.exe"
     },
     "autoupdate": {
-        "url": "https://sourceforge.net/projects/basic256prtbl/files/Release/BASIC256Portable_$version.paf.exe",
+        "url": "https://sourceforge.net/projects/kidbasic/files/BASIC256-$version_Win32_Install.exe",
         "hash": {
             "mode": "sourceforge"
         }
