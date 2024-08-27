@@ -1,0 +1,30 @@
+{
+    "version": "2.0.0.11",
+    "description": "A local document search application",
+    "homepage": "http://www.basic256.org/",
+    "license": "unknown",
+    "url": "https://sourceforge.net/projects/basic256prtbl/files/Release/BASIC256Portable_2.0.0.11.paf.exe",
+    "hash": "sha1:6a8c393eed29d7fc0cde8f86d656bc49fe402ed7",
+    "installer": {
+        "args": "/destination=$dir\\",
+        "script": [
+            "Move-Item \"$dir\\BASIC256Portable\\App\\BASIC256\\*\" \"$dir\"",
+            "Remove-Item \"$dir\\BASIC256Portable\"  -Force -Recurse"
+        ]
+    },
+    "bin": "BASIC256.exe",
+    "shortcuts": [
+        "BASIC256.exe",
+        "BASIC256"
+    ],
+    "checkver": {
+        "url": "https://sourceforge.net/projects/basic256prtbl/files/Release/",
+        "regex": "/Release/BASIC256Portable_([\\d.]+)\\.paf\\.exe"
+    },
+    "autoupdate": {
+        "url": "https://sourceforge.net/projects/basic256prtbl/files/Release/BASIC256Portable_$version.paf.exe",
+        "hash": {
+            "mode": "sourceforge"
+        }
+    }
+}
