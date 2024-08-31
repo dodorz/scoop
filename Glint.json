@@ -1,0 +1,26 @@
+{
+    "homepage": "https://glint.info/",
+    "license": "freemium",
+    "version": "1.8.3",
+    "url": "https://github.com/LogicOverSnacks/glint-release/releases/download/v1.8.3/Glint-Setup-1.8.3.exe#/dl.7z",
+    "hash": "4360889127f8dad7deb9deeef982bf5916c55e47a5160f6baa1bbe8fc6e157aa",
+    "installer": {
+        "script": [
+            "Expand-7ZipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\" -Removal",
+            "Remove-Item \"$dir\\`$PLUGINSDIR\", \"$dir\\`$R0\"  -Force -Recurse"
+        ]
+    },
+    "bin": "Glint.exe",
+    "shortcuts": [
+        [
+            "Glint.exe",
+            "Glint"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/LogicOverSnacks/glint-release"
+    },
+    "autoupdate": {
+        "url": "https://github.com/LogicOverSnacks/glint-release/releases/download/v$version/Glint-Setup-$version.exe#/dl.7z"
+    }
+}
