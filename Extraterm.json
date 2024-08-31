@@ -28,8 +28,8 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/sedwards2009/extraterm/releases/download/v$version/extratermqt-$version-win32-x64.zip",
-                "extract_dir": "extraterm-$version-win32-x64"
+                "url": "https://github.com/sedwards2009/extraterm/releases/download/v$version/extratermqt-$version-windows-x64.zip",
+                "extract_dir": "extratermqt-$version-windows-x64"
             }
         }
     }
