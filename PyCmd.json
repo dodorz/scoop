@@ -1,9 +1,8 @@
 {
-    "homepage": "https://sourceforge.net/projects/pycmd/",
-    "description": "a smart command prompt extension for Windows' cmd.exe; its purpose is to emulate a few power features of UNIX shells (decent Tab-completion, persistent history, etc.)",
+    "homepage": "https://github.com/horeah/PyCmd",
+    "description": "Improved interactive experience for Windows' cmd.exe",
     "version": "20210310",
-    "license": "LGPL-2.0-only",
-    "extract_dir": "PyCmd",
+    "license": "LGPL-3.0-or-later",
     "architecture": {
         "64bit": {
             "url": "https://downloads.sourceforge.net/project/pycmd/pycmd/snapshots/PyCmd-20210310-w64.zip",
@@ -14,6 +13,7 @@
             "hash": "sha1:5d7fc101d860b109a1714939863f1988ea8238e5"
         }
     },
+    "extract_dir": "PyCmd",
     "bin": "PyCmd.exe",
     "persist": "init.py",
     "shortcuts": [
@@ -22,25 +22,14 @@
             "PyCmd"
         ]
     ],
-    "checkver": {
-        "url": "https://sourceforge.net/projects/pycmd/rss?path=/pycmd/snapshots",
-        "regex": "\\[CDATA\\[/pycmd/snapshots/PyCmd-(\\d{8})-w64.zip\\]\\]"
-    },
+    "checkver": "github",
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://downloads.sourceforge.net/project/pycmd/pycmd/snapshots/PyCmd-$version-w64.zip",
-                "extract_dir": "$version",
-                "hash": {
-                    "mode": "sourceforge"
-                }
+                "url": "https://github.com/horeah/PyCmd/releases/download/$version/PyCmd-$version-w64.zip"
             },
             "32bit": {
-                "url": "https://downloads.sourceforge.net/project/pycmd/pycmd/snapshots/PyCmd-$version-w32.zip",
-                "extract_dir": "$version",
-                "hash": {
-                    "mode": "sourceforge"
-                }
+                "url": "https://github.com/horeah/PyCmd/releases/download/$version/PyCmd-$version-w32.zip"
             }
         }
     }
