@@ -1,9 +1,17 @@
 {
-    "version": "5.4.6.0",
+    "version": "2.5.5.0",
     "homepage": "https://www.vieas.com/en/soft.html",
     "license": "freeware",
-    "url": "https://www.vieas.com/software/dl/dl.php?id=Vieas#/dl.7z",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "architecture": {
+        "64bit": {
+            "url": "https://www.vieas.com/software/dl/dl.php?id=Vieas&ver=5460_64&ext=zip#/dl.7z",
+            "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "32bit": {
+            "url": "https://www.vieas.com/software/dl/dl.php?id=Vieas&ver=5460_32&ext=zip#/dl.7z",
+            "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+    },
     "extract_dir": "Vieas",
     "bin": "Vieas.exe",
     "shortcuts": [
@@ -14,6 +22,13 @@
     ],
     "checkver": "Vieas</h2><ul class=\"scol\"><li class=\"col2\">[\\W\\w]*?([\\d.]+)",
     "autoupdate": {
-        "url": "https://www.vieas.com/software/dl/dl.php?id=Vieas#/dl.7z"
+        "architecture": {
+            "64bit": {
+                "url": "https://www.vieas.com/software/dl/dl.php?id=Vieas&ver=5460_64&ext=zip"
+            },
+            "32bit": {
+                "url": "https://www.vieas.com/software/dl/dl.php?id=Vieas&ver=5460_32&ext=zip"
+            }
+        }
     }
 }
