@@ -7,9 +7,10 @@
     "hash": "995741f78da513a9b82a0b6066160d153baf91536a13a683bea982d204e06e64",
     "notes": "Please install fonts in $dir manually",
     "checkver": {
-        "github": "https://github.com/adobe-fonts/source-han-sans"
+        "url": "https://github.com/adobe-fonts/source-han-sans/releases/latest",
+        "regex": "Release Fonts Version ([\\d.\\w]+)"
     },
     "autoupdate": {
-        "url": "https://github.com/adobe-fonts/source-han-sans/raw/release/SubsetOTF/SourceHanSansCN.zip"
+        "url": "https://github.com/adobe-fonts/source-han-sans/release/download/$version/SourceHanSansCN.zip"
     }
 }
