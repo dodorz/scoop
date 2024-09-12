@@ -14,8 +14,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/Karmenzind/kd/releases/download/v$version/kd_windows_amd64.exe#/kd.exe",
-                "hash": ""
+                "url": "https://github.com/Karmenzind/kd/releases/download/v$version/kd_windows_amd64.exe#/kd.exe"
             }
         }
     }
