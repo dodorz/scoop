@@ -22,7 +22,7 @@
     ],
     "checkver": {
         "url": "http://www.tuxpaint.org/download/",
-        "regex": "Current Version \\(([\\d.]+)\\):</h3>"
+        "regex": "Tux Paint ([\\d.]+) is now available"
     },
     "autoupdate": {
         "architecture": {
