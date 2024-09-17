@@ -5,8 +5,8 @@
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/ggerganov/llama.cpp/releases/download/b3755/llama-b3755-bin-win-avx512-x64.zip",
-            "hash": "c460fda5ed9f3cafd6c953ecba25c0ce929d0bdd83540c7cbff19af52ee9f6c6"
+            "url": "https://github.com/ggerganov/llama.cpp/releases/download/b3772/llama-b3772-bin-win-avx512-x64.zip",
+            "hash": "4499ae4ffa715784ba9fb93d9bcbf7d1c6e686049ebc80c605e9c4ea6f6f10ee"
         }
     },
     "bin": "llama-cli.exe",
