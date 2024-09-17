@@ -20,7 +20,7 @@
             "UltraCopier"
         ]
     ],
-    "checkver": "Version ([\\d.]+)</td>",
+    "checkver": "ultracopier-windows-x86_64-([\\d.]+)-setup.exe",
     "autoupdate": {
         "architecture": {
             "64bit": {
