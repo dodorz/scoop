@@ -4,7 +4,7 @@
     "homepage": "https://otter-browser.org/",
     "license": "MPL-2.0",
     "url": "https://downloads.sourceforge.net/project/otter-browser/otter-browser-weekly420/otter-browser-win32-weekly420-xp.zip",
-    "hash": "sha1:f1faa185cd51773bc0560506fc145506247715c9"
+    "hash": "sha1:f1faa185cd51773bc0560506fc145506247715c9",
     "extract_dir": "otter-browser-win32-weekly420-xp",
     "shortcuts": [
         [
