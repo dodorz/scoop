@@ -1,6 +1,6 @@
 {
-    "version": "23.0.185.9",
-    "description": "", 
+    "version": "23.0.185.91",
+    "description": "",
     "homepage": "https://blisk.io/",
     "license": {
         "identifier": "EULA",
@@ -24,9 +24,9 @@
             "Blisk",
             "--user-data-dir=\"$dir\\UserData\""
         ]
-    ], 
-    "checkver": "Current version: ([\\d.]+)\\.", 
-    "autoupdate":{
-      "url": "https://bliskcloudstorage.blob.core.windows.net/win-installers/BliskInstaller_$version.exe#/dl.7z",
+    ],
+    "checkver": "Current version: ([\\d.]+)\\.",
+    "autoupdate": {
+        "url": "https://bliskcloudstorage.blob.core.windows.net/win-installers/BliskInstaller_$version.exe#/dl.7z"
     }
 }
