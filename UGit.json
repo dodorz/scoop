@@ -21,7 +21,7 @@
     ],
     "checkver": {
         "url": "https://ugit.qq.com/changelog.json",
-        "regex": "\\"version\\": \\"v([\\d.]+)\\""
+        "regex": "\"version\": \"v([\\d.]+)\""
     },
     "checkver": {
         "url": "https://ugit.qq.com/downloads/ugit_public/UGitSetup.exe#/dl.7z"
