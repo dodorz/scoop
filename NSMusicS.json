@@ -8,14 +8,17 @@
     "extract_dir": "NSMusicS_Win_v.0.7.1",
     "bin": "NSMusicS.exe",
     "shortcuts": [
-      [
-        "NSMusicS.exe",
-        "NSMusicS"
-      ]
+        [
+            "NSMusicS.exe",
+            "NSMusicS"
+        ]
     ],
-    "checkver": "github",
+    "checkver": {
+        "url": "https://github.com/Super-Badmen-Viper/NSMusicS/releases/latest",
+        "regex": "/releases/tag/NSMusicS-Win-v([\\d.]+)"
+    },
     "autoupdate": {
-      "url": "https://github.com/Super-Badmen-Viper/NSMusicS/releases/download/NSMusicS-Win-v$version/NSMusicS_Win_v.$version.zip",
-      "extract_dir": "NSMusicS_Win_v.$version",
+        "url": "https://github.com/Super-Badmen-Viper/NSMusicS/releases/download/NSMusicS-Win-v$version/NSMusicS_Win_v.$version.zip",
+        "extract_dir": "NSMusicS_Win_v.$version"
     }
 }
