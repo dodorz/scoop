@@ -1,5 +1,5 @@
 {
-    "version": "0.7.1",
+    "version": "0.7.0",
     "description": "Streaming media server/music client",
     "homepage": "https://github.com/Super-Badmen-Viper/NSMusicS",
     "license": "AGPL-3.0",
@@ -16,6 +16,6 @@
     "checkver": "github",
     "autoupdate": {
       "url": "https://github.com/Super-Badmen-Viper/NSMusicS/releases/download/NSMusicS-Win-v$version/NSMusicS_Win_v.$version.zip",
-      "extract_dir": "NSMusicS_Win_v.$version",
+      "extract_dir": "NSMusicS_Win_v.$version"
     }
 }
