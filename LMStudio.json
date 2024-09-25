@@ -22,7 +22,6 @@
     ],
     "checkver": {
         "url": "https://lmstudio.ai/",
-        "url": "https://lmstudio.ai/",
         "regex": "LM-Studio-([\\d.]+)-Setup.exe"
     },
     "autoupdate": {
