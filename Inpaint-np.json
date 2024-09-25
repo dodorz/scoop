@@ -10,6 +10,9 @@
 			"/dir=$dir"
 		]
     },
+    "uninstaller": {
+        "file": "unins000.exe"
+    },
     "bin": "Inpaint.exe",
     "shortcuts": [
         [
