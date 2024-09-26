@@ -1,12 +1,12 @@
 {
-    "version": "0.8.3",
+    "version": "0.8.5",
     "description": "cross-platform terminal for seamless workflows",
     "homepage": "https://www.waveterm.dev/",
     "license": "Apache-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://dl.waveterm.dev/releases-w2/Wave-win32-x64-0.8.3.msi",
-            "hash": "c353a65fd3eede6776f8b181fbe3881990f1bf9a6a134062c21ff86521c335a5"
+            "url": "https://dl.waveterm.dev/releases-w2/Wave-win32-x64-0.8.5.msi",
+            "hash": "7f6545d730c51ba3d6344dd6c020234b97163017edf24ebdd045a34a582a7ab9"
         }
     },
     "extract_dir": "waveterm",
