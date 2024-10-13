@@ -3,7 +3,7 @@
     "version": "14.6",
     "license": "free for home users",
     "url": "https://www.pdfshaper.com/downloads/pdfshaper_free_14.6.exe",
-    "hash": "",
+    "hash": "f4673424bd1eacc1b17809522c747edbd82a189f8b0ca582686df6c89ac20e00",
     "innosetup": true,
     "bin": "PDFShaper.exe",
     "shortcuts": [
