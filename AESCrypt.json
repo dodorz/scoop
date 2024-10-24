@@ -17,8 +17,7 @@
     "bin": "aescrypt.exe",
     "checkver": {
         "url": "https://www.aescrypt.com/download/",
-        "regex": "<a href=\"/download/v\\d/windows/AESCrypt_v(\\d)(\\d+)_x64.zip\">AES Crypt - GUI \\(Windows",
-        "replace": "${1}.${2}"
+        "regex": "<a href=\"/download/v\\d/windows/aescrypt_gui-([\\d.]+)-Windows-x86_64.zip\">AES Crypt - Desktop"
     },
     "autoupdate": {
         "architecture": {
