@@ -26,7 +26,10 @@
         "architecture": {
             "64bit": {
                 "url": "https://github.com/PeterDing/aget-rs/releases/download/$version/aget-rs-$version-x86_64-pc-windows-msvc.zip",
-                "extract_dir": "aget-rs-$version-x86_64-pc-windows-msvc"
+                "extract_dir": "aget-rs-$version-x86_64-pc-windows-msvc", 
+                "hash": {
+                    "url": "https://github.com/PeterDing/aget-rs/releases/download/$version/aget-rs-$version-x86_64-pc-windows-msvc.zip.sha256"
+                }
             }
         }
     }
