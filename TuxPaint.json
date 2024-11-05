@@ -1,15 +1,15 @@
 {
     "homepage": "http://www.tuxpaint.org/",
     "license": "GPL-2.0-only",
-    "version": "0.9.33",
+    "version": "0.9.34",
     "architecture": {
         "64bit": {
-            "url": "https://master.dl.sourceforge.net/project/tuxpaint/tuxpaint/0.9.33/tuxpaint-0.9.33-windows-x86_64.zip",
-            "hash": "sha1:9c9e2a264b1e2fe47f9d35e4e89bf0a503cbcdb6"
+            "url": "https://master.dl.sourceforge.net/project/tuxpaint/tuxpaint/0.9.34/tuxpaint-0.9.34-windows-x86_64.zip",
+            "hash": "sha1:4a620a254812da940361949e635be33180af60a0"
         },
         "32bit": {
-            "url": "https://master.dl.sourceforge.net/project/tuxpaint/tuxpaint/0.9.33/tuxpaint-0.9.33-windows-i686.zip",
-            "hash": "sha1:3d84da0f928f6a9003135c10fbcf4b6c68edf1d0"
+            "url": "https://master.dl.sourceforge.net/project/tuxpaint/tuxpaint/0.9.34/tuxpaint-0.9.34-windows-i686.zip",
+            "hash": "sha1:0a2aef1d5647c71ecba92fcaee728aa20d8a2fd0"
         }
     },
     "extract_dir": "TuxPaint",
