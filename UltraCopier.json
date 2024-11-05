@@ -1,15 +1,15 @@
 {
     "homepage": "https://ultracopier.herman-brule.com/",
     "license": "GPL-3.0-only",
-    "version": "2.2.7.1",
+    "version": "3.0.0.2",
     "architecture": {
         "64bit": {
-            "url": "https://cdn.confiared.com/ultracopier.herman-brule.com/files/2.2.7.1/ultracopier-windows-x86_64-2.2.7.1-setup.exe#/dl.7z",
-            "hash": "4dda1a4d7a78dbba5a00744fce3b90b321ff46c7dc93088bbf5c24ab9fc3a6d8"
+            "url": "https://cdn.confiared.com/ultracopier.herman-brule.com/files/3.0.0.2/ultracopier-windows-x86_64-3.0.0.2-setup.exe#/dl.7z",
+            "hash": "29a18ae9137a5d0c1d0cfd3ba1b88baaaff659fb4cd261384af9f601d4f4d47e"
         },
         "32bit": {
-            "url": "https://cdn.confiared.com/ultracopier.herman-brule.com/files/2.2.7.1/ultracopier-windows-x86-2.2.7.1-setup.exe#/dl.7z",
-            "hash": "60af5dc8a8e087577c47e4da5ff8f118d4e0e6a75552673dc04b8a4dae514c1d"
+            "url": "https://cdn.confiared.com/ultracopier.herman-brule.com/files/3.0.0.2/ultracopier-windows-x86-3.0.0.2-setup.exe#/dl.7z",
+            "hash": "d50336fc4983d309fa4d8763b67b81c0ca4375ab4289a916a33494f3a2a653b3"
         }
     },
     "post_install": "Remove-Item \"$dir\\`$PLUGINSDIR\", \"$dir\\`$R0\" -Force -Recurse",
