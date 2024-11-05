@@ -1,18 +1,18 @@
 {
     "homepage": "http://www.sqliteexpert.com/",
-    "version": "5.5.24",
+    "version": "5.5.26",
     "license": "Proprietary",
     "architecture": {
         "64bit": {
             "url": "http://www.sqliteexpert.com/v5/SQLiteExpertProSetup64.exe",
-            "hash": "md5:69840a6c07ada6cb48042207144e49d6",
+            "hash": "md5:0ef2595b35c805c2eea7a7355ba974d4",
             "installer": {
                 "script": "Rename-Item \"$dir\\SQLiteExpertPro64.exe\" \"$dir\\SQLiteExpertPro.exe\""
             }
         },
         "32bit": {
             "url": "http://www.sqliteexpert.com/v5/SQLiteExpertProSetup32.exe",
-            "hash": "md5:8f1b5ba8a5efbc9c72356c09ccb15745",
+            "hash": "md5:bb04a577b94f69dd6c2d86beae8fb584",
             "installer": {
                 "script": "Rename-Item \"$dir\\SQLiteExpertPro32.exe\" \"$dir\\SQLiteExpertPro.exe\""
             }
