@@ -1,5 +1,5 @@
 {
-    "version": "0.7.0",
+    "version": "0.8.0",
     "description": "Command-line tool that prints random fortune entries.",
     "license": "unknown",
     "homepage": "https://github.com/zuisong/rs-fortune",
