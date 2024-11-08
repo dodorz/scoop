@@ -1,9 +1,9 @@
 {
     "homepage": "https://www.pdfshaper.com/",
-    "version": "14.6",
+    "version": "14.7",
     "license": "free for home users",
-    "url": "https://www.pdfshaper.com/downloads/pdfshaper_free_14.6.exe",
-    "hash": "f4673424bd1eacc1b17809522c747edbd82a189f8b0ca582686df6c89ac20e00",
+    "url": "https://www.pdfshaper.com/downloads/pdfshaper_free_14.7.exe",
+    "hash": "2be27bd428be5179f60e76066514876e31dbb6c4542fda0beaf3fe224952c5e5",
     "innosetup": true,
     "bin": "PDFShaper.exe",
     "shortcuts": [
