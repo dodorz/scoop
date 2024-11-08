@@ -32,7 +32,7 @@
     ],
     "checkver": {
         "url": "https://www.bulkrenameutility.co.uk/Download.php",
-        "regex": "New Version ([\\d.]+) Released."
+        "regex": "<span class=\"text-muted\">version 4.0.0.2([\\d.]+)"
     },
     "autoupdate": {
         "url": "http://www.s3.tgrmn.com/bru/BRU_NoInstall.zip"
