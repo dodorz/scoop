@@ -1,11 +1,11 @@
 {
-    "version": "2.13.1",
+    "version": "2.13.3",
     "homepage": "https://firealpaca.com/",
     "license": "freeware",
     "architecture": {
         "64bit": {
             "url": "https://firealpaca.com/download/win64_zip",
-            "hash": "24e55f182df70dde9a47da194aba5745ea2d88b135953e4cf2d6aeea3688ae9e",
+            "hash": "cb749c8f4713708623afe70d0d718c0cc17aa71e0a184314446d240898867b21",
             "installer": {
                 "script": [
                     "$folder = (Get-ChildItem \"$dir\" 'FireAlpacaWin64*' | Select-Object -First 1).FullName",
@@ -16,7 +16,7 @@
         },
         "32bit": {
             "url": "https://firealpaca.com/download/win_zip",
-            "hash": "75dcfa12b345d6a38a517df1d48ff23f0cb92d8d5b42db06cb07d2bdb6231b03",
+            "hash": "260dd7e8b2541a7e85bd9527b5972b7e57b574463ce094478d463317115473fe",
             "installer": {
                 "script": [
                     "$folder = (Get-ChildItem \"$dir\" 'FireAlpacaWin32*' | Select-Object -First 1).FullName",
