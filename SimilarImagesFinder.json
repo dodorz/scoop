@@ -1,15 +1,15 @@
 {
     "homepage": "https://kurtzimmermann.com",
-    "version": "1.008",
+    "version": "1.010",
     "license": "freeware",
     "architecture": {
         "64bit": {
             "url": "https://kurtzimmermann.com/files/SimilarImagesFinderX64.zip",
-            "hash": "0f7d1eb45a0a0bd3dbcd7b0bd84fe0255ef8b4b8562a679bca80a64316d8e144"
+            "hash": "0fdab66ade2c7fea2cbcc2ecc805515302dc278651973972bc6e2380f97829f3"
         },
         "32bit": {
             "url": "https://kurtzimmermann.com/files/SimilarImagesFinderX32.zip",
-            "hash": "5107f0f7c82e19655962cced37225274c9e9c2c0ccf9b02b29c280f36b51191c"
+            "hash": "7509327031f070a1eed9bd11e31e8442bd4bb702890875a48686fdb0b900aab2"
         }
     },
     "bin": "SimilarImagesFinder.exe",
