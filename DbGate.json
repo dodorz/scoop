@@ -16,7 +16,7 @@
     "bin": "DbGate.exe",
     "shortcuts": [
         [
-            "DbGate.exe"
+            "DbGate.exe",
             "DbGate"
         ]
     ]
