@@ -17,6 +17,7 @@
             "Remove-Item \"$dir\\`$PLUGINSDIR\",\"$dir\\`$R0\",\"$dir\\`$LOCALAPPDATA\"  -Force -Recurse"
         ]
     },
+    "bin": "Cursor.exe",
     "shortcuts": [
         [
             "Cursor.exe",
