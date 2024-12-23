@@ -1,15 +1,15 @@
 {
     "homepage": "http://www.javaeditor.org/",
-    "version": "22.11",
+    "version": "23.02",
     "license": "freeware",
     "architecture": {
         "64bit": {
-            "url": "https://www.javaeditor.org/download/javaeditor64.22.11.zip",
-            "hash": "8c8bca47b479aad0eefbe96641f321822131f858cfa126a342bc902195bc4619"
+            "url": "https://www.javaeditor.org/download/javaeditor64.23.02.zip",
+            "hash": "a4f3302b406af8d9638ba8c8f9b478d00678283cc85caf949ff7f58033c522c8"
         },
         "32bit": {
-            "url": "https://www.javaeditor.org/download/javaeditor22.11.zip",
-            "hash": "492ead9581bcbd08cd52eac25c6982403cdde7d6786c13cf724495d6a71d94a3"
+            "url": "https://www.javaeditor.org/download/javaeditor23.02.zip",
+            "hash": "1a53fdeb4eaf791c85427294e07a7ac855eaa682f08eff515a1490f827b86f0b"
         }
     },
     "bin": "javaeditor.exe",
