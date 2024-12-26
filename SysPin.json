@@ -6,7 +6,7 @@
     "url": "http://www.technosys.net/download.aspx?file=syspin.zip",
     "hash": "c3eef00abf76cfa00e5c304595e26eb016c07c87f830807ed2650acaa73b2883",
     "bin": "syspin.exe",
-    "shortcut": [
+    "shortcuts": [
         [
             "syspin.exe",
             "SysPin"
