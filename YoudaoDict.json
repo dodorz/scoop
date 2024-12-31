@@ -2,8 +2,8 @@
     "homepage": "https://cidian.youdao.com/",
     "version": "11.0.0",
     "license": "freeware",
-    "url": "https://download.ydstatic.com/cidian/static/download/YoudaoDictSetup240912.exe#/dl.7z",
-    "hash": "84af047388021222fc34f488145f0cb19006d64202666d64807a5bc91cb346bc",
+    "url": "http://cidian.youdao.com/download/YoudaoDict.exe#/dl.7z",
+    "hash": "14f3fbcce8b0ec424ae48019536c5a0fe884d42e0ddf05fd9c317e805889393e",
     "installer": {
         "script": "Expand-7ZipArchive \"$dir\\`$PLUGINSDIR\\dict.7z\" \"$dir\""
     },
