@@ -4,10 +4,13 @@
     "license": "",
     "url": "https://github.com/rashil2000/clink-powerline/archive/0.5.1.zip",
     "hash": "c1b205ddf34a14bcd5c88b2484c4370a03f14435d6a5fbe85f84b6d34a980e82",
-    "extract_dir": "clink-powerline-0.5.1",
+    "post_install": [
+        "if (Test-Path $env:APPDATA\\clink) {",
+        "    Copy-Item -Path $dir\\powerline.bundle.lua -Destination $env:APPDATA\\clink\\*",
+        "}"
+    ],
     "checkver": "github",
     "autoupdate": {
-        "url": "https://github.com/rashil2000/clink-powerline/archive/$version.zip",
-        "extract_dir": "clink-powerline-$version"
+        "url": "https://github.com/HelloWorld017/clink-powerline/releases/download/$version/powerline.bundle.lua"
     }
 }
