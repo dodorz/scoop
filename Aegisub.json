@@ -11,7 +11,7 @@
     "bin": "aegisub.exe",
     "shortcuts": [
         [
-            "aegisub.exe"
+            "aegisub.exe",
             "Aegisub"
         ]
     ],
