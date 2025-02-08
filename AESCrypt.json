@@ -11,6 +11,6 @@
         "regex": "<a href=\"/download/v\\d/windows/aescrypt_gui-([\\d.]+)-Windows-x86_64.zip\">AES Crypt - Desktop"
     },
     "autoupdate": {
-        "url": "https://www.aescrypt.com/download/v$majorVersion/windows/aescrypt_gui-$Version-Windows-x86_64.zip"
+        "url": "https://www.aescrypt.com/download/v$majorVersion/windows/aescrypt_gui-$version-Windows-x86_64.zip"
     }
 }
