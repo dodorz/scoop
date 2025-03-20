@@ -1,12 +1,12 @@
 {
-    "version": "b4897",
+    "version": "b4927",
     "description": "LLM inference in C/C++",
     "homepage": "https://github.com/ggerganov/llama.cpp",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/ggerganov/llama.cpp/releases/download/b4897/llama-b4897-bin-win-avx-x64.zip",
-            "hash": "645136208e683c9f2b68c039296eadb4ead11b86af6bc1f7127463b83a92dd3a"
+            "url": "https://github.com/ggerganov/llama.cpp/releases/download/b4927/llama-b4927-bin-win-avx-x64.zip",
+            "hash": "400e3c97f73771cf9b18d8b0a7292e0a2ddf03c124ba09a9602674d924c937f3"
         }
     },
     "bin": "llama-cli.exe",
