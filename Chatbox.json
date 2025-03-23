@@ -1,12 +1,12 @@
 {
-    "version": "1.10.4",
+    "version": "1.10.7",
     "description": "User-friendly Desktop Client App for AI Models/LLMs",
     "homepage": "https://chatboxai.app/",
     "license": "GPL-3.0-or-later",
     "architecture": {
         "64bit": {
-            "url": "https://download.chatboxai.app/releases/Chatbox-1.10.4-Setup.exe",
-            "hash": "5ea90ef9c50bc5b9023133883fa5c7bff6492e4087590e6970344fc815620a07"
+            "url": "https://download.chatboxai.app/releases/Chatbox-1.10.7-Setup.exe",
+            "hash": "53e82cc2088a7c94548543185b97a831fb6b6a22a1c669e92821b026444e08ea"
         }
     },
     "installer": {
