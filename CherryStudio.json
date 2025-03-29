@@ -5,22 +5,27 @@
     "license": {
         "url": "https://github.com/CherryHQ/cherry-studio?tab=License-1-ov-file"
     },
-    "url": "https://github.com/CherryHQ/cherry-studio/releases/download/v1.1.16/Cherry-Studio-1.1.16-portable.exe",
+    "url": "https://github.com/CherryHQ/cherry-studio/releases/download/v1.1.16/Cherry-Studio-1.1.16-setup.exe",
     "installer": {
-        "script": "Get-ChildItem \"$dir\\Cherry-Studio-*.exe\" | Rename-Item -NewName 'Cherry-Studio-portable.exe'"
+        "script": [
+            "$file = (Get-ChildItem \"$dir\" 'Cherry-Studio-*.exe' | Select-Object -First 1).FullName",
+            "Expand-7ZipArchive \"$file\" \"$dir\\\" -Removal",
+            "Expand-7ZipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\" -Removal",
+            "Remove-Item \"$dir\\`$PLUGINSDIR\",\"$dir\\`$R0\"  -Force -Recurse"
+        ]
     },
-    "hash": "5f52ee9341794ff551c5b142abf179907f00f7027007770af990fdcdd76d0a04",
-    "bin": "Cherry-Studio-portable.exe",
+    "hash": "",
+    "bin": "Cherry Studio.exe",
     "shortcuts": [
         [
-            "Cherry-Studio-portable.exe",
-            "Cherry-Studio"
+            "Cherry Studio.exe",
+            "Cherry Studio"
         ]
     ],
     "checkver": {
         "github": "https://github.com/CherryHQ/cherry-studio/"
     },
     "autoupdate": {
-        "url": "https://github.com/CherryHQ/cherry-studio/releases/download/v$version/Cherry-Studio-$version-portable.exe"
+        "url": "https://github.com/CherryHQ/cherry-studio/releases/download/v$version/Cherry-Studio-$version-setup.exe"
     }
 }
