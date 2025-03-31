@@ -1,11 +1,11 @@
 {
-    "version": "1.1.16",
+    "version": "1.1.17",
     "description": "֧A multi-LLM desktop client",
     "homepage": "https://cherry-ai.com/",
     "license": {
         "url": "https://github.com/CherryHQ/cherry-studio?tab=License-1-ov-file"
     },
-    "url": "https://github.com/CherryHQ/cherry-studio/releases/download/v1.1.16/Cherry-Studio-1.1.16-setup.exe",
+    "url": "https://github.com/CherryHQ/cherry-studio/releases/download/v1.1.17/Cherry-Studio-1.1.17-setup.exe",
     "installer": {
         "script": [
             "$file = (Get-ChildItem \"$dir\" 'Cherry-Studio-*.exe' | Select-Object -First 1).FullName",
