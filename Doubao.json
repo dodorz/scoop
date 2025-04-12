@@ -1,10 +1,10 @@
 {
-    "version": "1.48.7",
+    "version": "1.51.10",
     "description": "LLM client by douyin",
     "homepage": "https://doubao.com",
     "license": "freeware",
-    "url": "https://lf-flow-web-cdn.doubao.com/obj/flow-doubao/doubao_pc/1.48.7/1005/Doubao_installer.exe#dl.7z",
-    "hash": "4de19f1edd94c59b9d9136cb790140a398a134e0ca249d20530312904356d08c",
+    "url": "https://lf-flow-web-cdn.doubao.com/obj/flow-doubao/doubao_pc/1.51.10/1005/Doubao_installer.exe#dl.7z",
+    "hash": "6028e79c296bb0925207a52c05a24b784441c41fcb9005ba10cf421667827bb7",
     "shortcuts": [  
         [
             "Doubao.exe",
