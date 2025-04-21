@@ -34,6 +34,7 @@
             "--user-data-dir=\"$dir\\data\\user-data\" --extensions-dir=\"$dir\\data\\extensions\""
         ]
     ],
+    "persist": "data",
     "checkver": {
         "url": "https://api.trae.ai/icube/api/v1/native/version/trae/latest",
         "jsonpath": "$.data.manifest.win32.version"
