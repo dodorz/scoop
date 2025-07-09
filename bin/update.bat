@@ -17,11 +17,13 @@ if "x%~1" == "x" goto updall
 :updone
 if "x%~1" == "x" goto commit
 %PWSH% -noprofile -ex unrestricted -f %CHECKVER% -dir %DIR% "%~n1" -u
+if errorlevel 1 exit /b %errorlevel%
 shift
 goto :updone
 
 :updall
 %PWSH% -noprofile -ex unrestricted -f %CHECKVER% -dir %DIR% -u
+if errorlevel 1 exit /b %errorlevel%
 
 :commit
 for /f %%i in ('git diff --name-only') do (
