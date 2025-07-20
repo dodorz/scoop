@@ -48,36 +48,33 @@ foreach ($file in $Files) {
         # Move url and hash to architecture.x64
         $url = $json.url
         $hash = $json.hash
-        
         $json.PSObject.Properties.Remove('url')
         $json.PSObject.Properties.Remove('hash')
-        
         $architecture = @{
-            x64 = @{
+            x64 = [ordered]@{
                 url = $url
                 hash = $hash
             }
         }
-        $json | Add-Member -MemberType NoteProperty -Name 'architecture' -Value $architecture
+        $json | Add-Member -MemberType NoteProperty -Name 'architecture' -Value $architecture -Force
+        # amd64-only key order
+        $orderedKeys = @('version', 'description', 'homepage', 'license', 'architecture', 'bin')
+    } else {
+        # 非amd64-only key order
+        $orderedKeys = @('version', 'description', 'homepage', 'license', 'url', 'hash', 'bin')
     }
-    
-    # Create ordered hashtable with desired key order
-    $orderedKeys = @('version', 'description', 'homepage', 'license', 'architecture', 'url', 'hash', 'bin')
     $orderedJson = [ordered]@{}
-    
     foreach ($key in $orderedKeys) {
         if ($json.PSObject.Properties[$key]) {
             $orderedJson[$key] = $json.$key
         }
     }
-    
     # Add remaining keys
     foreach ($prop in $json.PSObject.Properties) {
         if ($prop.Name -notin $orderedKeys) {
             $orderedJson[$prop.Name] = $prop.Value
         }
     }
-    
     # Convert to JSON with 4-space indentation and save
     $orderedJson | ConvertTo-Json -Depth 10 | ForEach-Object {
         $_ -replace '  ', '    '
