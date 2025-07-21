@@ -51,7 +51,7 @@ foreach ($file in $Files) {
         $json.PSObject.Properties.Remove('url')
         $json.PSObject.Properties.Remove('hash')
         $architecture = @{
-            64bit = [ordered]@{
+            '64bit' = [ordered]@{
                 url = $url
                 hash = $hash
             }
