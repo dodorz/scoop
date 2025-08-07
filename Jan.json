@@ -5,10 +5,11 @@
     "license": "AGPL-3.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/menloresearch/jan/releases/download/v0.6.7/Jan_0.6.7_x64-setup.exe",
+            "url": "https://github.com/menloresearch/jan/releases/download/v0.6.7/Jan_0.6.7_x64-setup.exe#/dl.7z",
             "hash": "738aafe2e51773837e043ffeb605afa17565e6878360ecaed11cabd87582a734"
         }
     },
+    "post_install": "Remove-Item \"$dir\\`$PLUGINSDIR\",\"$dir\\uninstall.exe\" -Recurse",
     "shortcuts": [
         [
             "Jan.exe",
@@ -21,7 +22,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/menloresearch/jan/releases/download/v$version/Jan_$version_x64-setup.exe",
+                "url": "https://github.com/menloresearch/jan/releases/download/v$version/Jan_$version_x64-setup.exe#/dl.7z",
                 "hash": {
                     "url": "https://github.com/menloresearch/jan/releases/download/v$version/latest.yml",
                     "regex": "sha512: $base64"
