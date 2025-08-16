@@ -1,12 +1,15 @@
 {
-    "version": "0.1.6",
+    "version": "0.1.5",
     "description": "A GUI that supports multiple popular search tools",
     "homepage": "https://github.com/xuender/grephub",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/xuender/grephub/releases/download/v0.1.6/grephub_windows_amd64_v0.1.6.zip",
-            "hash": "b22f2ef81f8a46b81eeeb22925139eccce87f29ed8e0699a30d937c750b3fbbf"
+            "url": "https://github.com/xuender/grephub/releases/download/v0.1.5/grephub_windows_amd64_v0.1.5.zip",
+            "hash": ""
+        },
+        "installer": {
+            "script": "Rename-Item \"$dir\\grephub_windows_amd64_v0.1.5.exe\" \"grephub.exe\""
         }
     },
     "shortcuts": [
@@ -20,6 +23,9 @@
         "architecture": {
             "64bit": {
                 "url": "https://github.com/xuender/grephub/releases/download/v$version/grephub_windows_amd64_v$version.zip"
+            },
+            "installer": {
+                "script": "Rename-Item \"$dir\\grephub_windows_amd64_v$version.exe\" \"grephub.exe\""
             }
         }
     }
