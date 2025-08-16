@@ -1,17 +1,17 @@
 {
-    "version": "2.4.12",
+    "version": "2.13.1",
     "description": "A desktop AI assistant",
     "homepage": "https://witsyai.com/",
     "license": "Apache-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/nbonamy/witsy/releases/download/v2.4.12/witsy-2.4.12-win32-x64-full.nupkg",
-            "hash": "67c83ce0c83e86e7ca3ba8df5b1da0d521baefa660cf072abd72578e854764da",
+            "url": "https://github.com/nbonamy/witsy/releases/download/v2.13.1/witsy-2.13.1-win32-x64-full.nupkg",
+            "hash": "48a0afa67546c79be178a4643fcee830a75ab162f52e635d4262cae7c334fc13",
             "extract_dir": "lib\\net45"
         },
         "arm64": {
-            "url": "https://github.com/nbonamy/witsy/releases/download/v2.4.12/witsy-2.4.12-win32-arm64.zip",
-            "hash": "c94d7fba4c38222b8d9f5b8b8e8be2c183502eb1d53b22657d6aaa9cb66a3513",
+            "url": "https://github.com/nbonamy/witsy/releases/download/v2.13.1/witsy-2.13.1-win32-arm64.zip",
+            "hash": "581fb994cb6532ee1d94ed08a75022aba83e5296098eb842ae9da8c1447038b8",
             "extract_dir": "Witsy-win32-arm64"
         }
     },
