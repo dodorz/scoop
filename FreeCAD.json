@@ -30,12 +30,13 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/FreeCAD/FreeCAD/releases/download/$matchHead/FreeCAD_$version-conda-Windows-x86_64-$matchSuffix.7z"
+                "url": "https://github.com/FreeCAD/FreeCAD/releases/download/$matchHead/FreeCAD_$version-conda-Windows-x86_64-$matchSuffix.7z",
                 "extract_dir": "FreeCAD-$version-conda-Windows-x86_64-$matchSuffix"
-        },
-        "hash": {
-            "url": "$url-SHA256.txt",
-            "regex": "(?sm)$basename.*?$sha256"
-        }
+			},
+			"hash": {
+				"url": "$url-SHA256.txt",
+				"regex": "(?sm)$basename.*?$sha256"
+			}
+		}
     }
 }
