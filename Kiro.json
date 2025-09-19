@@ -5,7 +5,6 @@
     "license": {
         "identifier": "Proprietary"
     },
-    "innosetup": true,
     "architecture": {
         "64bit": {
             "url": "https://prod.download.desktop.kiro.dev/releases/202509172055-Kiro-win32-x64.zip",
