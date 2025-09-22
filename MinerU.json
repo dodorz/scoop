@@ -4,7 +4,7 @@
     "homepage": "https://mineru.net/",
     "license": "unknown",
     "url": "https://webpub.shlab.tech/MinerU/latest/win/MinerU-0.8.0-setup.exe#dl.7z",
-    "hash": "",
+    "hash": "d990616ed807b1d82f250cde8e4db7ce03fdcc5ce1e3480ee8bc89cd4744d26e",
     "architecture": {
         "64bit": {
             "installer": {
