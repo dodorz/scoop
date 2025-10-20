@@ -1,0 +1,36 @@
+{
+    "version": "2.0.0-beta.6",
+    "description": "A privacy-first AI platform using local and online models",
+    "homepage": "https://msty.ai/",
+    "license": "Proprietary",
+    "architecture": {
+        "64bit": {
+            "url": "https://next-assets.msty.studio/app/beta/win/MstyStudio_x64.exe#/dl.7z",
+            "hash": "90c75cd7f3c0c06d6f7e6f63f030fb2d458d5438dab7866ce717a235204dd9d3",
+            "installer": {
+                "script": [
+                    "Expand-7ZipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\" -Removal",
+                    "Remove-Item \"$dir\\`$PLUGINSDIR\",\"$dir\\`$R0\"  -Force -Recurse"
+                ]
+            }
+        }
+    },
+    "bin": "MstyStudio.exe",
+    "shortcuts": [
+        [
+            "MstyStudio.exe",
+            "MstyStudio"
+        ]
+    ],
+    "checkver": {
+        "url": "https://msty.ai/changelog",
+        "regex": "<small><strong><!--\\[-->Msty Studio ([\\d.]+(?:-(?:alpha|beta).\\d)?)<!--\\]--></strong></small>"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://next-assets.msty.studio/app/beta/win/MstyStudio_x64.exe#/dl.7z"
+            }
+        }
+    }
+}
