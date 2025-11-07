@@ -16,6 +16,6 @@
         "github": "https://github.com/cardo-podcast/cardo"
     },
     "autoupdate": {
-        "url": "https://github.com/cardo-podcast/cardo/releases/download/$version/Cardo_$version_x64-setup.exe#/dl.7z"
+        "url": "https://github.com/cardo-podcast/cardo/releases/download/$version/Cardo_$version_x64-setup_windows.exe#/dl.7z"
     }
 }
