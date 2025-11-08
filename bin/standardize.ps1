@@ -7,9 +7,9 @@ if (!(Test-Path $backupDir)) {
 }
 
 foreach ($file in $Files) {
-    # Add .json extension if missing
-    if (![System.IO.Path]::HasExtension($file)) {
-        $file = "$file.json"
+    # Add .json extension if not already ending with .json
+    if ($file -notlike "*.json") {
+    $file = "$file.json"
     }
     
     if (!(Test-Path $file)) {
@@ -81,4 +81,13 @@ foreach ($file in $Files) {
     } | Set-Content $file -Encoding UTF8
     
     Write-Host "Completed: $file (backup: $backupFile)" -ForegroundColor Green
+
+    # Ask if user wants to open the file in editor
+    Write-Host "Do you want to open the file in editor? (Y/N): " -NoNewline
+    $response = [System.Console]::ReadKey($true).KeyChar.ToString().ToUpper()
+    Write-Host $response
+
+    if ($response -eq 'Y') {
+        Start-Process "C:\Tool\Notepad3.exe" $file
+    }
 }

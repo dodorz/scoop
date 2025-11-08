@@ -9,7 +9,7 @@ if "%PWSH%x" == "x" for /f %%i in ('scoop which powershell') do set PWSH=%%i
 
 :stdone
 if "x%~1" == "x" goto end
-%PWSH% -noprofile -ex unrestricted -f %STANDARDIZE% -dir %DIR% "%~n1" -u
+%PWSH% -noprofile -ex unrestricted -f %STANDARDIZE% -dir %DIR% "%~1" -u
 if errorlevel 1 exit /b %errorlevel%
 shift
 goto :stdone
