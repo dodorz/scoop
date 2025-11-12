@@ -26,6 +26,7 @@
             "Eudic"
         ]
     ],
+    "persist": "dic",
     "autoupdate": {
         "architecture": {
             "64bit": {
