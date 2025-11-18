@@ -8,7 +8,7 @@
     "architecture": {
         "64bit": {
             "url": "https://prod.download.desktop.kiro.dev/releases/stable/win32-x64/signed/0.6.0/kiro-ide-0.6.0-stable-win32-x64.zip",
-            "hash": ""
+            "hash": "6b96f352b23409dedc2774e9af112f87a5a2ca8c766d77bdd4ed40d508ffac00"
         }
     },
     "post_install": [
