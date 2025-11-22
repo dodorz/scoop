@@ -1,5 +1,5 @@
 {
-    "version": "2.0.1.",
+    "version": "2.0.1",
     "description": "A privacy-first AI platform using local and online models",
     "homepage": "https://msty.ai/",
     "license": "Proprietary",
@@ -9,6 +9,7 @@
             "hash": "5ccb87d0d52543e7de3dd6cbad9192f4728dfd246bb6f7ed8fe48c1b3979699c",
             "installer": {
                 "script": [
+                    "Expand-7ZipArchive \"$dir\\dl.7z\" \"$dir\" -Removal",
                     "Expand-7ZipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\" -Removal",
                     "Remove-Item \"$dir\\`$PLUGINSDIR\",\"$dir\\`$R0\"  -Force -Recurse"
                 ]
@@ -24,7 +25,7 @@
     ],
     "checkver": {
         "url": "https://msty.ai/changelog",
-        "regex": "<small><strong><!--\\[-->Msty Studio ([\\d.]+(?:-(?:alpha|beta).\\d)?)<!--\\]--></strong></small>"
+        "regex": "<small><strong><!--\\[-->Msty Studio ([\\d.]+)\\.<!--\\]--></strong></small>"
     },
     "autoupdate": {
         "architecture": {
