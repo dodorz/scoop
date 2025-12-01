@@ -1,20 +1,20 @@
 {
-    "version": "2.4.0",
+    "version": "2.5.0",
     "description": "Convert HTML to Markdown",
     "homepage": "https://html-to-markdown.com/",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/JohannesKaufmann/html-to-markdown/releases/download/v2.4.0/html-to-markdown_Windows_x86_64.zip",
-            "hash": "191d5be28eab5ca611926b214d0b14e4bea2497d939f88145953c694e786c511"
+            "url": "https://github.com/JohannesKaufmann/html-to-markdown/releases/download/v2.5.0/html-to-markdown_Windows_x86_64.zip",
+            "hash": "6f8e28c288afd776ce3d2bd07639d8ff5f6a9b541c1de30b371be455cc7c6049"
         },
         "32bit": {
-            "url": "https://github.com/JohannesKaufmann/html-to-markdown/releases/download/v2.4.0/html-to-markdown_Windows_i386.zip",
-            "hash": "1d79f1ac455fbb0291f8153c2692a258506ac8b1b4ad8c44212cde5400d316c4"
+            "url": "https://github.com/JohannesKaufmann/html-to-markdown/releases/download/v2.5.0/html-to-markdown_Windows_i386.zip",
+            "hash": "863f444d4209c202323c46e6a64ee5ec6785c6fc738fa90104874c4350eb5f63"
         },
         "arm64": {
-            "url": "https://github.com/JohannesKaufmann/html-to-markdown/releases/download/v2.4.0/html-to-markdown_Windows_arm64.zip",
-            "hash": "3db708f832ad47901fbf6345cf24f834b32ae7cf18220dd9a80c8c64d46a2513"
+            "url": "https://github.com/JohannesKaufmann/html-to-markdown/releases/download/v2.5.0/html-to-markdown_Windows_arm64.zip",
+            "hash": "91bcdfa08df7257a8c4d05d8da2865f3a92f01b4d00cb5c0aded0902cc8ca8db"
         }
     },
     "bin": "html2markdown.exe",
