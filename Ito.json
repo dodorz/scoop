@@ -1,12 +1,12 @@
 {
-    "version": "0.15.17",
+    "version": "0.15.35",
     "description": "AI voice assistant",
     "homepage": "https://ito.ai/",
-    "license": "",
+    "license": "GPL-3.0-or-later",
     "architecture": {
         "64bit": {
-            "url": "https://hub.gitmirror.com/https://github.com/heyito/ito/releases/download/v0.15.17/Ito-0.15.17.exe#/dl.7z",
-            "hash": "6f90876b1496a23bd6498bbf4950922293aa5b545c777ad319bd0569cfd7bf60",
+            "url": "https://github.com/heyito/Ito/releases/download/v0.15.35/Ito-0.15.35.exe#/dl.7z",
+            "hash": "bbfb2751ffc314b48347e203ca5358d3be83f5a8a8a4ef9ba30bc25044b527b7",
             "installer": {
                 "script": [
                     "Expand-7ZipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\" -Removal",
@@ -23,7 +23,7 @@
         ]
     ],
     "checkver": {
-        "github": "https://github.com/nanbingxyz/Ito"
+        "github": "https://github.com/heyito/ito"
     },
     "autoupdate": {
         "architecture": {
