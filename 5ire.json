@@ -1,5 +1,5 @@
 {
-    "version": "0.14.1",
+    "version": "0.15.0",
     "description": "desktop AI assistant & MCP client",
     "homepage": "https://5ire.app/",
     "license": {
@@ -7,8 +7,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/nanbingxyz/5ire/releases/download/v0.14.1/5ire-Setup-0.14.1.exe#/dl.7z",
-            "hash": "b8b039ab95a3cd1374462b714187845973ee9df32c76238f86afc4c1a8ad12ec",
+            "url": "https://github.com/nanbingxyz/5ire/releases/download/v0.15.0/5ire-Setup-0.15.0.exe#/dl.7z",
+            "hash": "9cb3aec6f6d9afa0c8deefdf2ecbefb6263b32f96fc94d765e1eb5e0c7b4246c",
             "installer": {
                 "script": [
                     "Expand-7ZipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\" -Removal",
