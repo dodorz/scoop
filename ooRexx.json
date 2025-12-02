@@ -24,7 +24,7 @@
         "ooDialog.exe"
     ],
     "checkver": {
-        "url": "https://www.oorexx.org/download.html",
+        "url": "https://www.oorexx.org/download.rsp",
         "regex": "<i>Release ([\\d.]+)</i>"
     },
     "autoupdate": {
