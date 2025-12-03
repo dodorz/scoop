@@ -1,10 +1,10 @@
 {
-    "version": "0.20.0",
+    "version": "1.0.1",
     "description": "A platform for scientific and technical data processing and visualization",
     "homepage": "https://datalab-platform.com/",
     "license": "BSD-3-Clause",
-    "url": "https://github.com/DataLab-Platform/DataLab/releases/download/v0.20.0/DataLab-0.20.0.msi",
-    "hash": "41cf20642081d6a98706593cebbc1a7f5ce34d9d016f69a6af3fc72a7bcac145",
+    "url": "https://github.com/DataLab-Platform/DataLab/releases/download/v1.0.1/DataLab-1.0.1.msi",
+    "hash": "52e5e0ff46402275f5119afac988267d8892c38fc20a23a37fd41aa9f49d9745",
     "installer": {
         "script": [
             "Expand-DarkArchive \"$dir\\$fname\" \"$dir\" -Removal",
