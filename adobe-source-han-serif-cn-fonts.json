@@ -11,6 +11,6 @@
         "regex": "Release Fonts Version ([\\d.\\w]+)"
     },
     "autoupdate": {
-        "url": "https://github.com/adobe-fonts/source-han-serif/release/download/$version/SourceHanSerifCN.zip"
+        "url": "https://github.com/adobe-fonts/source-han-serif/release/download/$version/09_SourceHanSerifCN.zip"
     }
 }
