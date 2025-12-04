@@ -18,6 +18,12 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
+      # 安装 scoop
+      -name: Install scoop
+      run: |
+        Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+        Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
+
       # 安装 jq
       - name: Install jq
         run: choco install jq -y
@@ -25,7 +31,7 @@ jobs:
 
       # 执行 BAT 脚本
       - name: Run update batch script
-        run: .\bin\update.bat
+        run: .\bin\autoupdate.bat
         shell: cmd
 
       # 如果脚本修改了文件，提交更改
