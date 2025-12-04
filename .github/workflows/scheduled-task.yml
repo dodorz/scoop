@@ -1,0 +1,52 @@
+name: Scheduled Batch Task
+
+# 定期执行触发
+on:
+  schedule:
+    # 每天 UTC 时间 00:00 执行
+    - cron: '0 0 * * *'
+  # 允许手动触发
+  workflow_dispatch:
+
+jobs:
+  run-batch:
+    # 使用 Windows 系统
+    runs-on: windows-latest
+
+    steps:
+      # 拉取代码
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # 安装 scoop
+      - name: Install scoop
+        run: |
+          Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+          Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
+        shell: powershell
+
+      # 安装 jq
+      - name: Install jq
+        run: choco install jq -y
+        shell: powershell
+
+      # 执行 BAT 脚本
+      - name: Run update batch script
+        run: .\bin\autoupdate.bat
+        shell: cmd
+
+      # 如果脚本修改了文件，提交更改
+      - name: Commit and push changes
+        run: |
+          git pull --ff-only origin master
+          for /f %%i in ('git diff --name-only') do (
+              git add %%i
+              for /f %%v in ('jq .version %%i') do (
+                  git commit -m "%%~ni: Update to version %%v"
+                  git tag "%%~ni-%%v"
+              )
+          )
+          git push origin master
+          git push origin master --tag
+          git checkout -f master
+        shell: cmd
