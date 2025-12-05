@@ -1,13 +1,13 @@
 {
-    "version": "0.30.0",
+    "version": "0.31.0",
     "description": "An native software development agents that work everywhere you do.",
     "homepage": "https://factory.ai/",
     "license": "unknown",
     "depends": "ripgrep",
     "architecture": {
         "64bit": {
-            "url": "https://downloads.factory.ai/factory-cli/releases/0.30.0/windows/x64/droid.exe",
-            "hash": "9d668c02af061b93a13394b6d5e2ac7c76b6db63d32047659b25e3c97cba7b02"
+            "url": "https://downloads.factory.ai/factory-cli/releases/0.31.0/windows/x64/droid.exe",
+            "hash": "d77369edcafefd773aa94a9e63a138abaa8ad44d89047c037e4f9486ae05e6c2"
         }
     },
     "bin": "droid.exe",
