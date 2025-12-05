@@ -1,10 +1,8 @@
-set FORMAT=%GITHUB_WORKSPACE%\formatjson.ps1
-
 for %%i in (%0) do set DIR=%%~dpi..
 
 git checkout master
 
-pwsh -noprofile -ex unrestricted -f %GITHUB_WORKSPACE%\checkver.ps1 -dir %GITHUB_WORKSPACE% -u
+pwsh -noprofile -ex unrestricted -f bin\checkver.ps1 -dir . -u
 
 :commit
 for /f %%i in ('git diff --name-only') do (
