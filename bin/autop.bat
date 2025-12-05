@@ -14,5 +14,4 @@ for /f %%i in ('git diff --name-only') do (
     )
 )
 git push origin master --tag
-git push gitee master --tag
 git checkout -f master
