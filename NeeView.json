@@ -17,7 +17,6 @@
         "Bookmark.json",
         "History.json"
     ],
-    "depends": "windowsdesktop-runtime-lts",
     "checkver": {
         "github": "https://github.com/neelabo/NeeView"
     },
