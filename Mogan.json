@@ -1,14 +1,18 @@
 {
-    "version": "1.2.9.7",
+    "version": "2025.2.1",
     "description": "A user-friendly distribution of GNU TeXmacs.",
     "homepage": "https://mogan.app/",
     "license": "GPL-3.0-or-later",
-    "url": "https://github.com/XmacsLabs/mogan/releases/download/v1.2.9.7/MoganResearch-v1.2.9.7-64bit-portable.zip",
-    "hash": "c51a9c0f801f23e1ba886f7133277aefc213932b8495abb17168a6ff4604dc36",
-    "bin": "bin\\MoganResearch.exe",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/XmacsLabs/mogan/releases/download/v2025.2.1/MoganSTEM-v2025.2.1-64bit-installer.exe#/dl.7z",
+            "hash": "b1399c6a4a2527569feefdcc188203aa1ac1ae7cb3b7392ab6c17d91c484da75"
+        }
+    },
+    "bin": "bin\\MoganSTEM.exe",
     "shortcuts": [
         [
-            "bin\\MoganResearch.exe",
+            "bin\\MoganSTEM.exe",
             "Mogan"
         ]
     ],
@@ -16,6 +20,10 @@
         "github": "https://github.com/XmacsLabs/mogan"
     },
     "autoupdate": {
-        "url": "https://github.com/XmacsLabs/mogan/releases/download/v$version/MoganResearch-v$version-64bit-portable.zip"
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/XmacsLabs/mogan/releases/download/v$version/MoganSTEM-v$version-64bit-installer.exe#/dl.7z"
+            }
+        }
     }
 }
