@@ -6,7 +6,7 @@
     "architecture": {
         "64bit": {
             "url": "https://acc-1258344699.cos.accelerate.myqcloud.com/aiide/win32-x64-user/CodeBuddy-win32-x64-user-4.0.1.14157604-a7845cb9d8-d81a7bee-cn.exe",
-            "hash": "",
+            "hash": "1e3685a0e33a2f37c24ab4f8d4733afe9e65f7a543ca5ce1391990c4bb312399",
             "extract_dir": "{code_GetDestDir}"
         }
     },
