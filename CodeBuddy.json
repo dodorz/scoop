@@ -5,7 +5,7 @@
     "license": "Proprietary",
     "architecture": {
         "64bit": {
-            "url": "https://codebuddy-1328495429.cos.accelerate.myqcloud.com/aiide/win32-x64-archive/CodeBuddy-win32-x64-archive-4.0.1.14157604-a7845cb9d8-d81a7bee.exe",
+            "url": "https://codebuddy-1328495429.cos.accelerate.myqcloud.com/aiide/win32-x64-user/CodeBuddy-win32-x64-user-4.0.1.14157604-a7845cb9d8-d81a7bee.exe",
             "hash": "953f5aecfa42c29566df5d91acd095da6e59e5c32f40b97ed4843711389358d6",
             "extract_dir": "{code_GetDestDir}"
         }
