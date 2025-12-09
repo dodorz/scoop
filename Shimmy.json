@@ -1,12 +1,12 @@
 {
-    "version": "1.8.1",
+    "version": "1.8.2",
     "description": "Python-free Rust inference server �� OpenAI-API compatible. GGUF + SafeTensors, hot model swap, auto-discovery, single binary.",
     "homepage": "https://github.com/Michael-A-Kuykendall/shimmy",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/Michael-A-Kuykendall/shimmy/releases/download/v1.8.1/shimmy-windows-x86_64.exe#/shimmy.exe",
-            "hash": "9538dd158210dec992b977462ceac7a278ef5fe73ac3a38e92bbfb9ecf947655"
+            "url": "https://github.com/Michael-A-Kuykendall/shimmy/releases/download/v1.8.2/shimmy-windows-x86_64.exe#/shimmy.exe",
+            "hash": "994473985db000417d6ad6537fccc75e842a9138799ed14ecae1197d128c4a52"
         }
     },
     "bin": "shimmy.exe",
