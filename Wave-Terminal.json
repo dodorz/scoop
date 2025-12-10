@@ -6,15 +6,15 @@
     "architecture": {
         "64bit": {
             "url": "https://dl.waveterm.dev/releases-w2/Wave-win32-x64-0.13.0.zip",
-            "hash": "0acc8a13d5b3eb793c9200831b90f76fe8481939bfe772d8805f3c743469d5eb"
+            "hash": "0acc8a13d5b3eb793c9200831b90f76fe8481939bfe772d8805f3c743469d5eb",
+            "bin": [
+                [
+                    "resources\\app.asar.unpacked\\dist\\bin\\wsh-0.13.0-windows.x64.exe",
+                    "wsh"
+                ]
+            ]
         }
     },
-    "bin": [
-        [
-            "resources\\app.asar.unpacked\\dist\\bin\\wsh-0.12.5-windows.x64.exe",
-            "wsh"
-        ]
-    ],
     "shortcuts": [
         [
             "Wave.exe",
@@ -33,7 +33,7 @@
                         "resources\\app.asar.unpacked\\dist\\bin\\wsh-$version-windows.x64.exe",
                         "wsh"
                     ]
-    ],
+                ]
             }
         }
     }
