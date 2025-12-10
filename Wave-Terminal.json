@@ -27,7 +27,13 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://dl.waveterm.dev/releases-w2/Wave-win32-x64-$version.zip"
+                "url": "https://dl.waveterm.dev/releases-w2/Wave-win32-x64-$version.zip",
+                "bin": [
+                    [
+                        "resources\\app.asar.unpacked\\dist\\bin\\wsh-$version-windows.x64.exe",
+                        "wsh"
+                    ]
+    ],
             }
         }
     }
