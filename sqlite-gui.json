@@ -14,6 +14,12 @@
         }
     },
     "bin": "sqlite-gui.exe",
+    "shortcuts": [
+        [
+            "sqlite-gui.exe",
+            "SQLite GUI"
+        ]
+    ],
     "checkver": "github",
     "autoupdate": {
         "architecture": {
