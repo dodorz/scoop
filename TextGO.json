@@ -1,11 +1,11 @@
 {
-    "version": "0.4.1",
+    "version": "0.5.0",
     "homepage": "https://github.com/C5H12O5/TextGO",
     "license": "A customizable text selection popup tool",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/C5H12O5/TextGO/releases/download/v0.4.1/TextGO_0.4.1_x64-setup.exe#/dl.7z",
-            "hash": "84c7d8f98162b5ab55e7977d3879383d151b160c83aa9b9acfea3adc20927978"
+            "url": "https://github.com/C5H12O5/TextGO/releases/download/v0.5.0/TextGO_0.5.0_x64-setup.exe#/dl.7z",
+            "hash": "406b63c0a91a61dd08f0bf4a48b1a55b326c1c09d79231542b1a9f1db52cea90"
         }
     },
     "bin": "text-go.exe",
