@@ -1,0 +1,23 @@
+{
+    "version": "0.1.64",
+    "description": "Text editor for your terminal: easy, powerful and fast",
+    "homepage": "https://sinelaw.github.io/fresh/",
+    "license": "GPL-2.0",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/sinelaw/fresh/releases/download/v0.1.64/fresh-editor-x86_64-pc-windows-msvc.zip",
+            "hash": "6d9e28ecea6b14927aa639dc2bdf83b97929eb398963afcb32e1b665ab5fc1de"
+        }
+    },
+    "bin": "",
+    "checkver": {
+        "github": "https://github.com/sinelaw/fresh"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/sinelaw/fresh/releases/download/v$version/fresh-editor-x86_64-pc-windows-msvc.zip"
+            }
+        }
+    }
+}
