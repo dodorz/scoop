@@ -1,0 +1,43 @@
+{
+    "version": "1.8.2",
+    "description": "High-performance inference of OpenAI's Whisper automatic speech recognition (ASR) model accelerated by OpenBLAS",
+    "homepage": "https://github.com/ggerganov/whisper.cpp",
+    "license": "MIT",
+    "notes": [
+        "Whisper Model files are not included. You can download them here:",
+        "https://huggingface.co/ggerganov/whisper.cpp/tree/main"
+    ],
+    "bin": [
+        "whisper-bench.exe",
+        "whisper-command.exe",
+        "whisper-cli.exe",
+        "whisper-server.exe",
+        "whisper-stream.exe",
+        "whisper-talk-llama.exe",
+        "quantize.exe"
+    ],
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/ggerganov/whisper.cpp/releases/download/v1.8.2/whisper-blas-bin-x64.zip",
+            "hash": "ffad94bc6a3e00530cc53900b9b3fe921c13282e946b7189161fb4304b661a97"
+        },
+        "32bit": {
+            "url": "https://github.com/ggerganov/whisper.cpp/releases/download/v1.8.2/whisper-blas-bin-Win32.zip",
+            "hash": "da0dc2fd243f0addc9b148f9c76def0ad2b9c602419d260bd6ce63d5b42ce77d"
+        }
+    },
+    "extract_dir": "Release",
+    "checkver": {
+        "github": "https://github.com/ggerganov/whisper.cpp"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/ggerganov/whisper.cpp/releases/download/v$version/whisper-bin-x64.zip"
+            },
+            "32bit": {
+                "url": "https://github.com/ggerganov/whisper.cpp/releases/download/v$version/whisper-bin-Win32.zip"
+            }
+        }
+    }
+}
