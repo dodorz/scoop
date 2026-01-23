@@ -18,9 +18,8 @@
         }
     },
     "pre_install": [
-        "'Notepad4.ini', 'matepath.ini'  | ForEach-Object {",
-        "   if(!(Test-Path \"$persist_dir\\$_\")) { New-Item -ItemType File -Path \"$dir\\$_\" -Force | Out-Null }",
-        "}"
+        "if(!(Test-Path \"$persist_dir\\Notepad4.ini\")) { Copy-Item \"$dir\\Notepad4.ini-default\" \"$dir\\Notepad4.ini\" | Out-Null }",
+        "if(!(Test-Path \"$persist_dir\\matepath.ini\")) { Copy-Item \"$dir\\matepath.ini-default\" \"$dir\\matepath.ini\" | Out-Null }"
     ],
     "bin": "Notepad4.exe",
     "persist": [
