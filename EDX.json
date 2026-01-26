@@ -2,15 +2,15 @@
     "homepage": "https://www.ed-x.cn/",
     "description": "A extensible editor",
     "license": "unknown",
-    "version": "0.4.7.1975",
+    "version": "0.4.17.2962",
     "architecture": {
         "64bit": {
             "url": "https://www.ed-x.cn/versions/edx.zip",
-            "hash": "12dc2aca52c396d50f180596d59a1defc12581f9cb30e2bb2f5f82a4506c1c20"
+            "hash": "9451855a7ad44956f53c0eab5ce3ca209c6bd65fa8ccebcc39e42658a110d4a9"
         },
         "32bit": {
             "url": "https://www.ed-x.cn/versions/edx-x86.zip",
-            "hash": "d6ca89cdc01b88a4808172ba041dbc35c688b14fdf47f27613ff8d95b80fd94a"
+            "hash": "8cad6b402d3404979b84c13148dad0cee305477db9e6905d8fcda0115f7191f2"
         }
     },
     "bin": "edx.exe",
