@@ -8,7 +8,7 @@
             "url": "https://lf-cdn.trae.com.cn/obj/trae-com-cn/pkg/app/releases/stable/2.3.6265/win32/Trae%20CN-Setup-x64.exe",
             "hash": "6c6670d0d895dc57bf0ce95742479143e485bed4b2810385d8834cc5e064512f",
             "extract_dir": "{code_GetDestDir}",
-            "extract_to": "Trae",
+            "extract_to": "Trae"
         }
     },
     "innosetup": true,
