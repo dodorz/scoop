@@ -7,7 +7,8 @@
         "64bit": {
             "url": "https://lf-cdn.trae.ai/obj/trae-ai-sg/pkg/app/releases/stable/2.3.6266/win32/Trae-Setup-x64.exe",
             "hash": "31edeb8a8e7698bb90f602eda90328fdcca257a82a39a46a28a9882fc77f20fd",
-            "extract_dir": "{code_GetDestDir}"
+            "extract_dir": "{code_GetDestDir}",
+            "extract_to": "Trae",
         }
     },
     "innosetup": true,
@@ -26,10 +27,10 @@
         "    (Get-Content \"$extensions_file\") -replace '(?<=trae(/|\\\\\\\\)).*?(?=(/|\\\\\\\\)data(/|\\\\\\\\)extensions)', $version | Set-Content \"$extensions_file\"",
         "}"
     ],
-    "bin": "bin/trae.cmd",
+    "bin": "Trae/bin/trae.cmd",
     "shortcuts": [
         [
-            "Trae.exe",
+            "Trae/Trae.exe",
             "Trae",
             "--user-data-dir=\"$dir\\data\\user-data\" --extensions-dir=\"$dir\\data\\extensions\""
         ]
