@@ -16,13 +16,13 @@ if "x%~1" == "x" goto updall
 
 :updone
 if "x%~1" == "x" goto commit
-%PWSH% -noprofile -ex unrestricted -f %CHECKVER% -dir %DIR% "%~n1" -u
+%PWSH% -noprofile -ex unrestricted -f %CHECKVER% -dir %DIR%\bucket "%~n1" -u
 if errorlevel 1 exit /b %errorlevel%
 shift
 goto :updone
 
 :updall
-%PWSH% -noprofile -ex unrestricted -f %CHECKVER% -dir %DIR% -u
+%PWSH% -noprofile -ex unrestricted -f %CHECKVER% -dir %DIR%\bucket -u
 if errorlevel 1 exit /b %errorlevel%
 
 :commit
