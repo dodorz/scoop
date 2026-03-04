@@ -20,5 +20,9 @@
             "LazyTyper.exe",
             "LazyTyper"
         ]
-    ]
+    ],
+    "checkver": {
+        "url": "https://github.com/oldcai/LazyTyper-releases/releases",
+        "regex": "LazyTyper v([\\d.]+) \\(Windows\\)"
+	}
 }
