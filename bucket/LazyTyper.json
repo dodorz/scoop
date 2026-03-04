@@ -1,5 +1,5 @@
 {
-    "version": "1.8.7",
+    "version": "1.8.6",
     "homepage": "https://lazytyper.com/",
     "license": "Proprietary",
     "architecture": {
@@ -20,5 +20,9 @@
             "LazyTyper.exe",
             "LazyTyper"
         ]
-    ]
+    ],
+    "checkver": {
+        "url": "https://github.com/oldcai/LazyTyper-releases/releases",
+        "regex": "LazyTyper v([\\d.]+) \\(Windows)"
+	}
 }
