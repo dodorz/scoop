@@ -29,7 +29,7 @@
     ],
     "bin": [
         [
-            "Trae/bin/trae.cmd",
+            "Trae/bin/trae-cn.cmd",
             "traecn"
         ]
     ],
