@@ -1,12 +1,12 @@
 {
-    "version": "4.5.12",
+    "version": "4.6.1",
     "description": "An AI-native desktop Agent WorkBench",
     "homepage": "https://www.codebuddy.cn/work/",
     "license": "Proprietary",
     "architecture": {
         "64bit": {
-            "url": "https://acc-1258344699.cos.accelerate.myqcloud.com/workbuddy/saas/win32-x64-user/WorkBuddy-win32-x64-user-4.5.12.22728027-04247477de-00c855fa.exe",
-            "hash": "f330c022368619639766c99f46cf2dfcc5fbd7966b5c60529f2d42664817b7d4",
+            "url": "https://acc-1258344699.cos.accelerate.myqcloud.com/workbuddy/saas/win32-x64-user/WorkBuddy-win32-x64-user-4.6.1.23163629-13ad5c0862-000d5f39.exe",
+            "hash": "6af0a5c0b60b726fbb94d73e3b377be899630a5662ddf857935c0a8280465bca",
             "extract_dir": "{code_GetDestDir}"
         }
     },
