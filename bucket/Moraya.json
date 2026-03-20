@@ -1,7 +1,7 @@
 {
     "version": "0.26.2",
     "description": "An extremely elegant open-source Markdown AI Agent, Bridging AI capabilities and user sovereignty.",
-    "homepage": "0.26.2",
+    "homepage": "https://moraya.app/",
     "license": "Apache-2.0",
     "architecture": {
         "64bit": {
