@@ -1,12 +1,12 @@
 {
-    "version": "0.24.4",
+    "version": "0.25.0",
     "description": "",
     "homepage": "https://zcode-ai.com/",
     "license": "Proprietary",
     "architecture": {
         "64bit": {
-            "url": "https://cdn.zcode-ai.com/zcode/releases/0.24.4/z-code_0.24.4_x64-setup.exe#/dl.7z",
-            "hash": "d53ac2d0965c8ac578496e7c0df40bfd11fda7f1207b227275d1d16cd957ea31"
+            "url": "https://cdn.zcode-ai.com/zcode/releases/0.25.0/z-code_0.25.0_x64-setup.exe#/dl.7z",
+            "hash": "a0a7dcd063753de0c4d30e4dfdc686ed753c2131e5b4d81fda87ce6e2093a96a"
         }
     },
     "bin": "z-code.exe",
