@@ -1,12 +1,12 @@
 {
-    "version": "0.27.2",
+    "version": "0.27.3",
     "description": "A Markdown AI note-taking software.",
     "homepage": "https://notegen.top/",
     "license": "GPL-3.0-or-later",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/codexu/note-gen/releases/download/note-gen-v0.27.2/NoteGen_0.27.2_x64_en-US.msi",
-            "hash": "e2af889f05882ab5585b0b6028dc173da59157606f4e5b5189f959a68dd9d6fd"
+            "url": "https://github.com/codexu/note-gen/releases/download/note-gen-v0.27.3/NoteGen_0.27.3_x64_en-US.msi",
+            "hash": "a069575fb3025895bcaea74f6017876b6364c673b7e63cc68255534988cf277b"
         }
     },
     "extract_dir": "PFiles\\NoteGen",
