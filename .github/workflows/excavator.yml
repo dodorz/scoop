@@ -1,15 +1,21 @@
 on:
+  push:
   workflow_dispatch:
   schedule:
     # run every 4 hours
     - cron: '20 */4 * * *'
+
 name: Excavator
+
+permissions:
+  contents: write
+
 jobs:
   excavate:
     name: Excavate
     runs-on: windows-latest
     steps:
-    - uses: actions/checkout@main
+    - uses: actions/checkout@v4
     - name: Excavate
       uses: dodorz/GithubActions@scoop
       env:
