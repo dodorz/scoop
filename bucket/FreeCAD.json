@@ -7,7 +7,7 @@
         "64bit": {
             "url": "https://github.com/FreeCAD/FreeCAD/releases/download/1.1.0/FreeCAD_1.1.0-Windows-x86_64-py311.7z",
             "hash": "040a6971614e7ad0455b4080b13144f9c6b2e154904d9fd443fd8dd357927cab",
-            "extract_dir": "FreeCAD-1.1.0-conda-Windows-x86_64-$matchSuffix"
+            "extract_dir": "FreeCAD_1.1.0-Windows-x86_64-py311"
         },
         "32bit": {
             "url": "https://github.com/FreeCAD/FreeCAD/releases/download/0.18.4/FreeCAD-0.18.4.980bf90-WIN-x32-portable.7z",
@@ -31,7 +31,7 @@
         "architecture": {
             "64bit": {
                 "url": "https://github.com/FreeCAD/FreeCAD/releases/download/$version/FreeCAD_$version-Windows-x86_64-py311.7z",
-                "extract_dir": "FreeCAD-$version-conda-Windows-x86_64-$matchSuffix"
+                "extract_dir": "FreeCAD-$version-Windows-x86_64-py311"
             },
             "hash": {
                 "url": "$url-SHA256.txt",
