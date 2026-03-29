@@ -13,7 +13,7 @@
             "hash": "dbb8a40ced480516714704346e405deafb6341d3173151df884381a9cccf5428"
         }
     },
-    "bin": "tuios.exe",
+    "bin": "tuios-web.exe",
     "checkver": "github",
     "autoupdate": {
         "architecture": {
