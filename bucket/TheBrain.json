@@ -1,9 +1,9 @@
 {
     "homepage": "https://www.thebrain.com/",
-    "version": "13.0.46.0",
+    "version": "14.0.113.0",
     "license": "freeware",
-    "url": "http://updater.thebrain.com/files/TheBrain%2013.0.46.0%20Installer.exe",
-    "hash": "201ca48768112ed366fe95838d5645fc0b93f1d1cc66d6b675e7c9a75457373e",
+    "url": "http://updater.thebrain.com/files/TheBrain%2014.0.113.0%20Installer.exe",
+    "hash": "555df29a4be2b1d954a6cee5eb43239b1db274467054a67587068cd8ee9b7933",
     "installer": {
         "script": [
             "Expand-DarkArchive \"$dir\\$fname\" \"$dir\" -Removal",
