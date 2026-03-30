@@ -1,27 +1,25 @@
 {
     "homepage": "https://www.thebrain.com/",
-    "version": "14.0.113.0",
+    "version": "15.0.529",
     "license": "freeware",
-    "url": "http://updater.thebrain.com/files/TheBrain%2014.0.113.0%20Installer.exe",
-    "hash": "555df29a4be2b1d954a6cee5eb43239b1db274467054a67587068cd8ee9b7933",
-    "installer": {
-        "script": [
-            "Expand-DarkArchive \"$dir\\$fname\" \"$dir\" -Removal",
-            "Get-ChildItem $dir -Exclude 'AttachedContainer' | Remove-Item -Force -Recurse",
-            "Get-ChildItem \"$dir\\AttachedContainer\\TheBrainSetup*.msi\" | Expand-MsiArchive -DestinationPath $dir -Removal",
-            "$folder = (Get-ChildItem \"$dir\\PFiles\\TheBrain *\" | Select-Object -First 1).FullName",
-            "Move-Item $folder\\* \"$dir\"",
-            "Remove-Item \"$dir\\AttachedContainer\",\"$dir\\System\",\"$dir\\PFiles\" -Recurse -Force"
-        ]
+    "architecture": {
+        "64bit": {
+            "url": "https://updater.thebrain.com/files/TheBrain-15.0.529-win-x64.zip",
+            "hash": "e0aa43a8f860524d889f621857d447494d3700377ad8f87c8d9d83442481a7a2"
+        }
     },
-    "bin": "TheBrain.exe",
+    "bin": "TheBrain 15.exe",
     "shortcuts":  [
         [
-            "TheBrain.exe",
+            "TheBrain 15.exe",
             "The Brain"
         ]
     ],
     "autoupdate": {
-        "url": "http://updater.thebrain.com/files/TheBrain%20$version%20Installer.exe"
+        "architecture": {
+            "64bit": {
+                "url": "http://updater.thebrain.com/files/TheBrain-$version-win-x64.zip"
+            }
+        }
     }
 }
