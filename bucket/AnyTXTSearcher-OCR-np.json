@@ -6,7 +6,7 @@
     "architecture": {
         "64bit": {
             "url": "https://downloads.sourceforge.net/project/anytxt/Anytxt_1.3.2477_Windows_X86_64_OCR.exe",
-            "hash": "sha1:1053ae90e7a053e95c01d44d7dac3ec017bb76e2",
+            "hash": "sha1:1053ae90e7a053e95c01d44d7dac3ec017bb76e2"
         },
         "32bit": {
             "url": "https://sourceforge.net/projects/anytxt/files/Anytxt_1.3.2477_Windows_X86_32_OCR.exe",
