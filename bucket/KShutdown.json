@@ -13,7 +13,7 @@
             "KShutdown"
         ]
     ],
-    "checkver": "Download KShutdown.*([\\d.]+) <small>",
+    "checkver": "([\\d.]+) <small>",
     "autoupdate": {
         "url": "https://downloads.sourceforge.net/project/kshutdown/files/KShutdown/$version/kshutdown-portable-$version-win32.7z"
     }
