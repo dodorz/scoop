@@ -16,7 +16,7 @@
             "Boom"
         ]
     ],
-    "checkver": "Current version: ([\\d.]+)",
+    "checkver": "fooversion\\">([\\d.]+)",
     "autoupdate": {
         "url": "https://perkele.cc/download/Boom.exe"
     }
