@@ -2,14 +2,14 @@
     "homepage": "https://www.mediacoderhq.com/",
     "description": "A universal media transcoding software",
     "license": "unknown",
-    "version": "0.8.65",
+    "version": "0.8.66",
     "architecture": {
         "64bit": {
-            "url": "https://www.fosshub.com/MediaCoder.html?dwl=MediaCoder-x64-0.8.65.7z",
+            "url": "https://www.fosshub.com/MediaCoder.html?dwl=MediaCoder-x64-0.8.66.7z",
             "hash": "eac879c77ce5d61bd5ca4f3e174256ccb9beacb4ccfa1a057994c685fa238882"
         },
         "32bit": {
-            "url": "https://mediatronic.com.au/download/files/MediaCoder-0.8.55.exe",
+            "url": "http://mediatronic.com.au/download/files/MediaCoder-0.8.55.exe",
             "hash": ""
         }
     },
