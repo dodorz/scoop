@@ -10,7 +10,7 @@ if "%PWSH%x" == "x" for /f %%i in ('scoop which powershell') do set PWSH=%%i
 
 for %%i in (%0) do set DIR=%%~dpi..
 cd %DIR%
-git checkout uo
+git checkout master
 
 set "TMP_PRE=%TEMP%\scoop_pre_%RANDOM%.txt"
 set "TMP_POST=%TEMP%\scoop_post_%RANDOM%.txt"
