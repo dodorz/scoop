@@ -1,12 +1,12 @@
 {
-    "version": "1.9.13",
+    "version": "1.9.14",
     "description": "Free, local, open-source GUI app for LLMs �� Chat UI, Multi-agent, Multi-LLMs & apikey polling, Workspace, MCP, Remote WebUi Mode",
     "homepage": "https://www.aionui.com/",
     "license": "Apache-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/iOfficeAI/AionUi/releases/download/v1.9.13/AionUi-1.9.13-win-x64.exe#/dl.7z",
-            "hash": "9b10151cdc41fc0cb34b0d8c874c2fc1369cdb52e5629a18c4e759a002a2e37d",
+            "url": "https://github.com/iOfficeAI/AionUi/releases/download/v1.9.14/AionUi-1.9.14-win-x64.exe#/dl.7z",
+            "hash": "d4e840e7e1a779bf5ff8a25521993780e131df5ab23e3e204c234c8dd2b714ae",
             "installer": {
                 "script": [
                     "Expand-7ZipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\" -Removal",
@@ -15,8 +15,8 @@
             }
         },
         "arm64": {
-            "url": "https://github.com/iOfficeAI/AionUi/releases/download/v1.9.13/AionUi-1.9.13-win-arm64.exe#/dl.7z",
-            "hash": "d1f57310e0c7ad783ba9641ea2a0241fa8403f3e7b9d852fd9cfb38c6ffeb92e",
+            "url": "https://github.com/iOfficeAI/AionUi/releases/download/v1.9.14/AionUi-1.9.14-win-arm64.exe#/dl.7z",
+            "hash": "93661d996897731ed88fd250440189138b7211cda2324f5ebc11963047ff4295",
             "installer": {
                 "script": [
                     "Expand-7ZipArchive \"$dir\\`$PLUGINSDIR\\app-arm64.7z\" \"$dir\" -Removal",
