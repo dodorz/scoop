@@ -1,7 +1,7 @@
 {
     "version": "0.1.9",
     "description": "SoloMD — a lightweight, cross-platform Markdown + plain text editor. One file. One window. Just write.",
-    "homepage": "https://github.com/zhitongblog/solomd",
+    "homepage": "https://solomd.app/",
     "license": "MIT",
     "architecture": {
         "64bit": {
