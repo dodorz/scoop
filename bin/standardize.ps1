@@ -160,6 +160,6 @@ foreach ($file in $Files) {
     Write-Host $response
 
     if ($response -eq 'Y') {
-        Start-Process "C:\Tool\Notepad3.exe" $file
+        Start-Process "C:\~\Tools\Notepad3.exe" $file
     }
 }
