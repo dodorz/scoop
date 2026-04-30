@@ -1,12 +1,12 @@
 {
-    "version": "1.6.1",
+    "version": "1.7.0",
     "description": "ZCode combines AI agents with your existing tools so you can plan, code, review, and deploy without friction.",
     "homepage": "https://zcode-ai.com/",
     "license": "Proprietary",
     "architecture": {
         "64bit": {
-            "url": "https://cdn.zcode-ai.com/zcode/electron/releases/1.6.1/ZCode-1.6.1-win-x64.exe#/dl.7z",
-            "hash": "399cf111d0d0f750256059321e8bc1e49e8c84d39195e90d417e833f7e288329",
+            "url": "https://cdn.zcode-ai.com/zcode/electron/releases/1.7.0/ZCode-1.7.0-win-x64.exe#/dl.7z",
+            "hash": "dce12152467e0b55fca91b9d01572c99425cd76c0387fd7b4358bf0da4591bbb",
             "installer": {
                 "script": [
                     "Expand-7ZipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\" -Removal",
