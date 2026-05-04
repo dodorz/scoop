@@ -4,6 +4,10 @@
     "homepage": "https://github.com/wxyhgk/retain-pdf",
     "license": "MIT",
     "architecuture": {
+        "64bit": {
+            "url": "https://github.com/wxyhgk/retain-pdf/releases/download/v4.1.2-beta3/RetainPDF-Windows-4.1.2-beta3-Setup.exe#/dl.7z",
+            "hash": "da398663475d5a3c6ff043f7165616d3a147dba20962e5621777a0216aa29f54"
+        },
         "32bit": {
             "url": "https://github.com/wxyhgk/retain-pdf/releases/download/v4.1.2-beta3/RetainPDF-Windows-4.1.2-beta3-Setup.exe#/dl.7z",
             "hash": "da398663475d5a3c6ff043f7165616d3a147dba20962e5621777a0216aa29f54"
@@ -29,6 +33,9 @@
     },
     "autoupdate": {
         "architecuture": {
+            "64bit": {
+                "url": "https://github.com/wxyhgk/retain-pdf/releases/download/v$version/RetainPDF-Windows-$version-Setup.exe#/dl.7z"
+            },
             "32bit": {
                 "url": "https://github.com/wxyhgk/retain-pdf/releases/download/v$version/RetainPDF-Windows-$version-Setup.exe#/dl.7z"
             }
