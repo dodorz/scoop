@@ -1,16 +1,16 @@
 {
-    "version": "1.0.75",
+    "version": "1.0.76",
     "description": "OfficeCLI is the world's first and the best Office suite designed for AI agents.It is a free, open-source command-line tool for AI agents to read, edit, and automate Word, Excel, and PowerPoint files. Single binary, no Office installation required.",
     "homepage": "https://github.com/iOfficeAI/OfficeCLI",
     "license": "Apache-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/iOfficeAI/OfficeCLI/releases/download/v1.0.75/officecli-win-x64.exe#/officecli.exe",
-            "hash": "cd5d50fb8418bb37cb9736c4502b30f7d6a2e545b1d6032e0cd7a9fc70ef0f20"
+            "url": "https://github.com/iOfficeAI/OfficeCLI/releases/download/v1.0.76/officecli-win-x64.exe#/officecli.exe",
+            "hash": "f9e4895505858ab813e133d4d1f9f01004c7b4b08397408487f534caf9e2ec58"
         },
         "arm64": {
-            "url": "https://github.com/iOfficeAI/OfficeCLI/releases/download/v1.0.75/officecli-win-arm64.exe#/officecli.exe",
-            "hash": "e2b32a6955b67d9e32846b17625577a3110655c44975972b9282de4d2659c7fa"
+            "url": "https://github.com/iOfficeAI/OfficeCLI/releases/download/v1.0.76/officecli-win-arm64.exe#/officecli.exe",
+            "hash": "513e28718299a42fb499b0a87cb7e5850266ad41ebacade5b1dbcb8915f4671d"
         }
     },
     "bin": "officecli.exe",
