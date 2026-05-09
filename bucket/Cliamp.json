@@ -1,12 +1,12 @@
 {
-    "version": "1.47.1",
+    "version": "1.47.2",
     "description": "cliamp - Terminal music player inspired by winamp ",
     "homepage": "https://github.com/bjarneo/cliamp",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/bjarneo/cliamp/releases/download/v1.47.1/cliamp-windows-amd64.exe#/cliamp.exe",
-            "hash": "a5260358705b67ba0b98ea119810882b60454213e48d0b518ef07a337d916b23"
+            "url": "https://github.com/bjarneo/cliamp/releases/download/v1.47.2/cliamp-windows-amd64.exe#/cliamp.exe",
+            "hash": "6d3ed10b6faaf7044cbc65b0a85e148743f6032931023da191ab3c1c009e0823"
         }
     },
     "bin": "cliamp.exe",
