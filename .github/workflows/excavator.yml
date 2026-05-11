@@ -1,24 +1,137 @@
+name: Excavator
+
 on:
-  push:
   workflow_dispatch:
   schedule:
-    # run every 4 hours
-    - cron: '20 */4 * * *'
-
-name: Excavator
+    - cron: '17 * * * *'
 
 permissions:
   contents: write
 
+concurrency:
+  group: excavator-${{ github.ref }}
+  cancel-in-progress: false
+
 jobs:
   excavate:
-    name: Excavate
+    name: Update manifests
     runs-on: windows-latest
-    steps:
-    - uses: actions/checkout@v4
-    - name: Excavate
-      uses: dodorz/GithubActions@scoop
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        SKIP_UPDATED: '1'
+    timeout-minutes: 60
 
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: ${{ github.ref_name }}
+
+      - name: Install Scoop
+        shell: pwsh
+        run: |
+          if (-not (Get-Command scoop -ErrorAction SilentlyContinue)) {
+            Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser -Force
+            Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
+          }
+
+          $shim = Join-Path $env:USERPROFILE 'scoop\shims'
+          $env:PATH = "$shim;$env:PATH"
+          Add-Content -Path $env:GITHUB_PATH -Value $shim -Encoding utf8
+
+          scoop --version
+
+      - name: Update bucket manifests
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = 'Stop'
+
+          $repo = Resolve-Path '.'
+          $bucket = Resolve-Path '.\bucket'
+          $manifests = @(
+            Get-ChildItem -Path $bucket -Filter '*.json' -File |
+            Sort-Object LastWriteTime -Descending |
+              ForEach-Object { $_.BaseName }
+          )
+
+          if ($manifests.Count -eq 0) {
+            Write-Host 'No manifests found in bucket.'
+            exit 0
+          }
+
+          $scoopHome = (scoop prefix scoop).Trim()
+          $checkver = Join-Path $scoopHome 'bin\checkver.ps1'
+
+          Write-Host "Checking $($manifests.Count) manifests in $bucket"
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+
+          foreach ($manifest in $manifests) {
+            $manifestPath = "bucket/$manifest.json"
+            $manifestFile = Join-Path $bucket "$manifest.json"
+
+            Push-Location $repo
+            try {
+              git diff --quiet -- $manifestPath
+              if ($LASTEXITCODE -eq 1) {
+                Write-Host "Skip ${manifest}: manifest has pre-existing worktree changes."
+                continue
+              }
+              if ($LASTEXITCODE -gt 1) {
+                throw "git diff failed for $manifestPath"
+              }
+
+              git diff --cached --quiet -- $manifestPath
+              if ($LASTEXITCODE -eq 1) {
+                Write-Host "Skip ${manifest}: manifest has pre-existing staged changes."
+                continue
+              }
+              if ($LASTEXITCODE -gt 1) {
+                throw "git diff --cached failed for $manifestPath"
+              }
+            } finally {
+              Pop-Location
+            }
+
+            Push-Location $bucket
+            try {
+              & $checkver -dir . $manifest -u
+            } catch {
+              Write-Warning "Failed to update ${manifest}: $_"
+              continue
+            } finally {
+              Pop-Location
+            }
+
+            Push-Location $repo
+            try {
+              git diff --quiet -- $manifestPath
+              if ($LASTEXITCODE -eq 0) {
+                continue
+              }
+              if ($LASTEXITCODE -gt 1) {
+                throw "git diff failed for $manifestPath"
+              }
+
+              $json = Get-Content -Raw -Path $manifestFile | ConvertFrom-Json
+              $version = [string]$json.version
+              if ([string]::IsNullOrWhiteSpace($version)) {
+                Write-Warning "Skip ${manifest}: version is empty after update."
+                continue
+              }
+
+              git add -- $manifestPath
+              git commit -m "${manifest}: Update to version $version" -- $manifestPath
+
+              $tag = "$manifest-$version"
+              git rev-parse -q --verify "refs/tags/$tag" *> $null
+              if ($LASTEXITCODE -ne 0) {
+                git tag $tag
+                git push origin $tag
+              } else {
+                Write-Host "Skip tag ${tag}: already exists."
+              }
+
+              git push origin "HEAD:${{ github.ref_name }}"
+            } finally {
+              Pop-Location
+            }
+          }
