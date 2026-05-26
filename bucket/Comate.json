@@ -5,12 +5,12 @@
     "license": "Proprietary",
     "architecture": {
         "64bit": {
-            "url": "https://comate-ide.cdn.bcebos.com/download/stable/5808fc449a289b1adccae943bde5b9d00d008f9e-253873066/Comate-win32-arm64.zip",
+            "url": "https://comate-ide.cdn.bcebos.com/download/stable/5808fc449a289b1adccae943bde5b9d00d008f9e-253873066/Comate-win32-x64.zip",
             "hash": "b1b78cd89b220f0d6ee539dbc9761c8df7c3c53ccb1e140012e78a6b17ed9e6b",
             "extract_dir": "VSCode-win32-x64"
         },
         "arm64": {
-            "url": "https://comate-ide.cdn.bcebos.com/download/stable/5808fc449a289b1adccae943bde5b9d00d008f9e-253873066/Comate-win32-x64.zip",
+            "url": "https://comate-ide.cdn.bcebos.com/download/stable/5808fc449a289b1adccae943bde5b9d00d008f9e-253873066/Comate-win32-arm64.zip",
             "hash": "6f68c707eea10a9cba6414c7c1feabc09ca40420e9b972b64feb1d5a5b07001a",
             "extract_dir": "VSCode-win32-arm64"
         }
