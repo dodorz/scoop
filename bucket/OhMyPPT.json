@@ -1,0 +1,35 @@
+{
+    "version": "2.0.11",
+    "description": "Describe what you need — a presentation, lesson, or story — and let the AI build clean, beautiful HTML slides for you. Local-first. Works offline. Works for you.",
+    "homepage": "https://github.com/arcsin1/oh-my-ppt",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/arcsin1/oh-my-ppt/releases/download/v2.0.11/ohmyppt-2.0.11-win-x86.exe#/dl.7z",
+            "hash": "c2a392096a826e32f2735625c2c2eadeada0b7373d7482b297fe8fac59a31f59",
+            "installer": {
+                "script": [
+                    "Expand-7ZipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\" -Removal",
+                    "Remove-Item \"$dir\\`$PLUGINSDIR\",\"$dir\\`$R0\"  -Force -Recurse"
+                ]
+            }
+        }
+    },
+    "bin": "ohmyppt.exe",
+    "shortcuts": [
+        [
+            "ohmyppt.exe",
+            "Oh My PPT"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/arcsin1/oh-my-ppt"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/arcsin1/oh-my-ppt/releases/download/v$version/ohmyppt-$version-win-x86.exe#/dl.7z"
+            }
+        }
+    }
+}
