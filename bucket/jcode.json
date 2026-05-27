@@ -1,12 +1,12 @@
 {
-    "version": "0.14.2",
+    "version": "0.14.3",
     "description": "Coding Agent Harness",
     "homepage": "https://github.com/1jehuang/jcode",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/1jehuang/jcode/releases/download/v0.14.2/jcode-windows-x86_64.tar.gz",
-            "hash": "5017eed0304dcfd775c74264b0e67dbbabd37a62552b5b048fd502aa83f73093"
+            "url": "https://github.com/1jehuang/jcode/releases/download/v0.14.3/jcode-windows-x86_64.tar.gz",
+            "hash": "dd567d7f761be2acb3a04b0751ed793544e01dcee76c2b4e90b32f051145b27f"
         }
     },
     "installer": {
