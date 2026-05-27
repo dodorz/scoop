@@ -34,7 +34,12 @@ if errorlevel 1 exit /b %errorlevel%
 :commit
 git diff --name-only > "%TMP_POST%"
 findstr /i /r /c:"^bucket\\.*\.json$" "%TMP_POST%" > "%TMP_POST_MAN%"
-findstr /v /x /g:"%TMP_PRE%" "%TMP_POST_MAN%" > "%TMP_UPD%"
+for %%i in ("%TMP_PRE%") do set TMP_PRE_SIZE=%%~zi
+if "%TMP_PRE_SIZE%" == "0" (
+    copy /y "%TMP_POST_MAN%" "%TMP_UPD%" >nul
+) else (
+    findstr /v /x /g:"%TMP_PRE%" "%TMP_POST_MAN%" > "%TMP_UPD%"
+)
 for /f %%i in ('type "%TMP_UPD%"') do (
     git add %%i
     for /f %%v in ('jq .version %%i') do (
