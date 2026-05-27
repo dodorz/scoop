@@ -6,15 +6,15 @@
     "architecture": {
         "64bit": {
             "url": "https://github.com/dodorz/tslt/releases/download/0.0.3/tslt-0.0.3-x86_64.zip",
-            "hash": "3f5ab4dbebcaced04cc2a38df9dbfbefdb1e0a8a4fe61d3b67bca691fa048c47"
+            "hash": "6f309d28db7fab5341841a07ef41743d56cbdcdf41517546ccc451c349ff3dda"
         },
         "32bit": {
             "url": "https://github.com/dodorz/tslt/releases/download/0.0.3/tslt-0.0.3-x86.zip",
-            "hash": "8b91dcb1fb5455850df3a426aae25b96e209cb357c4419b4c9e829c743f9bdf9"
+            "hash": "39c52f427fb3278cc090e89e31b166eb7d8f852a792e63f52e6c423e47378f8d"
         },
         "arm64": {
             "url": "https://github.com/dodorz/tslt/releases/download/0.0.3/tslt-0.0.3-arm64.zip",
-            "hash": "da9d2ee906bca5708d8e47f20237ab9bf03b8bc44b3f57a40ced82db4ccf8a67"
+            "hash": "42dd5f6c9d2ed89d56a40487befba312831ead1ba417d8a35b2e3b78f3065583"
         }
     },
     "installer": {
