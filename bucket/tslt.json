@@ -1,0 +1,52 @@
+{
+    "version": "0.0.3",
+    "description": "Minimal native Windows LLM translation tool built with Win32 API and WinHTTP.",
+    "homepage": "https://github.com/dodorz/tslt",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/dodorz/tslt/releases/download/0.0.3/tslt-0.0.3-x86_64.zip",
+            "hash": "3f5ab4dbebcaced04cc2a38df9dbfbefdb1e0a8a4fe61d3b67bca691fa048c47"
+        },
+        "32bit": {
+            "url": "https://github.com/dodorz/tslt/releases/download/0.0.3/tslt-0.0.3-x86.zip",
+            "hash": "8b91dcb1fb5455850df3a426aae25b96e209cb357c4419b4c9e829c743f9bdf9"
+        },
+        "arm64": {
+            "url": "https://github.com/dodorz/tslt/releases/download/0.0.3/tslt-0.0.3-arm64.zip",
+            "hash": "da9d2ee906bca5708d8e47f20237ab9bf03b8bc44b3f57a40ced82db4ccf8a67"
+        }
+    },
+    "installer": {
+        "script": [
+            "if (!(Test-Path \"$persist_dir\")) {",
+            "    New-Item -ItemType Directory -Path \"$persist_dir\" -Force | Out-Null",
+            "}",
+            "if (!(Test-Path \"$persist_dir\\config.ini\")) {",
+            "    Copy-Item \"$dir\\config.ini.example\" \"$persist_dir\\config.ini\"",
+            "}"
+        ]
+    },
+    "bin": "tslt.exe",
+    "shortcuts": [
+        [
+            "tslt.exe",
+            "LLM Translator"
+        ]
+    ],
+    "persist": "config.ini",
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/dodorz/tslt/releases/download/$version/tslt-$version-x86_64.zip"
+            },
+            "32bit": {
+                "url": "https://github.com/dodorz/tslt/releases/download/$version/tslt-$version-x86.zip"
+            },
+            "arm64": {
+                "url": "https://github.com/dodorz/tslt/releases/download/$version/tslt-$version-arm64.zip"
+            }
+        }
+    }
+}
