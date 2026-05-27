@@ -1,7 +1,7 @@
 {
     "version": "2.0.12",
     "description": "Describe what you need — a presentation, lesson, or story — and let the AI build clean, beautiful HTML slides for you. Local-first. Works offline. Works for you.",
-    "homepage": "https://github.com/arcsin1/oh-my-ppt",
+    "homepage": "https://arcsin1.github.io/",
     "license": "MIT",
     "architecture": {
         "64bit": {
