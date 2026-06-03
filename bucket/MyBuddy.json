@@ -1,12 +1,12 @@
 {
-    "version": "0.1.7",
+    "version": "0.1.8",
     "description": "Minimal native Win32 desktop buddy with grouped notes",
     "homepage": "https://github.com/dodorz/MyBuddy",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/dodorz/MyBuddy/releases/download/0.1.7/MyBuddy-v0.1.7-windows-x64.zip",
-            "hash": "d2c844b73724bc321a8ea87d46260dbaaf6d75fa71eeb069a14ba5e8aa97b1b5"
+            "url": "https://github.com/dodorz/MyBuddy/releases/download/0.1.8/MyBuddy-v0.1.8-windows-x64.zip",
+            "hash": "ff867441d5ac588c6fc6c2c571aabc7ce139281bbdd12b628ff1d2f546958805"
         }
     },
     "bin": "MyBuddy.exe",
