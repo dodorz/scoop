@@ -20,6 +20,24 @@ function Get-GitHubRepoFromUrl {
     return $null
 }
 
+# Function to extract GitHub release URL info for autoupdate/checkver
+function Get-GitHubReleaseUrlInfo {
+    param([string]$url)
+
+    if ($url -match '^(https://github\.com/([^/]+)/([^/]+)/releases/download/)(v)?([\d.]+)(/[^?#]+(?:[?#].*)?)$') {
+        $repoHomepage = "https://github.com/$($matches[2])/$($matches[3])"
+        $versionPrefix = if ($matches[4]) { $matches[4] } else { '' }
+
+        return @{
+            RepoHomepage = $repoHomepage
+            Checkver = $repoHomepage
+            StandardizedUrl = "$($matches[1])$versionPrefix`$version$($matches[6])"
+        }
+    }
+
+    return $null
+}
+
 # Function to fetch GitHub repo info via API
 function Get-GitHubRepoInfo {
     param([string]$owner, [string]$repo)
@@ -55,6 +73,11 @@ foreach ($file in $Files) {
     
     # Read and parse JSON
     $json = Get-Content $file -Raw | ConvertFrom-Json
+    $releaseUrlInfo = $null
+
+    if ($json.PSObject.Properties['version'] -and $json.version -match '^v([\d.]+)$') {
+        $json.version = $matches[1]
+    }
     
     # Remove unwanted keys
     if ($json.PSObject.Properties['extract_dir']) {
@@ -110,6 +133,13 @@ foreach ($file in $Files) {
             $json | Add-Member -MemberType NoteProperty -Name 'homepage' -Value ''
         }
     }
+
+    if ($json.PSObject.Properties['url']) {
+        $releaseUrlInfo = Get-GitHubReleaseUrlInfo -url $json.url
+        if ($releaseUrlInfo) {
+            Write-Host "Detected GitHub release download URL." -ForegroundColor Cyan
+        }
+    }
     
     # Ask if amd64-only
     Write-Host "Is this software amd64-only? (Y/N): " -NoNewline
@@ -129,11 +159,59 @@ foreach ($file in $Files) {
             }
         }
         $json | Add-Member -MemberType NoteProperty -Name 'architecture' -Value $architecture -Force
+        if ($releaseUrlInfo) {
+            Write-Host "Standardizing GitHub release autoupdate/checkver after amd64-only conversion." -ForegroundColor Cyan
+
+            $json.architecture.'64bit'.url = $releaseUrlInfo.StandardizedUrl
+
+            $checkverValue = if ($json.homepage -eq $releaseUrlInfo.RepoHomepage) {
+                'github'
+            } else {
+                $releaseUrlInfo.Checkver
+            }
+
+            if ($json.PSObject.Properties['checkver']) {
+                $json.checkver = $checkverValue
+            } else {
+                $json | Add-Member -MemberType NoteProperty -Name 'checkver' -Value $checkverValue
+            }
+
+            $autoupdate = [ordered]@{
+                architecture = [ordered]@{
+                    '64bit' = [ordered]@{
+                        url = $releaseUrlInfo.StandardizedUrl
+                    }
+                }
+            }
+            $json | Add-Member -MemberType NoteProperty -Name 'autoupdate' -Value $autoupdate -Force
+        }
         # amd64-only key order
-        $orderedKeys = @('version', 'description', 'homepage', 'license', 'architecture', 'bin')
+        $orderedKeys = @('version', 'description', 'homepage', 'license', 'architecture', 'checkver', 'autoupdate', 'bin')
     } else {
+        if ($releaseUrlInfo) {
+            Write-Host "Standardizing GitHub release autoupdate/checkver." -ForegroundColor Cyan
+
+            $json.url = $releaseUrlInfo.StandardizedUrl
+
+            $checkverValue = if ($json.homepage -eq $releaseUrlInfo.RepoHomepage) {
+                'github'
+            } else {
+                $releaseUrlInfo.Checkver
+            }
+
+            if ($json.PSObject.Properties['checkver']) {
+                $json.checkver = $checkverValue
+            } else {
+                $json | Add-Member -MemberType NoteProperty -Name 'checkver' -Value $checkverValue
+            }
+
+            $autoupdate = [ordered]@{
+                url = $releaseUrlInfo.StandardizedUrl
+            }
+            $json | Add-Member -MemberType NoteProperty -Name 'autoupdate' -Value $autoupdate -Force
+        }
         # 非amd64-only key order
-        $orderedKeys = @('version', 'description', 'homepage', 'license', 'url', 'hash', 'bin')
+        $orderedKeys = @('version', 'description', 'homepage', 'license', 'url', 'hash', 'checkver', 'autoupdate', 'bin')
     }
     $orderedJson = [ordered]@{}
     foreach ($key in $orderedKeys) {
