@@ -1,12 +1,12 @@
 {
-    "version": "0.6.8",
+    "version": "0.6.10",
     "description": "A WYSIWYG Markdown editor with native AI. Fully open source. Free to use. Your data stays local.",
     "homepage": "https://github.com/murongg/markra",
     "license": "AGPL-3.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/murongg/markra/releases/download/v0.6.8/Markra_0.6.8_windows_x64_setup.exe#dl.7z",
-            "hash": "e96e01e0e0f3630c5d0e3192d13aebd38fbe06dfb72690ed06b9b64a2c064b3d"
+            "url": "https://github.com/murongg/markra/releases/download/v0.6.10/Markra_0.6.10_windows_x64_setup.exe#dl.7z",
+            "hash": "5d1cddc0e36877b4d6cae8e0d6e92f894949481bb5c116bac98b2df156535724"
         }
     },
     "post_install": "Remove-Item \"$dir\\`$PLUGINSDIR\" -Force -Recurse",
