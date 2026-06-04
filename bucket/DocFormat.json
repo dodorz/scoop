@@ -1,12 +1,12 @@
 {
-    "version": "1.8.2",
+    "version": "1.8.3",
     "description": "Local Official Document Format Auto-Processing Tool",
     "homepage": "https://github.com/KaguraNanaga/docformat-gui",
     "license": "MIT",
     "depends": "uv",
-    "url": "https://github.com/KaguraNanaga/docformat-gui/archive/refs/tags/v1.8.2.zip",
-    "hash": "1756226d8084871b4b7946c7268a1d248482f6b5ad265de8587f3112fc820399",
-    "extract_dir": "docformat-gui-1.8.2",
+    "url": "https://github.com/KaguraNanaga/docformat-gui/archive/refs/tags/v1.8.3.zip",
+    "hash": "4e9258d4f1ab925687fd027839457b1c51c71b4cf1e0fd676b836dc614eac86e",
+    "extract_dir": "docformat-gui-1.8.3",
     "installer": {
         "script": [
             "Set-Location \"$dir\"",
