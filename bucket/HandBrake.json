@@ -5,26 +5,29 @@
     "license": "GPL-2.0-only",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/HandBrake/HandBrake/releases/download/1.11.1/HandBrake-1.11.1-x86_64-Win_GUI.exe#/dl.7z",
-            "hash": "19e3817012df1fd006ed9f56ec6db33048bf72a792272dab34765c33d9c85344"
+            "url": "https://github.com/HandBrake/HandBrake/releases/download/1.11.1/HandBrake-1.11.1-x86_64-Win_GUI.zip",
+            "hash": "2755446dd27a5276bbf6f32e78af44dba0c36a0d801e00bf2f4374fd21e2f5a7"
         }
     },
     "extract_dir": "HandBrake",
+        "script": [
+            "if(!(Test-Path \"$persist_dir\\portable.ini\")) { Copy-Item \"$dir\\HandBrake\\portable.ini.template\" \"$dir\\portable.ini\" | Out-Null }"
+        ]
+    },
+    "persist": "portable.ini",
     "shortcuts": [
         [
             "HandBrake.exe",
             "HandBrake"
         ]
     ],
-    "pre_install": "if(!(Test-Path \"$persist_dir\\portable.ini\")) { Copy-Item \"$dir\\HandBrake\\portable.ini.template\" \"$dir\\portable.ini\" | Out-Null }",
-    "persist": "portable.ini",
     "checkver": {
         "github": "https://github.com/HandBrake/HandBrake"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/HandBrake/HandBrake/releases/download/$version/HandBrake-$version-x86_64-Win_GUI.exe#/dl.7z"
+                "url": "https://github.com/HandBrake/HandBrake/releases/download/$version/HandBrake-$version-x86_64-Win_GUI.zip"
             }
         },
         "hash": {
