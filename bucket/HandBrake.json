@@ -10,6 +10,7 @@
         }
     },
     "extract_dir": "HandBrake",
+    "installer": {
         "script": [
             "if(!(Test-Path \"$persist_dir\\portable.ini\")) { Copy-Item \"$dir\\HandBrake\\portable.ini.template\" \"$dir\\portable.ini\" | Out-Null }"
         ]
