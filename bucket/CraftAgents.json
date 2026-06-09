@@ -1,12 +1,12 @@
 {
-    "version": "0.10.1",
+    "version": "0.10.2",
     "description": "Connect any API, MCP server, or local filesystem. Multitask naturally. Build your next-gen workflow with agents.",
     "homepage": "https://agents.craft.do/",
     "license": "Apache-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/lukilabs/craft-agents-oss/releases/download/v0.10.1/Craft-Agents-0.10.1-win-x64.exe#/dl.7z",
-            "hash": "1d6c0b03bcff2615bd4857c25882a43e8a3066ea8765a648addabab1924d6cb0",
+            "url": "https://github.com/lukilabs/craft-agents-oss/releases/download/v0.10.2/Craft-Agents-0.10.2-win-x64.exe#/dl.7z",
+            "hash": "22c090d381bbfa0705a7fb3903a7982ef31c637a6201c059c78522fc84a811b4",
             "installer": {
                 "script": [
                     "Expand-7ZipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\" -Removal",
