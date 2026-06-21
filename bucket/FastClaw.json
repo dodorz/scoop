@@ -1,5 +1,5 @@
 {
-    "version": "0.46.0",
+    "version": "0.46.1",
     "description": "A lightweight AI agent runtime written in Go",
     "homepage": "https://github.com/fastclaw-ai/fastclaw",
     "license": {
@@ -8,12 +8,12 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/fastclaw-ai/fastclaw/releases/download/v0.46.0/fastclaw_windows_amd64.zip",
-            "hash": "61c0db78204eebe94b62c98921b8f8717421630451d7863840eee2b2224afaa8"
+            "url": "https://github.com/fastclaw-ai/fastclaw/releases/download/v0.46.1/fastclaw_windows_amd64.zip",
+            "hash": "bcece702531684af5bdfb9a93038aa3c2d260556f4d7a6f78a18c42a4a6a4e32"
         },
         "arm64": {
-            "url": "https://github.com/fastclaw-ai/fastclaw/releases/download/v0.46.0/fastclaw_windows_arm64.zip",
-            "hash": "d37877bd0f5edc1be806e35f66c91c0d07c5a36733aa67245217d9e030e59707"
+            "url": "https://github.com/fastclaw-ai/fastclaw/releases/download/v0.46.1/fastclaw_windows_arm64.zip",
+            "hash": "333b66e28c63c1d158a7432d2c606ce8742730750e082845a9c39070cf5f3bb3"
         }
     },
     "installer": {
