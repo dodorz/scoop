@@ -1,0 +1,32 @@
+{
+    "version": "9.7.0-26013",
+    "description": "Professional academic literature reader supporting PDF, CAJ, and OFD formats",
+    "homepage": "http://cajviewer.cnki.net/",
+    "license": "freeware",
+    "architecture": {
+        "64bit": {
+            "url": "https://download.cnki.net/cajPackage/CAJWinPackage/CAJViewer_9.7.0-26013_x64_Setup.exe#/dl.7z",
+            "hash": "",
+            "installer": {
+                "script": [
+                    "Expand-7ZipArchive \"$dir\\app.7z\" \"$dir\" -Removal",
+                    "Remove-Item \"$dir\\`$PLUGINSDIR\"  -Force -Recurse"
+                ]
+            }
+        }
+    },
+    "bin": "CAJViewer.exe",
+    "shortcuts": [
+        [
+            "CAJViewer.exe",
+            "CAJ Viewer"
+        ]
+    ],
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://download.cnki.net/cajPackage/CAJWinPackage/CAJViewer_$version_x64_Setup.exe#/dl.7z"
+            }
+        }
+    }
+}
