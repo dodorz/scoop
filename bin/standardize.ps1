@@ -27,11 +27,13 @@ function Get-GitHubReleaseUrlInfo {
     if ($url -match '^(https://github\.com/([^/]+)/([^/]+)/releases/download/)(v)?([\d.]+)(/[^?#]+(?:[?#].*)?)$') {
         $repoHomepage = "https://github.com/$($matches[2])/$($matches[3])"
         $versionPrefix = if ($matches[4]) { $matches[4] } else { '' }
+        $versionNumber = $matches[5]
+        $filenamePart = $matches[6] -replace [regex]::Escape($versionNumber), '$version'
 
         return @{
             RepoHomepage = $repoHomepage
             Checkver = $repoHomepage
-            StandardizedUrl = "$($matches[1])$versionPrefix`$version$($matches[6])"
+            StandardizedUrl = "$($matches[1])$versionPrefix`$version$filenamePart"
         }
     }
 
@@ -162,8 +164,6 @@ foreach ($file in $Files) {
         if ($releaseUrlInfo) {
             Write-Host "Standardizing GitHub release autoupdate/checkver after amd64-only conversion." -ForegroundColor Cyan
 
-            $json.architecture.'64bit'.url = $releaseUrlInfo.StandardizedUrl
-
             $checkverValue = if ($json.homepage -eq $releaseUrlInfo.RepoHomepage) {
                 'github'
             } else {
@@ -190,8 +190,6 @@ foreach ($file in $Files) {
     } else {
         if ($releaseUrlInfo) {
             Write-Host "Standardizing GitHub release autoupdate/checkver." -ForegroundColor Cyan
-
-            $json.url = $releaseUrlInfo.StandardizedUrl
 
             $checkverValue = if ($json.homepage -eq $releaseUrlInfo.RepoHomepage) {
                 'github'
