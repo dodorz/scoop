@@ -1,12 +1,12 @@
 {
-    "version": "0.1.6",
+    "version": "0.1.7",
     "description": "A lightweight tool for quick AI text-to-speech",
     "homepage": "https://github.com/ilyaizen/CopySpeak",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/ilyaizen/CopySpeak/releases/download/v0.1.6/CopySpeak_0.1.6_x64_en-US.msi",
-            "hash": "678df2e187ec5f8a007895120193c60d8cb513b57b024fe14020333da4ebd5e0"
+            "url": "https://github.com/ilyaizen/CopySpeak/releases/download/v0.1.7/CopySpeak_0.1.7_x64_en-US.msi",
+            "hash": "0d6e19d936c7894fe321460b173935aee529a80127134271be7ae428fc63be21"
         }
     },
     "extract_dir": "PFiles\\CopySpeak",
