@@ -30,11 +30,16 @@ if not "x%INPUT_EXT%" == "x" (
 if not "x%INPUT_DIR%" == "x" (
     if exist "%CANDIDATE%" set "MANIFEST=%CANDIDATE%"
 ) else (
-    if exist "bucket\%CANDIDATE%" (
-        set "MANIFEST=bucket\%CANDIDATE%"
-    ) else if exist "%CANDIDATE%" (
-        set "MANIFEST=%CANDIDATE%"
+    for /f "delims=" %%f in ('dir /s /b "bucket\%CANDIDATE%" 2^>nul') do (
+        if defined MANIFEST (
+            echo Error: Multiple manifests found for %~1:
+            echo !MANIFEST!
+            echo %%f
+            exit /b 1
+        )
+        set "MANIFEST=%%f"
     )
+    if not defined MANIFEST if exist "%CANDIDATE%" set "MANIFEST=%CANDIDATE%"
 )
 
 if "x%MANIFEST%" == "x" (
