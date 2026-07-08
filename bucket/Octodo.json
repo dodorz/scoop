@@ -1,12 +1,12 @@
 {
-    "version": "1.0.11",
+    "version": "1.0.12",
     "description": "A multi-workspace terminal complex, powered by Flutter + Rust (Alacritty-based GPU renderer)",
     "homepage": "https://github.com/invented-pro/octodo",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/invented-pro/octodo/releases/download/v1.0.11/octodo-v1.0.11-windows-x64.zip",
-            "hash": "c6675336dab408cc96a2e505f8b2c066b435a70f400370dd67cf9527da7d5022"
+            "url": "https://github.com/invented-pro/octodo/releases/download/v1.0.12/octodo-v1.0.12-windows-x64.zip",
+            "hash": "cfca564a3f448a88fb4e82d8bbb9a9db870a64b489bd8f79e15104bfe5fa4241"
         }
     },
     "bin": "octodo.exe",
