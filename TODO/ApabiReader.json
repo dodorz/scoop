@@ -11,8 +11,6 @@
         ]
     },
     "bin": "",
-    "shortcuts": [
-    ],
     "checkver": {
         "url": "http://www.apabi.cn/download/",
         "regex": "PRCReaderSetup-([\\d.-]+).exe"
