@@ -1,9 +1,7 @@
 {
-    "homepage": "https://www.bitkeeper.org",
-    "license": "",
+    "homepage": "https://www.bitkeeper.org/",
     "version": "7.3.3",
+    "license": "proprietary",
     "url": "https://www.bitkeeper.org/downloads/7.3.3/bk-7.3.3-x86-win32-setup.exe#/dl.7z",
-    "hash": "",
-    "extract_dir": "",
-    "bin": ""
+    "bin": "bk.exe"
 }
