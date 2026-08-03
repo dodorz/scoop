@@ -1,0 +1,30 @@
+{
+    "version": "0.1.5",
+    "description": "A zero-code CLI and Web UI for building AI agents",
+    "homepage": "https://penguin.ooo/",
+    "license": "Apache-2.0",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/Prism-Shadow/penguin-harness/releases/download/v0.1.5/penguin-win32-x64.zip",
+            "hash": "34d72401dd4509141cd509169cbf289b0b881de42972e995839fd52a6a93c1be"
+        }
+    },
+    "extract_dir": "penguin",
+    "bin": [
+        [
+            "bin\\penguin.cmd",
+            "penguin"
+        ]
+    ],
+    "persist": "data",
+    "checkver": {
+        "github": "https://github.com/Prism-Shadow/penguin-harness"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/Prism-Shadow/penguin-harness/releases/download/v$version/penguin-win32-x64.zip"
+            }
+        }
+    }
+}
