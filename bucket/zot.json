@@ -1,12 +1,12 @@
 {
-    "version": "0.3.30",
+    "version": "0.3.31",
     "description": "Yet another coding agent harness, lightweight and written in go.",
     "homepage": "https://zot.sh/",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/patriceckhart/zot/releases/download/v0.3.30/zot_0.3.30_windows_amd64.zip",
-            "hash": "90397086b158f399da2c94baaceecc44c49edacad91213767a453c01d3631c14"
+            "url": "https://github.com/patriceckhart/zot/releases/download/v0.3.31/zot_0.3.31_windows_amd64.zip",
+            "hash": "8ec74dfe9dbf5515c3c560967288e2fce5d050fb269bccaeffc0d96140665522"
         }
     },
     "bin": "zot.exe",
