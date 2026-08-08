@@ -1,5 +1,5 @@
 {
-    "version": "0.6.1",
+    "version": "0.6.2",
     "description": "A terminal coding agent optimized for DeepSeek prefix caching — 95-99% cache hit, 1/50th the cost.",
     "homepage": "https://github.com/Menfre01/waveloom",
     "license": "Apache-2.0",
@@ -7,12 +7,12 @@
     "depends": "git",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/Menfre01/waveloom/releases/download/v0.6.1/waveloom_windows_amd64.zip",
-            "hash": "c653ecc9d7a463367f6a0ca52799bedb7892db8d7131924f633913264a537061"
+            "url": "https://github.com/Menfre01/waveloom/releases/download/v0.6.2/waveloom_windows_amd64.zip",
+            "hash": "3b9728c09001c5a284a9e76c2dbfb03dcd455dfbf0c51c584fc2d991126ab30b"
         },
         "arm64": {
-            "url": "https://github.com/Menfre01/waveloom/releases/download/v0.6.1/waveloom_windows_arm64.zip",
-            "hash": "471a0ab8850f9b390c41826c560020d8048b6181937e128cb80a93ec2929bfc9"
+            "url": "https://github.com/Menfre01/waveloom/releases/download/v0.6.2/waveloom_windows_arm64.zip",
+            "hash": "cb6ac097aeb1717f55059c86a0c1f9d321fc5ca436be39dad8f6633a2cdeaf5e"
         }
     },
     "bin": "waveloom.exe",
