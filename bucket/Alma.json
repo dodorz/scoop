@@ -1,12 +1,12 @@
 {
-    "version": "0.0.950",
+    "version": "0.0.951",
     "description": "Elegant AI Provider Orchestration",
     "homepage": "https://alma.now/",
     "license": "Proprietary",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/yetone/alma-releases/releases/download/v0.0.950/alma-0.0.950-win-x64.exe#/dl.7z",
-            "hash": "sha512:181e1445d5ab91de8fd7b7fdb2184e83a80886326997b8c5f001b3fe2a57981d0e5d74c1edded914b9ed64ca84f16378b56517eb71eb05d8cfe5bc8ef65000e3",
+            "url": "https://github.com/yetone/alma-releases/releases/download/v0.0.951/alma-0.0.951-win-x64.exe#/dl.7z",
+            "hash": "sha512:ddba839db2cb11acacb79a4390ccb13c9522aa4316b016cd7db18507fd822d72ea7a705c931e12b5137f3ee23212e713dc620bf57804c0fcd09c372fdfdbd062",
             "installer": {
                 "script": [
                     "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
