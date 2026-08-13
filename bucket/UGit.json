@@ -1,9 +1,9 @@
 {
-    "version": "5.51.0",
+    "version": "5.52.1",
     "homepage": "https://ugit.qq.com/",
     "license": "unknown",
     "url": "https://ugit.qq.com/downloads/ugit_public/UGitSetup.exe#/dl.7z",
-    "hash": "53cda2d8cad056e2ce0fcb9968e38477ad95516db2a1a872fdcc84796934e635",
+    "hash": "17f9c36b15e9d348e3d687ab0abf4f8be879bcd6334a1bf151b38fc79dff4b5f",
     "installer": {
         "script": [
             "$nupkg = (Get-ChildItem \"$dir\" 'UGit-*-full.nupkg' | Select-Object -First 1).FullName",
