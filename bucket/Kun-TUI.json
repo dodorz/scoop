@@ -1,12 +1,12 @@
 {
-    "version": "0.3.0",
+    "version": "0.3.1",
     "description": "A three-entry coding agent that shares the same local Kun runtime for Code, Write, and connecting to a phone.",
     "homepage": "https://www.kun-agent.com/",
     "license": "Proprietary",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/KunAgent/Kun/releases/download/v0.3.0/Kun-TUI-0.3.0-win-x64.zip",
-            "hash": "313e4aca06f5dd7a6283534a9fefbff3b5a223165432d2997e52bcbd15f9fb54"
+            "url": "https://github.com/KunAgent/Kun/releases/download/v0.3.1/Kun-TUI-0.3.1-win-x64.zip",
+            "hash": "1a889e5030c1825ad88cfe40955c851e322451f1e7471c35c65d7d5c8a97f7de"
         }
     },
     "extract_dir": "kun",
