@@ -6,7 +6,7 @@
     "architecture": {
         "64bit": {
             "url": "https://qoder-ide.oss-accelerate.aliyuncs.com/qodercli/releases/1.1.23/qodercli-windows-x64.zip",
-            "hash": "4a5112da59b3ae559513a775498f25a26c372c925efbaffffd5aec50d040fe65"
+            "hash": "54c3ce7bffb8dbceed2d2fba19b28a0c572c0721ece0097b006e32f43376d200"
         }
     },
     "bin": "qodercli.exe",
