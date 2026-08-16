@@ -20,6 +20,11 @@
             "MinEd"
         ]
     ],
+    "checkver": {
+        "url": "https://api.github.com/repos/mined/mined/releases/latest",
+        "jsonpath": "$.assets[*].name",
+        "regex": "MinEd-(?<version>(?<short>[\\d.]+)\\.\\d+)-Windows64-install\\.exe"
+    },
     "autoupdate": {
         "architecture": {
             "64bit": {
