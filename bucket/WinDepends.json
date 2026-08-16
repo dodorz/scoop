@@ -10,5 +10,13 @@
             "WinDepends.exe",
             "WinDepends"
         ]
-    ]
+    ],
+    "checkver": {
+        "url": "https://api.github.com/repos/hfiref0x/WinDepends/releases/latest",
+        "regex": "WinDepends_v(?<raw>(?<number>[\\d.]+\\.(?<build>\\d+))_(?<channel>[a-z]+\\d*))_snapshot\\.zip",
+        "replace": "$2-$4"
+    },
+    "autoupdate": {
+        "url": "https://github.com/hfiref0x/WinDepends/releases/download/$matchBuild-$matchChannel/WinDepends_v$matchRaw_snapshot.zip"
+    }
 }
