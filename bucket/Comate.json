@@ -43,5 +43,19 @@
             "--user-data-dir=\"$dir\\data\\user-data\" --extensions-dir=\"$dir\\data\\extensions\""
         ]
     ],
-    "persist": "data"
+    "persist": "data",
+    "checkver": {
+        "url": "https://comate.baidu.com/api/aiIde/updates/stable/win32/x64/user/latest.json",
+        "regex": "(?s)(?=.*\"productVersion\"\\s*:\\s*\"([\\d.]+)\")(?=.*\"url\"\\s*:\\s*\"https://comate-ide\\.cdn\\.bcebos\\.com/download/stable/(?<build>[^/]+)/Comate-win32-x64-user-setup\\.exe\")"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://comate-ide.cdn.bcebos.com/download/stable/$matchBuild/Comate-win32-x64.zip"
+            },
+            "arm64": {
+                "url": "https://comate-ide.cdn.bcebos.com/download/stable/$matchBuild/Comate-win32-arm64.zip"
+            }
+        }
+    }
 }
