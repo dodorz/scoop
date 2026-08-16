@@ -1,10 +1,10 @@
 {
-    "version": "2.1.1",
+    "version": "2.1.2",
     "description": "CLI tool for saving a faithful copy of a complete web page in a single HTML file",
     "homepage": "https://github.com/gildas-lormeau/single-file-cli",
     "license": "AGPL-3.0-or-later",
-    "url": "https://github.com/gildas-lormeau/single-file-cli/releases/download/v2.1.1/single-file.exe",
-    "hash": "8cdf329ae6ed83a6715cfb85ed787f4935eac8036da689c9ad29468b1f321440",
+    "url": "https://github.com/gildas-lormeau/single-file-cli/releases/download/v2.1.2/single-file.exe",
+    "hash": "e154bf2bb5900ec77bbd42a8acb3c50fcaeb96b9432294ce9f52d5a026fb7486",
     "bin": "single-file.exe",
     "checkver": "github",
     "autoupdate": {
