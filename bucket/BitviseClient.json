@@ -20,10 +20,16 @@
         ]
     },
     "bin": "BvSsh.exe",
-    "shortcuts": [
-        [
-            "BvSsh.exe",
-            "Bitvise SSH Client"
-        ]
-    ]
+    "checkver": {
+        "url": "https://www.bitvise.com/ssh-client-version-history-9-5",
+        "regex": "9\\.([\\d]{2})",
+        "replace": "9.$1"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://dl.bitvise.com/BvSshClient-$cleanVersion.exe"
+            }
+        }
+    }
 }
