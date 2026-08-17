@@ -18,11 +18,15 @@ if "x%~1" == "x" goto end
 set "INPUT=%~1"
 set "MANIFEST="
 
-for %%i in ("%INPUT%") do (
-    set "INPUT_DIR=%%~dpi"
-    set "INPUT_NAME=%%~ni"
-    set "INPUT_EXT=%%~xi"
-)
+for %%i in ("%INPUT%") do set "INPUT_EXT=%%~xi"
+
+set "EXPLICIT_PATH="
+set "INPUT_NO_SEPARATORS=%INPUT:\=%"
+if not "%INPUT_NO_SEPARATORS%" == "%INPUT%" set "EXPLICIT_PATH=1"
+set "INPUT_NO_SEPARATORS=%INPUT:/=%"
+if not "%INPUT_NO_SEPARATORS%" == "%INPUT%" set "EXPLICIT_PATH=1"
+set "INPUT_NO_SEPARATORS=%INPUT::=%"
+if not "%INPUT_NO_SEPARATORS%" == "%INPUT%" set "EXPLICIT_PATH=1"
 
 if not "x%INPUT_EXT%" == "x" (
     set "CANDIDATE=%INPUT%"
@@ -30,7 +34,7 @@ if not "x%INPUT_EXT%" == "x" (
     set "CANDIDATE=%INPUT%.json"
 )
 
-if not "x%INPUT_DIR%" == "x" (
+if defined EXPLICIT_PATH (
     if exist "%CANDIDATE%" set "MANIFEST=%CANDIDATE%"
 ) else (
     if exist "%CANDIDATE%" set "MANIFEST=%CANDIDATE%"
