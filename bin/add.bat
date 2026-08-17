@@ -9,6 +9,9 @@ if "x%~1" == "x" (
     exit /b 1
 )
 
+git pull --ff-only origin master
+if errorlevel 1 exit /b %errorlevel%
+
 :addone
 if "x%~1" == "x" goto end
 
@@ -30,7 +33,8 @@ if not "x%INPUT_EXT%" == "x" (
 if not "x%INPUT_DIR%" == "x" (
     if exist "%CANDIDATE%" set "MANIFEST=%CANDIDATE%"
 ) else (
-    for /f "delims=" %%f in ('dir /s /b "bucket\%CANDIDATE%" 2^>nul') do (
+    if exist "%CANDIDATE%" set "MANIFEST=%CANDIDATE%"
+    if not defined MANIFEST for /f "delims=" %%f in ('dir /s /b "bucket\%CANDIDATE%" 2^>nul') do (
         if defined MANIFEST (
             echo Error: Multiple manifests found for %~1:
             echo !MANIFEST!
@@ -39,7 +43,6 @@ if not "x%INPUT_DIR%" == "x" (
         )
         set "MANIFEST=%%f"
     )
-    if not defined MANIFEST if exist "%CANDIDATE%" set "MANIFEST=%CANDIDATE%"
 )
 
 if "x%MANIFEST%" == "x" (
