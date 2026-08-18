@@ -1,8 +1,7 @@
 {
     "version": "1.0.0.2",
-    "description": "A fast file search utility for Windows.",
     "homepage": "https://github.com/Gaoyongxian666/OpenSearcher",
-    "license": "Unknown",
+    "license": "unknown",
     "architecture": {
         "64bit": {
             "url": "https://github.com/Gaoyongxian666/OpenSearcher/releases/download/V1.0.0.2/OpenSearcher_1.0.0.2_green_win7.zip",
@@ -21,9 +20,7 @@
             "Open Searcher"
         ]
     ],
-    "checkver": {
-        "github": "https://github.com/Gaoyongxian666/OpenSearcher"
-    },
+    "checkver": "github",
     "autoupdate": {
         "architecture": {
             "64bit": {
