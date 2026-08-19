@@ -5,8 +5,8 @@
     "license": "freeware",
     "architecture": {
         "64bit": {
-            "url": "https://releases.r2.chatwise.app/26.8.0/ChatWise-26.8.0-setup.exe#/dl.7z",
-            "hash": "cf01a5ac5bdb9ecf5cf1503f08fd338fdabbe975f2be574a80963519d3127b10",
+            "url": "https://releases.chatwise.app/26.8.0/ChatWise-26.8.0-setup.exe#/dl.7z",
+            "hash": "sha512:48e8b8252c5f9da3c44e218de1db54da59564a2fb60b5d64503c472b34d70e5e616d07607d8a7ccf17b3bf058f087f67d39f160409bad08b7ab41a87b9d70ad8",
             "installer": {
                 "script": [
                     "Expand-7ZipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\" -Removal",
@@ -22,11 +22,18 @@
             "ChatWise"
         ]
     ],
-    "checkver": "Download ([\\d.]+)",
+    "checkver": {
+        "url": "https://releases.chatwise.app/releases",
+        "jsonpath": "$[0].version"
+    },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://releases.r2.chatwise.app/$version/ChatWise-$version-setup.exe#/dl.7z"
+                "url": "https://releases.chatwise.app/$version/ChatWise-$version-setup.exe#/dl.7z",
+                "hash": {
+                    "url": "https://releases.chatwise.app/releases",
+                    "regex": "\\\"name\\\":\\\"ChatWise-$version-setup.exe\\\".*?\\\"sha512\\\":\\\"$base64"
+                }
             }
         }
     }
