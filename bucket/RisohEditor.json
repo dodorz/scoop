@@ -1,10 +1,10 @@
 {
     "homepage": "https://katahiromz.web.fc2.com/re/en",
-    "version": "6.1.5",
+    "version": "6.1.6",
     "license": "GPL-3.0-only",
-    "url": "https://github.com/katahiromz/RisohEditor/releases/download/6.1.5/RisohEditor-6.1.5-portable.zip",
-    "hash": "212554cecf10237b34cbc71478ac3ce93bcad8bc8cef13c9d22111bf535d611d",
-    "extract_dir": "RisohEditor-6.1.5-portable",
+    "url": "https://github.com/katahiromz/RisohEditor/releases/download/6.1.6/RisohEditor-6.1.6-portable.zip",
+    "hash": "346e980aca597fd3f6642b28373129963991c6c938c54d78ecacdcff521fd416",
+    "extract_dir": "RisohEditor-6.1.6-portable",
     "bin": "RisohEditorPortable.exe",
     "shortcuts": [
         [
