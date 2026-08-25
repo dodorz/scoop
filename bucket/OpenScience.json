@@ -1,12 +1,12 @@
 {
-    "version": "2.0.39",
+    "version": "2.0.40",
     "description": "Open-source AI workbench for scientific research",
     "homepage": "https://github.com/synthetic-sciences/openscience",
     "license": "Apache-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/synthetic-sciences/openscience/releases/download/v2.0.39/openscience-windows-x64.zip",
-            "hash": "6b76b8c134c46b48f0562b2e31d440927abf7a1a5943989e459ab79fbc1dfe08"
+            "url": "https://github.com/synthetic-sciences/openscience/releases/download/v2.0.40/openscience-windows-x64.zip",
+            "hash": "596f529a7ad2870719d8e500a4b0766e102577165a6cfd022c1c2cb95ab7af7c"
         }
     },
     "bin": "openscience.exe",
