@@ -1,20 +1,20 @@
 {
-    "version": "0.0.3",
+    "version": "0.0.4",
     "description": "Compiler for Alias DSL v2",
     "homepage": "https://github.com/dodorz/aliasc",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/dodorz/aliasc/releases/download/0.0.3/aliasc-x86_64-pc-windows-msvc.exe#/aliasc.exe",
-            "hash": "c8ad89c3ae69c0b7e5c37a92b5bf743458e35191c5e9c6d44f795dc0691f7344"
+            "url": "https://github.com/dodorz/aliasc/releases/download/0.0.4/aliasc-x86_64-pc-windows-msvc.exe#/aliasc.exe",
+            "hash": "6b504c334d8eb9aa94e01223918095c109c70f4ec2435b5c93ec1df84a3c273d"
         },
         "32bit": {
-            "url": "https://github.com/dodorz/aliasc/releases/download/0.0.3/aliasc-i686-pc-windows-msvc.exe#/aliasc.exe",
-            "hash": "bda12d05973d5f4de0965ae41371c6049ff265ef96e9a37ab3bb843bc3e597aa"
+            "url": "https://github.com/dodorz/aliasc/releases/download/0.0.4/aliasc-i686-pc-windows-msvc.exe#/aliasc.exe",
+            "hash": "771cff53d7f2e9bf70c8fbf39d192c74f6f2d30e680275a4e1abbb562129c31d"
         },
         "arm64": {
-            "url": "https://github.com/dodorz/aliasc/releases/download/0.0.3/aliasc-aarch64-pc-windows-msvc.exe#/aliasc.exe",
-            "hash": "8c2443cfe0a9ea2eddf6edcd3542bf584ad28a53fd8d45bbbeeaa05dd4c3edc9"
+            "url": "https://github.com/dodorz/aliasc/releases/download/0.0.4/aliasc-aarch64-pc-windows-msvc.exe#/aliasc.exe",
+            "hash": "790639ed52778820611fa993bb8a74a1e85fff0aa6c1db4fcaef27bd149f9a8b"
         }
     },
     "bin": "aliasc.exe",
