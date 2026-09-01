@@ -1,5 +1,5 @@
 {
-    "version": "0.8.1",
+    "version": "0.9.0",
     "description": "Coding agent CLI with IPython-backed tools and session management",
     "homepage": "https://github.com/PrimeIntellect-ai/prime-agent",
     "license": "MIT",
@@ -17,8 +17,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://pub-728493de92a943e2a9b2d17b4719f318.r2.dev/releases/v0.8.1/prime-agent-0.8.1.tgz",
-            "hash": "46c24db1782dd31adc35d5c6cbcc75564faba6ced3bf2ccf03d836ee77134475"
+            "url": "https://pub-728493de92a943e2a9b2d17b4719f318.r2.dev/releases/v0.9.0/prime-agent-0.9.0.tgz",
+            "hash": "fc560ec74195297999405d4fbfd0d308598cf502e0fccef7f02eb60032213108"
         }
     },
     "extract_dir": "package",
