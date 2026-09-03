@@ -1,12 +1,12 @@
 {
-    "version": "0.0.19",
+    "version": "0.0.20",
     "description": "A lightweight IDE for the pi coding agent.",
     "homepage": "https://thinkrail.ai/",
     "license": "Apache-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/JetBrains/thinkrail/releases/download/v0.0.19/thinkrail-windows-x64.exe#/thinkrail.exe",
-            "hash": "bc0a9a9503bbb872b6147fc17e519f413fda49d062f35ee2ab8f648eb91c4a58"
+            "url": "https://github.com/JetBrains/thinkrail/releases/download/v0.0.20/thinkrail-windows-x64.exe#/thinkrail.exe",
+            "hash": "58b5592254520e7749b11fad981c2aa2252ac81258e04769ac69a9278817c84d"
         }
     },
     "bin": "thinkrail.exe",
