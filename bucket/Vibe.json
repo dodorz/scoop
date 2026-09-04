@@ -1,12 +1,12 @@
 {
-    "version": "3.1.7",
+    "version": "3.1.9",
     "description": "Transcribe almost any languages",
     "homepage": "https://thewh1teagle.github.io/vibe/",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/thewh1teagle/vibe/releases/download/v3.1.7/vibe_3.1.7_x64-setup.exe#/dl.7z",
-            "hash": "1b440c22e1cb2e5abddce14d49f866242cc70988002b7f5c3e7c3ec2b88830e7"
+            "url": "https://github.com/thewh1teagle/vibe/releases/download/v3.1.9/vibe_3.1.9_x64-setup.exe#/dl.7z",
+            "hash": "95b39048ffc859c01bda40e31b13bd0b81e77aa1406adcafa86728faa702c3d4"
         },
         "arm64": {
             "url": "https://github.com/thewh1teagle/vibe/releases/download/v3.0.5/vibe_3.0.5_arm64-setup.exe#/dl.7z",
