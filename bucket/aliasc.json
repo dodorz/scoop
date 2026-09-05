@@ -6,15 +6,15 @@
     "architecture": {
         "64bit": {
             "url": "https://github.com/dodorz/aliasc/releases/download/0.0.8/aliasc-x86_64-pc-windows-msvc.exe#/aliasc.exe",
-            "hash": "3e3ac6b25869159841ba6b325c61480f0dee99a039afca35a09f3de507b5d2cc"
+            "hash": "671cd137627b9be203e68fc88d5716405e988456bf7935ce15e80de5867ccacf"
         },
         "32bit": {
             "url": "https://github.com/dodorz/aliasc/releases/download/0.0.8/aliasc-i686-pc-windows-msvc.exe#/aliasc.exe",
-            "hash": "7a91190fae498f289e237adf82f01962151cbe07374eaaa18155b8306f3f164c"
+            "hash": "0a4ad15717c49a12f0ff643b894aa935625db1f0fbb811bd4d19c5b109b40b42"
         },
         "arm64": {
             "url": "https://github.com/dodorz/aliasc/releases/download/0.0.8/aliasc-aarch64-pc-windows-msvc.exe#/aliasc.exe",
-            "hash": "0408677ed6de2c6c0e0dcf4867d80246e19460ab88490645aaece721a9097bc3"
+            "hash": "39237c346332f3af7d8df248c7eab49dabe4b4051013322d0479d23c7159a3df"
         }
     },
     "bin": "aliasc.exe",
