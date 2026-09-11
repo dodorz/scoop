@@ -1,12 +1,12 @@
 {
-    "version": "2.0.3",
+    "version": "2.0.5",
     "description": "An elegant Markdown editor for humans and AI agents.",
     "homepage": "https://colamd.com/",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/marswaveai/ColaMD/releases/download/v2.0.3/ColaMD-Setup-2.0.3.exe",
-            "hash": "f4631613dcf1dbdef41dda22e4c549fcb6615a64c31aea94a4a14b8b94799635"
+            "url": "https://github.com/marswaveai/ColaMD/releases/download/v2.0.5/ColaMD-Setup-2.0.5.exe",
+            "hash": "3a61ceaf23c0f029b1139814136e919e28dbe51b58d694263c920622012894b2"
         }
     },
     "installer": {
