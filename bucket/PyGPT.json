@@ -1,11 +1,11 @@
 {
-    "version": "2.8.19",
+    "version": "2.8.20",
     "description": "Personal Desktop AI Assistant with Chat, Vision, Agents, Image generation, Tools and commands, Voice control and more.",
     "homepage": "https://pygpt.net",
     "license": "freeware",
-    "url": "https://pygpt.net/download/2.8.19/pygpt-2.8.19.msi",
-    "hash": "50cc8234e0880efcf689cda4ab5fe2a3f1494190e694c1c42d9b059d022fb7d0",
-    "extract_dir": "pygpt-2.8.19\\PyGPT",
+    "url": "https://pygpt.net/download/2.8.20/pygpt-2.8.20.msi",
+    "hash": "ed27ae6d52605fac091cbe521e9f6d2a9c8028796ffe372241d7dceee4fcf555",
+    "extract_dir": "pygpt-2.8.20\\PyGPT",
     "bin": "pygpt.exe",
     "shortcuts": [
         [
