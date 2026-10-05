@@ -1,0 +1,27 @@
+{
+    "version": "0.1.11",
+    "description": "A fast, native Markdown reader with publication-quality typography.",
+    "homepage": "https://github.com/szdytom/markview",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/szdytom/markview/releases/download/v0.1.11/markview-x86_64-pc-windows-msvc.zip",
+            "hash": "19e6073696cd60e573a37cc008f3fc590d991e981a7820ef7ff95426d8d2cfc2"
+        }
+    },
+    "bin": "markview.exe",
+    "shortcuts": [
+        [
+            "markview.exe",
+            "Markview"
+        ]
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/szdytom/markview/releases/download/v$version/markview-x86_64-pc-windows-msvc.zip"
+            }
+        }
+    }
+}
