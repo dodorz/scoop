@@ -1,12 +1,12 @@
 {
-    "version": "0.7.4",
+    "version": "0.7.5",
     "description": "Visual workbench for AI coding agents: a desktop app plus a headless server, vendor-neutral across Claude Code, Codex, Copilot, Gemini, Ollama and OpenAI-compatible providers.",
     "homepage": "https://juggler.studio/",
     "license": "AGPL-3.0-or-later",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/juggler-ai/juggler/releases/download/v0.7.4/juggler-v0.7.4-windows-amd64.zip",
-            "hash": "31dfa3186b853aa45f8f2cdf0b977d927e1e9709e62717b48369d2e5a2503f1f"
+            "url": "https://github.com/juggler-ai/juggler/releases/download/v0.7.5/juggler-v0.7.5-windows-amd64.zip",
+            "hash": "9f6630128ad152da36cf7e406ae3e4dcbd40a1d5bb73bf545529709a23a563a7"
         }
     },
     "extract_dir": "Juggler",
