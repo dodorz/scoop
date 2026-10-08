@@ -1,18 +1,18 @@
 {
-    "version": "0.2.1",
+    "version": "0.4.0",
     "description": "Open-source page layout and publishing, rebuilt in pure Rust.",
     "homepage": "https://getartcraft.com/apps/designcraft",
     "license": "MIT OR Apache-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/storytold/designcraft/releases/download/v0.2.1/designcraft-0.2.1-windows-x64-portable.zip",
-            "hash": "307b1281acc7cf8a9328768cef18665b7f96067eea4984e871e061f97ea3ec3f",
-            "extract_dir": "designcraft-0.2.1-windows-x64-portable"
+            "url": "https://github.com/storytold/designcraft/releases/download/v0.4.0/designcraft-0.4.0-windows-x64-portable.zip",
+            "hash": "dfc76a2a5428f02207a05e985319e36eba8f0e3c9a1eec5f80050c15047097b3",
+            "extract_dir": "designcraft-0.4.0-windows-x64-portable"
         },
         "32bit": {
-            "url": "https://github.com/storytold/designcraft/releases/download/v0.2.1/designcraft-0.2.1-windows-x86-portable.zip",
-            "hash": "23f546f1ef78833ada6c416009462ccdaa32ad75f2810e39f23b8991fcdc52ce",
-            "extract_dir": "designcraft-0.2.1-windows-x86-portable"
+            "url": "https://github.com/storytold/designcraft/releases/download/v0.4.0/designcraft-0.4.0-windows-x86-portable.zip",
+            "hash": "88a8e3669f7464f99c780e3466b9c8f08d3966b31e80bb1c85beca9133c520c5",
+            "extract_dir": "designcraft-0.4.0-windows-x86-portable"
         }
     },
     "bin": [
