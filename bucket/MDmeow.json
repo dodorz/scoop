@@ -17,6 +17,7 @@
             "MDmeow"
         ]
     ],
+    "persist": "settings.toml",
     "checkver": {
         "github": "https://github.com/zakee039/MDmeow"
     },
