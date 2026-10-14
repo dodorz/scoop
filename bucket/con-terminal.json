@@ -1,12 +1,12 @@
 {
-    "version": "0.1.0-beta.134",
+    "version": "0.1.0-beta.135",
     "description": "The Native Terminal Emulator with a builtin AI Harness",
     "homepage": "https://github.com/nowledge-co/con-terminal",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/nowledge-co/con-terminal/releases/download/v0.1.0-beta.134/con-0.1.0-beta.134-windows-x86_64.zip",
-            "hash": "0b171dce7ea555824369368e81f01b56336233c33123d8f1f7bf0311163816d3"
+            "url": "https://github.com/nowledge-co/con-terminal/releases/download/v0.1.0-beta.135/con-0.1.0-beta.135-windows-x86_64.zip",
+            "hash": "dffa10828904726ebe658b7346a1eac6a5bdf44ced995dcec6f5936e6ce9f32f"
         }
     },
     "bin": "con-app.exe",
