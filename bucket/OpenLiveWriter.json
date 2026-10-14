@@ -1,7 +1,7 @@
 {
     "homepage": "http://openlivewriter.org/",
     "license": "MIT",
-    "version": "0.7.0",
+    "version": "0.6.2.0",
     "url": "https://openlivewriter.azureedge.net/stable/Releases/OpenLiveWriterSetup.exe#/dl.7z",
     "hash": "f606de05007eba227df4e000b264cfe1de9c37b1f3e7918a41186561904b0176",
     "installer": {
