@@ -1,5 +1,5 @@
 {
-    "version": "2026.10.12-d47ca18",
+    "version": "2026.10.14-0f9edde",
     "description": "Cursor Agent command-line interface (CLI) for AI coding agents",
     "homepage": "https://cursor.com/docs/cli/overview",
     "license": "proprietary",
@@ -10,12 +10,12 @@
     ],
     "architecture": {
         "64bit": {
-            "url": "https://downloads.cursor.com/lab/2026.10.12-d47ca18/windows/x64/agent-cli-package.zip",
-            "hash": "43ebf568c0be49c1f2308545bebceefbb8fe19b6b67a91151b146bb0c06f961c"
+            "url": "https://downloads.cursor.com/lab/2026.10.14-0f9edde/windows/x64/agent-cli-package.zip",
+            "hash": "9f317fa3857018ae41f787a64178a8a62dc46c1c6f79c35073da2e3a370d0c11"
         },
         "arm64": {
-            "url": "https://downloads.cursor.com/lab/2026.10.12-d47ca18/windows/arm64/agent-cli-package.zip",
-            "hash": "16f5b3bcd1d1ba3645cf721fb79103b6cca6c546f33b9f39ef7a2f7ac59dd269"
+            "url": "https://downloads.cursor.com/lab/2026.10.14-0f9edde/windows/arm64/agent-cli-package.zip",
+            "hash": "e55c3905d2c7db203d3f74cb42cc8f5a8ac14dce83447c01695fc70b7bedb7f2"
         }
     },
     "extract_dir": "dist-package",
