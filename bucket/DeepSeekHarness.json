@@ -1,12 +1,12 @@
 {
-    "version": "0.2.1-rc.1",
+    "version": "0.2.1-rc.2",
     "description": "Official desktop client for DeepSeek Harness, the open-source agent harness where everything is a plugin",
     "homepage": "https://www.deepseek.com/harness/en/",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://download.deepseek.com/dsh-desk/bin/win-x64/deepseek-harness-0.2.1-rc.1-win-x64.exe#/dl.7z",
-            "hash": "sha512:62dd52b185e001001c82fc84fda281436263183f6c85a681f4760b0ddaf24968b77ba03c5e951e4906804d1111d42e61f2365b1d94510065affde0ce5d0835c9",
+            "url": "https://download.deepseek.com/dsh-desk/bin/win-x64/deepseek-harness-0.2.1-rc.2-win-x64.exe#/dl.7z",
+            "hash": "sha512:dfd3ce979a2c97d3ca32aacf5d0039d9d87f6c2574674daf395f5c4e33890c713a82c270a796efee57e00779955802aca57edaff0d624e2fbc2e2b2d761ab8e6",
             "installer": {
                 "script": [
                     "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
