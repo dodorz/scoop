@@ -27,7 +27,7 @@
     ],
     "checkver": {
         "url": "https://triptico.com/download/mp_release_notes",
-        "regex": "([\\d.]+)\\n----",
+        "regex": "([\\d.]+)\\n----"
     },
     "autoupdate": {
         "architecture": {
