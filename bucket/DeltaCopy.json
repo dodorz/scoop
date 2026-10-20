@@ -4,7 +4,7 @@
     "homepage": "http://www.aboutmyip.com/AboutMyXApp/DeltaCopy.jsp",
     "url": "http://www.aboutmyx.com/files/DeltaCopyRaw.zip",
     "bin": [
-        "rsync.exe",
+        "rsync.exe"
     ],
     "shortcuts": [
         [
