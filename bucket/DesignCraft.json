@@ -13,6 +13,11 @@
             "url": "https://github.com/storytold/designcraft/releases/download/v0.9.0/designcraft-0.9.0-windows-x86-portable.zip",
             "hash": "a2e96341374f6baa9a2048aae90af0e6129ed5ea8cb86fc76b35568a35d719f8",
             "extract_dir": "designcraft-0.9.0-windows-x86-portable"
+        },
+        "arm64": {
+            "url": "https://github.com/storytold/designcraft/releases/download/v0.9.0/designcraft-0.9.0-windows-arm64-portable.zip",
+            "hash": "a9a68b979ff9583d6d33651f5cd246c7ac49e199bc4bafbc7f9d53d6357813f1",
+            "extract_dir": "designcraft-0.9.0-windows-arm64-portable"
         }
     },
     "bin": [
@@ -37,6 +42,10 @@
             "32bit": {
                 "url": "https://github.com/storytold/designcraft/releases/download/v$version/designcraft-$version-windows-x86-portable.zip",
                 "extract_dir": "designcraft-$version-windows-x86-portable"
+            },
+            "arm64": {
+                "url": "https://github.com/storytold/designcraft/releases/download/v$version/designcraft-$version-windows-arm64-portable.zip",
+                "extract_dir": "designcraft-$version-windows-arm64-portable"
             }
         }
     }
