@@ -13,6 +13,11 @@
             "url": "https://github.com/storytold/filmcraft/releases/download/v0.9.0/filmcraft-0.9.0-windows-x86-portable.zip",
             "hash": "99f380ebb152686ac7d381faa915fa0b3456861f7d4615d44b0057625416a624",
             "extract_dir": "filmcraft-0.9.0-windows-x86-portable"
+        },
+        "arm64": {
+            "url": "https://github.com/storytold/filmcraft/releases/download/v0.9.0/filmcraft-0.9.0-windows-arm64-portable.zip",
+            "hash": "dd2b4aeb25973294659e849b10711698aa51b63cdb87be436b20ca1bd38c5066",
+            "extract_dir": "filmcraft-0.9.0-windows-arm64-portable"
         }
     },
     "bin": [
@@ -37,6 +42,10 @@
             "32bit": {
                 "url": "https://github.com/storytold/filmcraft/releases/download/v$version/filmcraft-$version-windows-x86-portable.zip",
                 "extract_dir": "filmcraft-$version-windows-x86-portable"
+            },
+            "arm64": {
+                "url": "https://github.com/storytold/filmcraft/releases/download/v$version/filmcraft-$version-windows-arm64-portable.zip",
+                "extract_dir": "filmcraft-$version-windows-arm64-portable"
             }
         }
     }
