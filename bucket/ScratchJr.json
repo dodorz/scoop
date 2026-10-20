@@ -24,6 +24,6 @@
       "github": "https://github.com/jfo8000/ScratchJr-Desktop/"
     },
     "autoupdate": {
-      "url": "https://github.com/jfo8000/ScratchJr-Desktop/releases/download/v$version/ScratchJr-$version.Setup.exe#/dl.7z",
+      "url": "https://github.com/jfo8000/ScratchJr-Desktop/releases/download/v$version/ScratchJr-$version.Setup.exe#/dl.7z"
     }
 }
