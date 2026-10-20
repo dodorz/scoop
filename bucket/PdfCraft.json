@@ -1,33 +1,32 @@
 {
-    "version": "0.2.1",
+    "version": "0.9.0",
     "description": "The open-source PDF workbench: read, organize, combine, split and secure.",
     "homepage": "https://getartcraft.com/apps/pdfcraft",
     "license": "MIT OR Apache-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/storytold/pdfcraft/releases/download/v0.2.1/printcraft-0.2.1-windows-x64-portable.zip",
-            "hash": "7ed1aa951eb336637763e3bd1f15b8fba483a9ca58d7b2b2d2ee2ab69be52872",
-            "extract_dir": "printcraft-0.2.1-windows-x64-portable"
+            "url": "https://github.com/storytold/pdfcraft/releases/download/v0.9.0/pdfcraft-0.9.0-windows-x64-portable.zip",
+            "hash": "e09f5bb89ab830e3f123a8779e28e203aef243a23997586c68a67d5b4995f429",
+            "extract_dir": "pdfcraft-0.9.0-windows-x64-portable"
         },
         "32bit": {
-            "url": "https://github.com/storytold/pdfcraft/releases/download/v0.2.1/printcraft-0.2.1-windows-x86-portable.zip",
-            "hash": "b5eed12ce10aabe537eafb802727db027fa6e161f76c4ef448781791343ccde5",
-            "extract_dir": "printcraft-0.2.1-windows-x86-portable"
+            "url": "https://github.com/storytold/pdfcraft/releases/download/v0.9.0/pdfcraft-0.9.0-windows-x86-portable.zip",
+            "hash": "7233f967e7cb124f7a58e68c89c16a28843d4150fc10770ee9756b7259e375f7",
+            "extract_dir": "pdfcraft-0.9.0-windows-x86-portable"
+        },
+        "arm64": {
+            "url": "https://github.com/storytold/pdfcraft/releases/download/v0.9.0/pdfcraft-0.9.0-windows-arm64-portable.zip",
+            "hash": "9931e148990166a8a36be62c20c065493bb8d89049c9a408a885e2dc2b7d88e4",
+            "extract_dir": "pdfcraft-0.9.0-windows-arm64-portable"
         }
     },
     "bin": [
-        [
-            "printcraft.exe",
-            "pdfcraft"
-        ],
-        [
-            "printcraft-cli.exe",
-            "pdfcraft-cli"
-        ]
+        "pdfcraft.exe",
+        "pdfcraft-cli.exe"
     ],
     "shortcuts": [
         [
-            "printcraft.exe",
+            "pdfcraft.exe",
             "PdfCraft"
         ]
     ],
@@ -37,12 +36,16 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/storytold/pdfcraft/releases/download/v$version/printcraft-$version-windows-x64-portable.zip",
-                "extract_dir": "printcraft-$version-windows-x64-portable"
+                "url": "https://github.com/storytold/pdfcraft/releases/download/v$version/pdfcraft-$version-windows-x64-portable.zip",
+                "extract_dir": "pdfcraft-$version-windows-x64-portable"
             },
             "32bit": {
-                "url": "https://github.com/storytold/pdfcraft/releases/download/v$version/printcraft-$version-windows-x86-portable.zip",
-                "extract_dir": "printcraft-$version-windows-x86-portable"
+                "url": "https://github.com/storytold/pdfcraft/releases/download/v$version/pdfcraft-$version-windows-x86-portable.zip",
+                "extract_dir": "pdfcraft-$version-windows-x86-portable"
+            },
+            "arm64": {
+                "url": "https://github.com/storytold/pdfcraft/releases/download/v$version/pdfcraft-$version-windows-arm64-portable.zip",
+                "extract_dir": "pdfcraft-$version-windows-arm64-portable"
             }
         }
     }
