@@ -13,6 +13,11 @@
             "url": "https://github.com/storytold/lightcraft/releases/download/v0.9.1/lightcraft-0.9.1-windows-x86-portable.zip",
             "hash": "e273da4a76b575cd02b7b5aefdf734641161c8b7d5629f8541468462df4da379",
             "extract_dir": "lightcraft-0.9.1-windows-x86-portable"
+        },
+        "arm64": {
+            "url": "https://github.com/storytold/lightcraft/releases/download/v0.9.1/lightcraft-0.9.1-windows-arm64-portable.zip",
+            "hash": "e3e142991bbcb644f247a57ff26a2385429271ed5f5e2279321a89f0f5b5e9bd",
+            "extract_dir": "lightcraft-0.9.1-windows-arm64-portable"
         }
     },
     "bin": [
@@ -37,6 +42,10 @@
             "32bit": {
                 "url": "https://github.com/storytold/lightcraft/releases/download/v$version/lightcraft-$version-windows-x86-portable.zip",
                 "extract_dir": "lightcraft-$version-windows-x86-portable"
+            },
+            "arm64": {
+                "url": "https://github.com/storytold/lightcraft/releases/download/v$version/lightcraft-$version-windows-arm64-portable.zip",
+                "extract_dir": "lightcraft-$version-windows-arm64-portable"
             }
         }
     }
