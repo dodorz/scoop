@@ -1,12 +1,12 @@
 {
-    "version": "0.2.1",
+    "version": "0.2.2",
     "description": "A modern cross-platform file and folder comparison and three-way merge tool.",
     "homepage": "https://github.com/chaxiu/OpenCompare",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/chaxiu/OpenCompare/releases/download/v0.2.1/OpenCompare.Setup.0.2.1.exe#/dl.7z",
-            "hash": "6d153de6dbf5f0aa6400833b6470efb162615da9f0e06373409420933110055e"
+            "url": "https://github.com/chaxiu/OpenCompare/releases/download/v0.2.2/OpenCompare.Setup.0.2.2.exe#/dl.7z",
+            "hash": "4dbbe5354715e748a0c5fda89434386e8aa877c32e3f358393db0d805b664524"
         }
     },
     "installer": {
