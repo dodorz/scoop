@@ -1,16 +1,16 @@
 {
-    "version": "0.1.6",
+    "version": "0.1.7",
     "description": "Two-way sync between a Simplenote account and a local markdown directory",
     "homepage": "https://github.com/dodorz/snsync",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/dodorz/snsync/releases/download/0.1.6/snsync-0.1.6-windows-amd64.7z",
-            "hash": "f92312027ee8c6d56cb5fa4f5afa04d7f77679a3180f4922b270bcdccd1ce274"
+            "url": "https://github.com/dodorz/snsync/releases/download/0.1.7/snsync-0.1.7-windows-amd64.7z",
+            "hash": "880418314059171497cf54101384845831a887bd5944ad7edb3e3769b96b480e"
         },
         "arm64": {
-            "url": "https://github.com/dodorz/snsync/releases/download/0.1.6/snsync-0.1.6-windows-arm64.7z",
-            "hash": "0f2f12a715bf7e2c3a83c8cd637ba746f1cb2bfd398ec2241b553b2ed3379b90"
+            "url": "https://github.com/dodorz/snsync/releases/download/0.1.7/snsync-0.1.7-windows-arm64.7z",
+            "hash": "97a3894392a2181bc1571910c29edfb14cebf0bf2db8c1a914237f9b41e0e632"
         }
     },
     "bin": "snsync.exe",
