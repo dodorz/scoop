@@ -1,23 +1,23 @@
 {
-    "version": "0.11.0",
+    "version": "0.12.0",
     "description": "An open-source photo library and raw developer that runs on your machine.",
     "homepage": "https://getartcraft.com/apps/lightcraft",
     "license": "MIT OR Apache-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/storytold/lightcraft/releases/download/v0.11.0/lightcraft-0.11.0-windows-x64-portable.zip",
-            "hash": "3417542319d63cbfa772763a94128d7fef9a389f997bb4e78bfe6a192a17ffac",
-            "extract_dir": "lightcraft-0.11.0-windows-x64-portable"
+            "url": "https://github.com/storytold/lightcraft/releases/download/v0.12.0/lightcraft-0.12.0-windows-x64-portable.zip",
+            "hash": "576191eeb08f3dd776408ee88e465a8bc6ef112e5a4831880d26abc9477a1457",
+            "extract_dir": "lightcraft-0.12.0-windows-x64-portable"
         },
         "32bit": {
-            "url": "https://github.com/storytold/lightcraft/releases/download/v0.11.0/lightcraft-0.11.0-windows-x86-portable.zip",
-            "hash": "66609b88909fb7ce88443a231a936f1d97a92a2d7848347ebe7bd1805e75dcfc",
-            "extract_dir": "lightcraft-0.11.0-windows-x86-portable"
+            "url": "https://github.com/storytold/lightcraft/releases/download/v0.12.0/lightcraft-0.12.0-windows-x86-portable.zip",
+            "hash": "4a16a7af3d0658bcd468682d83170c926b477bd82c5be93fc53ef5c63f7506c1",
+            "extract_dir": "lightcraft-0.12.0-windows-x86-portable"
         },
         "arm64": {
-            "url": "https://github.com/storytold/lightcraft/releases/download/v0.11.0/lightcraft-0.11.0-windows-arm64-portable.zip",
-            "hash": "a5e65d91a3682669d9f2e5f093b4c1c7680c613f9d6608d72d83b0230119574d",
-            "extract_dir": "lightcraft-0.11.0-windows-arm64-portable"
+            "url": "https://github.com/storytold/lightcraft/releases/download/v0.12.0/lightcraft-0.12.0-windows-arm64-portable.zip",
+            "hash": "4e113f969473cd6ea2ae54347ebb44876870f9e51031a6f9fc08b43c70c73a30",
+            "extract_dir": "lightcraft-0.12.0-windows-arm64-portable"
         }
     },
     "bin": [
