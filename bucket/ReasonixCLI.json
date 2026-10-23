@@ -1,30 +1,30 @@
 {
-    "version": "1.17.1",
+    "version": "2.49.0",
     "description": "DeepSeek-native AI coding agent for your terminal. Engineered around prefix-cache stability — leave it running.",
     "homepage": "https://github.com/esengine/DeepSeek-Reasonix",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/esengine/DeepSeek-Reasonix/releases/download/v1.17.1/reasonix-windows-amd64.zip",
-            "hash": "2bcb8831e90ff7e16ab1849e97d9ab2616f114ee8a5dfac532daa73434f70631"
+            "url": "https://github.com/esengine/DeepSeek-Reasonix/releases/download/studio-v2.49.0/reasonix-windows-amd64.zip",
+            "hash": "4bc70ba765e18e52fc74f964969ac76681f243eb3593680e0e9645e2a23eb23e"
         },
         "arm64": {
-            "url": "https://github.com/esengine/DeepSeek-Reasonix/releases/download/v1.17.1/reasonix-windows-arm64.zip",
-            "hash": "fbd0701f113d8ffde8267cf123d1f81172848e922603e80fab8ee94517cbd968"
+            "url": "https://github.com/esengine/DeepSeek-Reasonix/releases/download/studio-v2.49.0/reasonix-windows-arm64.zip",
+            "hash": "0da7d86c67e8cf50b863da3fba029ee8a9550f306186663b180dcbb065036df2"
         }
     },
     "bin": "reasonix.exe",
     "checkver": {
-        "url": "https://github.com/esengine/DeepSeek-Reasonix/releases/latest",
-        "regex": "/releases/tag/(?:v|V)?([\\d.]+)"
+        "github": "https://github.com/esengine/DeepSeek-Reasonix",
+        "regex": "studio-v([\\d.]+)"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/esengine/DeepSeek-Reasonix/releases/download/v$version/reasonix-windows-amd64.zip"
+                "url": "https://github.com/esengine/DeepSeek-Reasonix/releases/download/studio-v$version/reasonix-windows-amd64.zip"
             },
             "arm64": {
-                "url": "https://github.com/esengine/DeepSeek-Reasonix/releases/download/v$version/reasonix-windows-arm64.zip"
+                "url": "https://github.com/esengine/DeepSeek-Reasonix/releases/download/studio-v$version/reasonix-windows-arm64.zip"
             }
         }
     }
