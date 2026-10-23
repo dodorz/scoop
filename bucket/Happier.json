@@ -17,8 +17,8 @@
         ]
     },
     "checkver": {
-        "github": "https://github.com/happier-dev/happier",
-        "regex": "cli-stable.*?happier-v([\\d.]+)-windows-x64\\.tar\\.gz"
+        "url": "https://github.com/happier-dev/happier/releases/download/cli-stable/windows-x64.json",
+        "jsonpath": "version"
     },
     "autoupdate": {
         "architecture": {
