@@ -1,0 +1,82 @@
+name: Tag version commits
+
+on:
+  push:
+    branches:
+      - master
+  workflow_dispatch:
+    inputs:
+      scan:
+        description: "Scan mode"
+        type: choice
+        options:
+          - pushed
+          - all
+        default: pushed
+
+permissions:
+  contents: write
+
+concurrency:
+  group: tag-version-commits
+  cancel-in-progress: false
+
+jobs:
+  tag:
+    name: Create <App>-<version> tags
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - name: Tag version commits
+        shell: bash
+        env:
+          BEFORE: ${{ github.event.before }}
+          AFTER: ${{ github.event.after }}
+          SCAN: ${{ inputs.scan }}
+        run: |
+          set -euo pipefail
+
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+
+          zero='0000000000000000000000000000000000000000'
+          if [ "${SCAN:-pushed}" = "all" ] || [ -z "${BEFORE:-}" ] || [ "$BEFORE" = "$zero" ] || ! git cat-file -e "${BEFORE}^{commit}" 2>/dev/null; then
+            # Full backfill on manual dispatch; bounded scan if the previous
+            # tip is unreachable (force-push).
+            if [ "${SCAN:-pushed}" = "all" ]; then
+              commits="$(git rev-list HEAD)"
+            else
+              commits="$(git rev-list --max-count=200 HEAD)"
+            fi
+          else
+            commits="$(git rev-list "${BEFORE}..${AFTER}")"
+          fi
+
+          created=0
+          while IFS= read -r commit; do
+            [ -z "$commit" ] && continue
+
+            subject="$(git log -1 --format=%s "$commit")"
+            if [[ "$subject" =~ ^(.+):\ (Add\ version|Update\ to\ version)\ ([^[:space:]]+)$ ]]; then
+              app="${BASH_REMATCH[1]}"
+              version="${BASH_REMATCH[3]}"
+              tag="${app}-${version}"
+
+              if git rev-parse -q --verify "refs/tags/${tag}" >/dev/null; then
+                echo "skip ${tag}: already exists"
+                continue
+              fi
+
+              git tag "$tag" "$commit"
+              git push origin "refs/tags/${tag}"
+              echo "tagged ${tag} -> ${commit:0:12} (${subject})"
+              created=$((created + 1))
+            fi
+          done <<< "$commits"
+
+          echo "Created ${created} tag(s)."
