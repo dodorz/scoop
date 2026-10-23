@@ -14,7 +14,7 @@
     ],
     "checkver": {
         "url": "https://verycapture.com/download.html",
-        "regex": "VeryCapture v([0-9.]+)"
+        "regex": "class=\"title\">v([0-9.]+)</div>"
     },
     "autoupdate": {
         "url": "https://verycapture.com/download/verycapture$version.zip"
