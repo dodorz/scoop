@@ -22,7 +22,7 @@
     ],
     "checkver": {
         "url": "http://www.slsknet.org/news/node/1",
-        "regex": "Latest Windows 32-bit build.*?SoulseekQt-(?<ver32>[\\d-]+)-32bit\\.exe.*Latest Windows 64-bit build.*?SoulseekQt-([\\d-]+)-64bit\\.exe"
+        "regex": "Latest Windows(?: 32-bit)? build:.*?SoulseekQt-([\\d-]+)-64bit\\.exe"
     },
     "autoupdate": {
         "architecture": {
