@@ -13,7 +13,7 @@
             "PyGPT"
         ]
     ],
-    "checkver": "\"softwareVersion\": \"([\\d.]+)\"",
+    "checkver": "\"softwareVersion\":\\s*\"([\\d.]+)\"",
     "autoupdate": {
         "url": "https://pygpt.net/download/$version/pygpt-$version.msi",
         "extract_dir": "pygpt-$version\\PyGPT"
