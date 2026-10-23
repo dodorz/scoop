@@ -24,7 +24,7 @@
     ],
     "checkver": {
         "url": "https://www.kimi.com/code/docs/en/kimi-code-desktop/changelog.html",
-        "regex": "##\\s+([\\d.]+)"
+        "regex": "<h2[^>]*>([\\d.]+)"
     },
     "autoupdate": {
         "architecture": {
