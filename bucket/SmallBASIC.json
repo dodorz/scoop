@@ -27,8 +27,9 @@
         ]
     ],
     "checkver": {
-        "url": "https://github.com/smallbasic/SmallBASIC/releases/latest",
-        "regex": "Release (\\d+)_(\\d+) · smallbasic/SmallBASIC",
+        "url": "https://api.github.com/repos/smallbasic/SmallBASIC/releases/latest",
+        "jsonpath": "tag_name",
+        "regex": "v(\\d+)_(\\d+)(?:_win)?",
         "replace": "${1}.${2}"
     },
     "autoupdate": {
