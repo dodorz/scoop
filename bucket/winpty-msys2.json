@@ -21,7 +21,7 @@
         "bin\\winpty-debugserver.exe"
     ],
     "checkver": {
-        "url": "https://github.com/rprichard/winpty/releases/latest",
+        "url": "https://api.github.com/repos/rprichard/winpty/releases/latest",
         "regex": "winpty-([\\d.]+)-msys2-(?<msys2ver>[\\d.]+)-x64.tar.gz"
     },
     "autoupdate": {
