@@ -23,7 +23,7 @@
     ],
     "checkver": {
         "url": "https://api.github.com/repos/unslothai/unsloth/releases?per_page=10",
-        "regex": "\"browser_download_url\"\\s*:\\s*\"https://github.com/unslothai/unsloth/releases/download/v([\\d.]+-beta)/Unsloth-Desktop-[\\w]+-Windows\\.exe\""
+        "regex": "\"browser_download_url\"\\s*:\\s*\"https://github.com/unslothai/unsloth/releases/download/v([\\d.]+-beta)/Unsloth-Desktop-Windows\\.exe\""
     },
     "autoupdate": {
         "architecture": {
