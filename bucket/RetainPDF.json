@@ -7,15 +7,11 @@
         "64bit": {
             "url": "https://github.com/wxyhgk/retain-pdf/releases/download/v4.2.6/RetainPDF-Windows-4.2.6-Setup.exe#/dl.7z",
             "hash": "fffba3cc7b3cbdb635ee64272f709f371a10202b106850c308f21b3d248d8a22"
-        },
-        "32bit": {
-            "url": "https://github.com/wxyhgk/retain-pdf/releases/download/v4.2.6/RetainPDF-Windows-4.2.6-Setup.exe#/dl.7z",
-            "hash": "fffba3cc7b3cbdb635ee64272f709f371a10202b106850c308f21b3d248d8a22"
         }
     },
     "installer": {
         "script": [
-            "Expand-7ZipArchive \"$dir\\`$PLUGINSDIR\\app-32.7z\" \"$dir\" -Removal",
+            "Expand-7ZipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\" -Removal",
             "Remove-Item \"$dir\\`$PLUGINSDIR\",\"$dir\\`$R0\"  -Force -Recurse"
         ]
     },
@@ -34,9 +30,6 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/wxyhgk/retain-pdf/releases/download/v$version/RetainPDF-Windows-$version-Setup.exe#/dl.7z"
-            },
-            "32bit": {
                 "url": "https://github.com/wxyhgk/retain-pdf/releases/download/v$version/RetainPDF-Windows-$version-Setup.exe#/dl.7z"
             }
         }
