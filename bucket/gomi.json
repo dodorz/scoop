@@ -1,12 +1,12 @@
 {
     "homepage": "https://github.com/b4b4r07/gomi",
     "description": "A simple trash tool that works on CLI",
-    "version": "1.9.1",
+    "version": "1.10.0",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/b4b4r07/gomi/releases/download/v1.9.1/gomi_Windows_x86_64.zip",
-            "hash": "3298ceca4a5f970d3d8211bb1f16a1d7ce326f8660b9c7b8ba241ddf8fbd4663"
+            "url": "https://github.com/b4b4r07/gomi/releases/download/v1.10.0/gomi_Windows_x86_64.zip",
+            "hash": "2d59b483d07e7e1fb41a9e0dc87f3661159b33d0a066a92ab35c1921b951f2c6"
         }
     },
     "bin": "gomi.exe",
