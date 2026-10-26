@@ -52,6 +52,8 @@
         }
     },
     "pre_uninstall": [
+        "# Close running AutoHotkey processes so the uninstaller can delete/replace its files",
+        "Get-Process -ErrorAction SilentlyContinue | Where-Object { $_.ProcessName -like 'AutoHotkey*' } | Stop-Process -Force -ErrorAction SilentlyContinue",
         "# Persistence",
         "ensure \"$persist_dir\" | Out-Null",
         "ensure \"$persist_dir\\installed-files\" | Out-Null",
@@ -72,7 +74,11 @@
         "}"
     ],
     "uninstaller": {
-        "script": "Start-Process \"$dir\\UX\\AutoHotkeyUX.exe\" -ArgumentList @('/script', \"`\"$dir\\UX\\install.ahk`\"\", '/uninstall', '/silent') -Wait"
+        "script": [
+            "$ahk = @('/script', \"`\"$dir\\UX\\install.ahk`\"\", '/to', \"`\"$dir`\"\", '/uninstall', '/silent')",
+            "if (!$global) { $ahk = @('/script', \"`\"$dir\\UX\\install.ahk`\"\", '/to', \"`\"$dir`\"\", '/user', '/uninstall', '/silent') }",
+            "Start-Process \"$dir\\UX\\AutoHotkeyUX.exe\" -ArgumentList $ahk -Wait"
+        ]
     },
     "checkver": {
         "github": "https://github.com/AutoHotkey/AutoHotkey"
