@@ -1,5 +1,5 @@
 {
-    "version": "1.2.5",
+    "version": "1.2.7",
     "description": "The next-generation Markdown editor with an AI writing assistant.",
     "homepage": "https://textus.catvinci.com/",
     "license": "MIT",
@@ -8,8 +8,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/CatVinci-Studio/Textus/releases/download/v1.2.5/Textus_1.2.5_x64-setup.exe#/dl.7z",
-            "hash": "779224ba0369bbedc1530361c91fce32b78f1b8a88f07d1158ecd79c97e29b82"
+            "url": "https://github.com/CatVinci-Studio/Textus/releases/download/v1.2.7/Textus_1.2.7_x64-setup.exe#/dl.7z",
+            "hash": "c3fd588d6ec15a16a921d5c773a22a1b0d8f6253d16eccd637e48980d77e3989"
         }
     },
     "installer": {
