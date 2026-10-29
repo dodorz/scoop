@@ -1,12 +1,12 @@
 {
-    "version": "1.45.1",
+    "version": "1.46.0",
     "description": "A fast, minimal terminal emulator",
     "homepage": "https://github.com/xuzhougeng/wispterm",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/xuzhougeng/wispterm/releases/download/v1.45.1/wispterm-windows-portable-v1.45.1.zip",
-            "hash": "13c1ae62897553cd8953deb6cc41b4b19609b65d154ecfa50a96a62cf7b5c9ca"
+            "url": "https://github.com/xuzhougeng/wispterm/releases/download/v1.46.0/wispterm-windows-portable-v1.46.0.zip",
+            "hash": "befed8eebdd34f14497f464db1681b630d6e5f7ed742138055316d9353f28d46"
         }
     },
     "bin": "WispTerm.exe",
