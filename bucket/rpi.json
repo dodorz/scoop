@@ -1,12 +1,12 @@
 {
-    "version": "0.17.2",
+    "version": "0.18.0",
     "description": "Rust-native, library-first coding-agent runtime and terminal CLI inspired by Pi, with composable LLM providers, tools, sessions, and plugin ABI",
     "homepage": "https://github.com/bigfish1913/pi-rust",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/bigfish1913/pi-rust/releases/download/v0.17.2/rpi-v0.17.2-x86_64-pc-windows-msvc.zip",
-            "hash": "6d2e57cd8fc7eab67f69243e1d0acff8fa1760f18de03114989554dd13898fac"
+            "url": "https://github.com/bigfish1913/pi-rust/releases/download/v0.18.0/rpi-v0.18.0-x86_64-pc-windows-msvc.zip",
+            "hash": "fe936f56f4e2f750e16dba8ff2f321bdab7b4897b0e292c076d50aa0c34c6050"
         }
     },
     "bin": "rpi.exe",
