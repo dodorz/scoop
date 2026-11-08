@@ -1,20 +1,20 @@
 {
-    "version": "0.0.8",
+    "version": "0.0.9",
     "description": "Minimal native Windows LLM translation tool built with Win32 API and WinHTTP.",
     "homepage": "https://github.com/dodorz/tslt",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/dodorz/tslt/releases/download/0.0.8/tslt-0.0.8-x86_64.zip",
-            "hash": "ea4e6469064297b139d3406941ac0e6b4339f8df6373d4ede2bf240544812d37"
+            "url": "https://github.com/dodorz/tslt/releases/download/0.0.9/tslt-0.0.9-x86_64.zip",
+            "hash": "60e047aaa277ed98bca11219f5e13c9d74eb40e31815c59cdd0f6f4d7fec24d3"
         },
         "32bit": {
-            "url": "https://github.com/dodorz/tslt/releases/download/0.0.8/tslt-0.0.8-x86.zip",
-            "hash": "395c3071e37b1ae42c1736e1abcb2757e5d7fa4c0d18a8fa9af13026ab1aa271"
+            "url": "https://github.com/dodorz/tslt/releases/download/0.0.9/tslt-0.0.9-x86.zip",
+            "hash": "7772f20ae63bb44eff7593157f8a516a6c6acf7bfebb780595eac363f5b84dd3"
         },
         "arm64": {
-            "url": "https://github.com/dodorz/tslt/releases/download/0.0.8/tslt-0.0.8-arm64.zip",
-            "hash": "b0b9112fad31521c89b68d4707c8a504c331b27932dc178ca7bc86c0d43a015b"
+            "url": "https://github.com/dodorz/tslt/releases/download/0.0.9/tslt-0.0.9-arm64.zip",
+            "hash": "c3a4f7d4be424b44903ef5a123fedfaee88ed243ec3380ecf482de0adff1c3bc"
         }
     },
     "installer": {
