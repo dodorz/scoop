@@ -1,16 +1,16 @@
 {
-    "version": "2.6.2",
+    "version": "2.5.3",
     "description": "Moonshot AI coding agent CLI",
     "homepage": "https://github.com/MoonshotAI/kimi-code",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://code.kimi.com/kimi-code/binaries/2.6.2/kimi-code-win32-x64.exe#/kimi-code.exe",
-            "hash": "2ed90bd96e74c035705df2149bae9b377ff91a07e24d183b7c220794d6d7af46"
+            "url": "https://code.kimi.com/kimi-code/binaries/2.5.3/kimi-code-win32-x64.exe#/kimi-code.exe",
+            "hash": "3fe337ab7aa742ba0b72cc87fcc9a267756e609a54358c0d85bbe200da9bec8d"
         },
         "arm64": {
-            "url": "https://code.kimi.com/kimi-code/binaries/2.6.2/kimi-code-win32-arm64.exe#/kimi-code.exe",
-            "hash": "be6876923d9f033381aee28230506de6909b7a6a8b446757f207dc65ab26bcfb"
+            "url": "https://code.kimi.com/kimi-code/binaries/2.5.3/kimi-code-win32-arm64.exe#/kimi-code.exe",
+            "hash": "9c090c081e3f6da30917727c1e16633395892cc0eb8ae276f5f9f57c678a29e1"
         }
     },
     "bin": "kimi-code.exe",
