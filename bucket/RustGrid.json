@@ -1,16 +1,16 @@
 {
-    "version": "0.1.18",
+    "version": "0.1.19",
     "description": "Native database GUI. Built in Rust. No WebView",
     "homepage": "https://github.com/yisier/rustgrid",
     "license": "Apache-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/yisier/rustgrid/releases/download/v0.1.18/RustGrid-0.1.18-windows-x64.zip",
-            "hash": "a606c99170a572c8262d7d039abfd8287098aaaba063a1f3b93b0c98b3f92bb1"
+            "url": "https://github.com/yisier/rustgrid/releases/download/v0.1.19/RustGrid-0.1.19-windows-x64.zip",
+            "hash": "5dfceaac4ee5c671f38e8a9f28521fb63cc5ffc63779348a4e2fa464df284eab"
         },
         "arm64": {
-            "url": "https://github.com/yisier/rustgrid/releases/download/v0.1.18/RustGrid-0.1.18-windows-arm64.zip",
-            "hash": "d68809d6579b2a7a52e8d43c28d2bead07a4433df171cceb8a5d207317dfc33d"
+            "url": "https://github.com/yisier/rustgrid/releases/download/v0.1.19/RustGrid-0.1.19-windows-arm64.zip",
+            "hash": "a9f8a5f1aad4e35108eb77e5db5d0d365d62da2dcf4343b28d59663dc6165e57"
         }
     },
     "bin": "RustGrid.exe",
