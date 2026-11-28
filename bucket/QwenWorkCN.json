@@ -1,12 +1,12 @@
 {
-    "version": "2.3.2",
+    "version": "2.3.3",
     "description": "QwenWork - Beyond chat, get it done",
     "homepage": "https://qwenwork.cn/",
     "license": "proprietary",
     "architecture": {
         "64bit": {
             "url": "https://assets.qwenwork.cn/release/latest/qwenworkcn-setup-x64.exe#/dl.7z",
-            "hash": "77b233234ddbf6bc2ecdad627682e35b94a09a83a07ce54ffd468fecd5320cb6",
+            "hash": "500e60580ff56995b243df0a18bd85bc143ae52218fe03b10574081d4add57f2",
             "installer": {
                 "script": [
                     "Expand-7ZipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\" -Removal",
